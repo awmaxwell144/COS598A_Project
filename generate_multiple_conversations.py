@@ -53,7 +53,7 @@ def call_model(model_name: str, messages: list) -> str:
     return response['message']['content'].strip()
 
 
-def generate_conversation(therapist_model: str, patient_model: str, total_turns: int):
+def generate_conversation(model: str, total_turns: int):
     """
     Alternates between therapist and patient for `total_turns` messages,
     returns a list of {"role":..., "content":...} dicts.
@@ -65,7 +65,6 @@ def generate_conversation(therapist_model: str, patient_model: str, total_turns:
     for turn in range(total_turns):
         is_therapist = (turn % 2 == 0)
         role = "therapist" if is_therapist else "patient"
-        model = therapist_model if is_therapist else patient_model
 
         # track counts & reminders
         if is_therapist:
@@ -113,12 +112,8 @@ def main():
         description="Generate multiple therapist–patient dialogues via Ollama"
     )
     parser.add_argument(
-        "--therapist_model", default="gpt-3.5-turbo",
-        help="Ollama model name for the therapist role"
-    )
-    parser.add_argument(
-        "--patient_model", default="claude-haiku",
-        help="Ollama model name for the patient role"
+        "--model", default="gpt-3.5-turbo",
+        help="Ollama model name for both roles"
     )
     parser.add_argument(
         "--turns", type=int, default=20,
@@ -138,13 +133,11 @@ def main():
 
     # simulate 15 conversations
     assert is_ollama_running()
-    check_and_pull_model(args.patient_model)
-    check_and_pull_model(args.therapist_model)
+    check_and_pull_model(args.model)
     for i in range(1, 16):
         logging.info(f"Generating conversation #{i}")
         conv = generate_conversation(
-            therapist_model=args.therapist_model,
-            patient_model=args.patient_model,
+            model=args.model,
             total_turns=args.turns
         )
 
@@ -162,8 +155,8 @@ def main():
         output_list.extend(conv)
 
         # build filename
-        t_mod = args.therapist_model.replace('/', '_')
-        p_mod = args.patient_model.replace('/', '_')
+        t_mod = args.model.replace('/', '_')
+        p_mod = args.model.replace('/', '_')
         fname = f"Conversazione{i}_{t_mod}-{p_mod}.json"
         path = os.path.join(args.output_dir, fname)
 
