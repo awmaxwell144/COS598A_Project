@@ -112,7 +112,7 @@ def main():
         description="Generate multiple therapist–patient dialogues via Ollama"
     )
     parser.add_argument(
-        "--model", default="gpt-3.5-turbo",
+        "--model", default="llama3.3",
         help="Ollama model name for both roles"
     )
     parser.add_argument(
