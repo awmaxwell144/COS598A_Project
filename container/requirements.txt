@@ -1,9 +1,7 @@
-numpy==1.26.4
-ollama==0.2.1
-pip==24.1.2
-pip-tools==7.4.1
-scikit-learn==1.5.0
-scipy==1.13.0
+numpy
+ollama
+pip
+pip-tools
 tqdm
 httpx
 pandas
