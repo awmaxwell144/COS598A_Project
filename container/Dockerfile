@@ -9,7 +9,6 @@ WORKDIR /root
 
 # Copy requirements and entrypoint
 COPY requirements.txt .
-COPY req_with_deps.txt .
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 
