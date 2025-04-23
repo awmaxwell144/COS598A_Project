@@ -5,7 +5,9 @@ import logging
 import os
 import sys
 import subprocess
+import multiprocessing
 import ollama
+from tqdm import tqdm
 
 # -------------------------------------------------------------------
 # PROMPTS definition (from the paper)
@@ -106,6 +108,31 @@ def generate_conversation(model: str, total_turns: int):
     return conv
 
 
+def worker(args):
+    model, total_turns, output_dir, i = args
+    conv = generate_conversation(model, total_turns)
+
+    output_list = [
+        {
+            "psychotherapist pre-prompt": PROMPTS["therapist"]["pre_prompt"],
+            "reminder psychotherapist": PROMPTS["therapist"]["reminder"]
+        },
+        {
+            "patient pre-prompt": PROMPTS["patient"]["pre_prompt"],
+            "reminder patient": PROMPTS["patient"]["reminder"]
+        }
+    ]
+    output_list.extend(conv)
+
+    t_mod = model.replace('/', '_')
+    p_mod = model.replace('/', '_')
+    fname = f"Conversation{i}_{t_mod}-{p_mod}.json"
+    path = os.path.join(output_dir, fname)
+
+    with open(path, "w") as f:
+        json.dump(output_list, f, indent=2)
+    logging.info(f"Saved conversation #{i} to {path}")
+
 def main():
     logging.basicConfig(level=logging.INFO)
     parser = argparse.ArgumentParser(
@@ -116,53 +143,36 @@ def main():
         help="Ollama model name for both roles"
     )
     parser.add_argument(
-        "--turns", type=int, default=20,
+        "--turns", type=int, default=6,
         help="Total number of messages per conversation (must be even)"
     )
     parser.add_argument(
         "--output_dir", required=True,
         help="Directory to save the JSON conversation files"
     )
+    parser.add_argument(
+        "--num_conversations", type=int, default=1,
+        help="How many conversations to generate"
+    )
+    parser.add_argument(
+        "--workers", type=int, default=8,  
+        help="Number of parallel worker processes"
+    )
     args = parser.parse_args()
 
-    # validate
     if args.turns % 2 != 0:
         logging.error("--turns must be an even number.")
         sys.exit(1)
     os.makedirs(args.output_dir, exist_ok=True)
 
-    # simulate 15 conversations
     is_ollama_running()
     check_and_pull_model(args.model)
-    for i in range(1, 16):
-        logging.info(f"Generating conversation #{i}")
-        conv = generate_conversation(
-            model=args.model,
-            total_turns=args.turns
-        )
 
-        # prepend pre-prompts & reminders as in the example
-        output_list = [
-            {
-                "psychotherapist pre-prompt": PROMPTS["therapist"]["pre_prompt"],
-                "reminder psychotherapist": PROMPTS["therapist"]["reminder"]
-            },
-            {
-                "patient pre-prompt": PROMPTS["patient"]["pre_prompt"],
-                "reminder patient": PROMPTS["patient"]["reminder"]
-            }
-        ]
-        output_list.extend(conv)
+    tasks = [(args.model, args.turns, args.output_dir, i) for i in range(1, args.num_conversations + 1)]
 
-        # build filename
-        t_mod = args.model.replace('/', '_')
-        p_mod = args.model.replace('/', '_')
-        fname = f"Conversazione{i}_{t_mod}-{p_mod}.json"
-        path = os.path.join(args.output_dir, fname)
-
-        with open(path, "w") as f:                        
-            json.dump(output_list, f, indent=2)
-        logging.info(f"Saved conversation #{i} to {path}")
+    with multiprocessing.Pool(processes=args.workers) as pool:
+        for _ in tqdm(pool.imap_unordered(worker, tasks), total=len(tasks), desc="Generating conversations"):
+            pass
 
 def is_ollama_running(host="http://127.0.0.1", port=11434):
     """Check if the Ollama server is running."""
@@ -181,7 +191,7 @@ def start_ollama_server():
     except Exception as e:
         logging.warning(f"Failed to start Ollama server: {e}")
 
-def check_and_pull_model(model_name="llama3.3"):
+def check_and_pull_model(model_name="gemma3"):
     """
     Check if a specific model (e.g., llama3) is downloaded, and pull it if not.
     """
