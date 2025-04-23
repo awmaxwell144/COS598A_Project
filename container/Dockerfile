@@ -5,6 +5,10 @@ FROM ollama/ollama:latest
 ENV USER am8792
 ENV VSCODE_INSTALL_DIR /opt/VSCode-linux-x64
 ENV VSCODE_BINARY_URL "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64"
+ENV DEBIAN_FRONTEND=noninteractive
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+
 WORKDIR /root
 
 # Copy requirements and entrypoint
@@ -13,6 +17,7 @@ COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 
 # Install necessary system packages
+
 RUN apt-get update && apt-get install -y \
     git                \
     curl               \
