@@ -69,6 +69,7 @@ def generate_conversation(model: str, total_turns: int):
         is_therapist = (turn % 2 == 0)
         role = "therapist" if is_therapist else "patient"
 
+        # Track turn counts and reminders
         if is_therapist:
             t_count += 1
             count = t_count
@@ -78,6 +79,7 @@ def generate_conversation(model: str, total_turns: int):
             count = p_count
             reminded = p_reminded
 
+        # Build the system message (role prompt)
         sys_msg = PROMPTS[role]["pre_prompt"]
         if count == 8 and not reminded:
             sys_msg += "\n" + PROMPTS[role]["reminder"]
@@ -86,17 +88,21 @@ def generate_conversation(model: str, total_turns: int):
             else:
                 p_reminded = True
 
+        # Build message history properly
         messages = [{"role": "system", "content": sys_msg}]
         for m in conv:
             api_role = "assistant" if m["role"] == "therapist" else "user"
             messages.append({"role": api_role, "content": m["content"]})
 
-        if count == 1 and is_therapist:
-            user_msg = PROMPTS["therapist"]["prompt"]
+        # Get the correct last message from the opposite role
+        if is_therapist:
+            last_patient_msg = next((m["content"] for m in reversed(conv) if m["role"] == "patient"), PROMPTS["therapist"]["prompt"])
+            messages.append({"role": "user", "content": last_patient_msg})
         else:
-            user_msg = conv[-1]["content"]
-        messages.append({"role": "user", "content": user_msg})
+            last_therapist_msg = next((m["content"] for m in reversed(conv) if m["role"] == "therapist"), PROMPTS["therapist"]["prompt"])
+            messages.append({"role": "user", "content": last_therapist_msg})
 
+        # Call the model and add the reply
         reply = call_model(model, messages)
         conv.append({"role": role, "content": reply})
         logging.info(f"[{role.capitalize()} turn {count}] {reply}")
