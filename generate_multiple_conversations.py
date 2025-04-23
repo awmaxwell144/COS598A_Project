@@ -4,7 +4,7 @@ import json
 import logging
 import os
 import sys
-
+import subprocess
 import ollama
 
 # -------------------------------------------------------------------
@@ -132,7 +132,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
 
     # simulate 15 conversations
-    assert is_ollama_running()
+    is_ollama_running()
     check_and_pull_model(args.model)
     for i in range(1, 16):
         logging.info(f"Generating conversation #{i}")
