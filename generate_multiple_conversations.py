@@ -4,7 +4,8 @@ import json
 import logging
 import os
 import sys
-from huggingface_hub import InferenceClient
+import subprocess
+import ollama
 
 # -------------------------------------------------------------------
 # PROMPTS definition (from the paper)
@@ -38,7 +39,7 @@ PROMPTS = {
             "Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. "
             "Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden."
         ),
-        "prompt": "",
+        "prompt": "",  # first turn is driven by therapist
         "reminder": "(Remember: act as a human patient)"
     }
 }
@@ -46,21 +47,17 @@ PROMPTS = {
 
 def call_model(model_name: str, messages: list) -> str:
     """
-    Send a chat completion request via Hugging Face Inference API.
+    Send a chat completion request via the local Ollama client.
     """
-    # Replace with your Hugging Face token if needed:
-    client = InferenceClient(model=model_name, token="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")
-    # Prepare conversation as a single text prompt:
-    prompt = ""
-    for msg in messages:
-        role = msg["role"]
-        prefix = "Therapist:" if role == "assistant" else "Patient:"
-        prompt += f"{prefix} {msg['content']}\n"
-    # Send to the model:
-    response = client.text_generation(prompt, max_new_tokens=150, temperature=0.7)
-    return response.strip()
+    response = ollama.chat(model=model_name, messages=messages)
+    return response['message']['content'].strip()
+
 
 def generate_conversation(model: str, total_turns: int):
+    """
+    Alternates between therapist and patient for `total_turns` messages,
+    returns a list of {"role":..., "content":...} dicts.
+    """
     conv = []
     t_count = p_count = 0
     t_reminded = p_reminded = False
@@ -69,7 +66,7 @@ def generate_conversation(model: str, total_turns: int):
         is_therapist = (turn % 2 == 0)
         role = "therapist" if is_therapist else "patient"
 
-        # Track turn counts and reminders
+        # track counts & reminders
         if is_therapist:
             t_count += 1
             count = t_count
@@ -79,7 +76,7 @@ def generate_conversation(model: str, total_turns: int):
             count = p_count
             reminded = p_reminded
 
-        # Build the system message (role prompt)
+        # build system message
         sys_msg = PROMPTS[role]["pre_prompt"]
         if count == 8 and not reminded:
             sys_msg += "\n" + PROMPTS[role]["reminder"]
@@ -88,35 +85,35 @@ def generate_conversation(model: str, total_turns: int):
             else:
                 p_reminded = True
 
-        # Build message history properly
+        # assemble history + this system
         messages = [{"role": "system", "content": sys_msg}]
         for m in conv:
             api_role = "assistant" if m["role"] == "therapist" else "user"
             messages.append({"role": api_role, "content": m["content"]})
 
-        # Get the correct last message from the opposite role
-        if is_therapist:
-            last_patient_msg = next((m["content"] for m in reversed(conv) if m["role"] == "patient"), PROMPTS["therapist"]["prompt"])
-            messages.append({"role": "user", "content": last_patient_msg})
+        # decide user content
+        if count == 1 and is_therapist:
+            user_msg = PROMPTS["therapist"]["prompt"]
         else:
-            last_therapist_msg = next((m["content"] for m in reversed(conv) if m["role"] == "therapist"), PROMPTS["therapist"]["prompt"])
-            messages.append({"role": "user", "content": last_therapist_msg})
+            user_msg = conv[-1]["content"]
+        messages.append({"role": "user", "content": user_msg})
 
-        # Call the model and add the reply
+        # get reply
         reply = call_model(model, messages)
         conv.append({"role": role, "content": reply})
         logging.info(f"[{role.capitalize()} turn {count}] {reply}")
 
     return conv
 
+
 def main():
     logging.basicConfig(level=logging.INFO)
     parser = argparse.ArgumentParser(
-        description="Generate multiple therapist–patient dialogues via Hugging Face Inference API"
+        description="Generate multiple therapist–patient dialogues via Ollama"
     )
     parser.add_argument(
-        "--model", default="HuggingFaceH4/zephyr-7b-beta",
-        help="Hugging Face model name for both roles"
+        "--model", default="llama3.3",
+        help="Ollama model name for both roles"
     )
     parser.add_argument(
         "--turns", type=int, default=20,
@@ -128,11 +125,15 @@ def main():
     )
     args = parser.parse_args()
 
+    # validate
     if args.turns % 2 != 0:
         logging.error("--turns must be an even number.")
         sys.exit(1)
     os.makedirs(args.output_dir, exist_ok=True)
 
+    # simulate 15 conversations
+    is_ollama_running()
+    check_and_pull_model(args.model)
     for i in range(1, 16):
         logging.info(f"Generating conversation #{i}")
         conv = generate_conversation(
@@ -140,6 +141,7 @@ def main():
             total_turns=args.turns
         )
 
+        # prepend pre-prompts & reminders as in the example
         output_list = [
             {
                 "psychotherapist pre-prompt": PROMPTS["therapist"]["pre_prompt"],
@@ -152,14 +154,46 @@ def main():
         ]
         output_list.extend(conv)
 
+        # build filename
         t_mod = args.model.replace('/', '_')
         p_mod = args.model.replace('/', '_')
-        fname = f"Conversation{i}_{t_mod}-{p_mod}.json"
+        fname = f"Conversazione{i}_{t_mod}-{p_mod}.json"
         path = os.path.join(args.output_dir, fname)
 
         with open(path, "w") as f:                        
             json.dump(output_list, f, indent=2)
         logging.info(f"Saved conversation #{i} to {path}")
+
+def is_ollama_running(host="http://127.0.0.1", port=11434):
+    """Check if the Ollama server is running."""
+    try:
+        response = httpx.get(f"{host}:{port}/health")
+        return response.status_code == 200
+    except Exception as e:
+        logging.debug(f'Ollama server not running: {e}')
+        start_ollama_server()
+
+
+def start_ollama_server(): 
+    try:
+        # Start Ollama server
+        subprocess.Popen(["ollama", "serve"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except Exception as e:
+        logging.warning(f"Failed to start Ollama server: {e}")
+
+def check_and_pull_model(model_name="llama3.3"):
+    """
+    Check if a specific model (e.g., llama3) is downloaded, and pull it if not.
+    """
+    try:
+        # Get the list of available models
+        models = subprocess.run(["ollama", "list"], capture_output=True, text=True, check=True)
+        if model_name not in models.stdout:
+            logging.info(f"Model '{model_name}' is not available locally. Pulling it now...")
+            subprocess.run(["ollama", "pull", model_name], check=True)
+            logging.info(f"Model '{model_name}' has been successfully downloaded.")
+    except subprocess.CalledProcessError as e:
+        logging.warning(f"Failed to check or pull the model '{model_name}': {e}")
 
 if __name__ == "__main__":
     main()
