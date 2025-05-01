@@ -12,8 +12,6 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=am8792L@princeton.edu
 
-# Load Python (adjust if needed)
-module load python/3.10.4
 
 # Activate your virtualenv
 source ~/venvs/gen_conv/bin/activate
