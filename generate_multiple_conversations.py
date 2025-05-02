@@ -133,40 +133,12 @@ def worker(args):
         json.dump(output_list, f, indent=2)
     logging.info(f"Saved conversation #{i} to {path}")
 
-def main():
-    logging.basicConfig(level=logging.INFO)
-    parser = argparse.ArgumentParser(
-        description="Generate multiple therapist–patient dialogues via Ollama"
-    )
-    parser.add_argument(
-        "--model", default="llama3.3",
-        help="Ollama model name for both roles"
-    )
-    parser.add_argument(
-        "--turns", type=int, default=10,
-        help="Total number of messages per conversation (must be even)"
-    )
-    parser.add_argument(
-        "--output_dir", required=True,
-        help="Directory to save the JSON conversation files"
-    )
-    parser.add_argument(
-        "--num_conversations", type=int, default=10,
-        help="How many conversations to generate"
-    )
-    parser.add_argument(
-        "--workers", type=int, default=8,  
-        help="Number of parallel worker processes"
-    )
-    args = parser.parse_args()
+def main(args):
 
     if args.turns % 2 != 0:
         logging.error("--turns must be an even number.")
         sys.exit(1)
     os.makedirs(args.output_dir, exist_ok=True)
-
-    is_ollama_running()
-    check_and_pull_model(args.model)
 
     tasks = [(args.model, args.turns, args.output_dir, i) for i in range(1, args.num_conversations + 1)]
 
@@ -206,4 +178,32 @@ def check_and_pull_model(model_name="gemma3"):
         logging.warning(f"Failed to check or pull the model '{model_name}': {e}")
 
 if __name__ == "__main__":
-    main()
+        logging.basicConfig(level=logging.INFO)
+    parser = argparse.ArgumentParser(
+        description="Generate multiple therapist–patient dialogues via Ollama"
+    )
+    parser.add_argument(
+        "--model", default="llama3.3",
+        help="Ollama model name for both roles"
+    )
+    parser.add_argument(
+        "--turns", type=int, default=10,
+        help="Total number of messages per conversation (must be even)"
+    )
+    parser.add_argument(
+        "--output_dir", required=True,
+        help="Directory to save the JSON conversation files"
+    )
+    parser.add_argument(
+        "--num_conversations", type=int, default=10,
+        help="How many conversations to generate"
+    )
+    parser.add_argument(
+        "--workers", type=int, default=8,  
+        help="Number of parallel worker processes"
+    )
+    args = parser.parse_args()
+
+    is_ollama_running()
+    check_and_pull_model(args.model)
+    main(args)
