@@ -178,7 +178,7 @@ def check_and_pull_model(model_name="gemma3"):
         logging.warning(f"Failed to check or pull the model '{model_name}': {e}")
 
 if __name__ == "__main__":
-        logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO)
     parser = argparse.ArgumentParser(
         description="Generate multiple therapist–patient dialogues via Ollama"
     )
