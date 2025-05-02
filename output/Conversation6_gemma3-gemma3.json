@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s begin.\n\nHello, my name is Dr. Elias Vance, and I\u2019m a Cognitive-Behavioral Therapist. I\u2019ve been working in this field for over ten years, primarily focusing on helping people manage difficult emotions and develop healthier patterns of thinking and behavior. It\u2019s wonderful to meet you. \n\nThank you for taking this step, it takes courage to reach out.\n\nTo start, could you tell me, what\u2019s bringing you here today? What\u2019s prompted you to seek support at this time? Just take your time and tell me in as much detail as you feel comfortable with."
+  },
+  {
+    "role": "patient",
+    "content": "I\u2026 I just don\u2019t feel right, you know? Like something\u2019s off. I can\u2019t really\u2026 focus. It\u2019s like my brain just keeps buzzing. I used to be able to sit down and read for hours, but now\u2026 I can't even get past the first page. It's frustrating."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating, and it\u2019s perfectly understandable to feel that way when you\u2019re struggling to focus. It takes a lot of strength to articulate what you\u2019re experiencing. Thank you for sharing that with me. \n\nLet\u2019s unpack this feeling of \"not being right.\" When you say your brain is \u201cbuzzing,\u201d can you describe that buzzing sensation a little more specifically? What does it *feel* like? Is it a physical sensation \u2013 a tightness, a restlessness \u2013 or more of a mental experience, like a constant stream of thoughts? And when did you first notice this buzzing sensation beginning?"
+  },
+  {
+    "role": "patient",
+    "content": "(Sighs, fidgeting with my hands)\n\nIt\u2019s\u2026 hard to explain. It\u2019s like\u2026 static. Like there\u2019s this white noise underneath everything. And I keep thinking about things, but they don\u2019t\u2026 settle. It\u2019s like I\u2019m trying to grasp onto something, but it just slips away. It started\u2026 maybe about a week ago? It was subtle at first, just a little bit of trouble concentrating. But now\u2026 it\u2019s constant. Honestly, it\u2019s exhausting."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for elaborating on that \u2013 describing it as \u201cstatic\u201d is a really insightful way to put it. It paints a vivid picture. Let\u2019s talk a little bit about when you notice this feeling most intensely. Are there specific times of day when the \u201cstatic\u201d is particularly noticeable? For example, is it worse in the mornings, evenings, or perhaps after you\u2019ve been sitting still for a period of time? And could you tell me, what do you *think* might be contributing to this feeling? Is there anything specific you're worrying about, or a particular situation that seems to trigger it?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 mostly in the evenings, I think. After work. When I get home, I just\u2026 I can\u2019t switch off. It\u2019s like the day\u2019s anxieties just pile up and\u2026 amplify the static. And\u2026 yeah, I worry. About everything, really. Work, obviously. But also\u2026 my dad. He\u2019s not well. He\u2019s\u2026 slipping away, you know? And I feel like I should be doing more, but I don't know *what* to do. It just\u2026 swirls around."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly heavy, and I can absolutely hear the distress in your voice. It\u2019s completely understandable that caring for your father while simultaneously navigating work anxieties would be so overwhelming. Let\u2019s dig a little deeper into this feeling of \u201cnot being able to switch off.\u201d When you\u2019re at home, what specifically are you doing when this feeling intensifies? Are you trying to relax, perhaps watching TV or reading, or are you actively engaged in a task? And, if you're engaging in an activity, what is it about that activity that makes the static worse? Let\u2019s use the laddering technique \u2013 *what is that you don\u2019t like about this activity and why?* Could you give me a specific example?"
+  },
+  {
+    "role": "patient",
+    "content": "(Pause, a long sigh)\n\nI\u2026 I try to read. Like I said, I used to love reading. But now\u2026 it\u2019s just\u2026 pointless. I pick up a book, and I force myself to look at the words, but my mind just\u2026 races. It\u2019s like the story is happening somewhere else, and I\u2019m just an observer, detached and\u2026 frustrated. It\u2019s like I\u2019m trying to *force* myself to enjoy it, and the more I try, the worse it gets. I feel guilty, too, like I *should* be getting something out of it, and that makes the frustration even stronger. It\u2019s\u2026 irritating. Just\u2026 irritating."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for so clearly articulating that. It sounds like you\u2019re experiencing a real struggle with this activity \u2013 reading \u2013 and it's creating a vicious cycle of frustration and guilt. Let\u2019s really hone in on that feeling of guilt. When you say you \"should\" be getting something out of it, what *exactly* do you believe you *should* be getting out of reading? What would it look like if you *were* enjoying it? And more importantly, *why* do you believe that\u2019s what you\u2019re supposed to be getting? Let\u2019s use the laddering technique again \u2013 *what is that you don\u2019t like about this and why?* \u2013 this time focusing on the expectation you place on yourself."
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s really unpack this expectation. When you say you \u201cshould\u201d be getting something out of it, let\u2019s be specific. What *exactly* do you think you\u2019re *supposed* to be gaining from reading? Is it relaxation? Entertainment? Intellectual stimulation? And, crucially, *why* do you believe that\u2019s what you\u2019re supposed to be getting? Are there any past experiences or beliefs that contribute to this expectation? Let's start with just one element \u2013 what is there a specific *reason* why you believe reading should be relaxing for you, for example?"
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s a really insightful question. Let\u2019s consider this \u2013 when you say reading *should* be relaxing for you, can you pinpoint a specific memory or experience that shaped that belief? Was there a time in your life when reading felt particularly calming or restorative? Or is this more of a general belief you've held for a long time? And, importantly, *why* do you believe relaxation is the primary outcome you should be getting from reading? Let\u2019s stick with that for now \u2013 this expectation of relaxation."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s go back to that memory, if there is one. When you think about a time when reading *did* feel relaxing, what were the circumstances? Where were you? Who were you with? What were you reading? And, most importantly, *how* did it make you feel at that moment? Try to describe the feeling as vividly as possible. Let\u2019s really focus on that feeling \u2013 what was it like to be in that moment of relaxation?"
+  },
+  {
+    "role": "therapist",
+    "content": "(A long pause, a thoughtful expression)\n\nOkay\u2026 let me think. There was\u2026 when I was about ten. I was staying at my grandparents\u2019 cottage by the lake. It was a rainy afternoon, and I was curled up in a big armchair by the fireplace with a copy of \u201cThe Chronicles of Narnia.\u201d I remember the rain drumming on the roof, the smell of woodsmoke in the air, and the pages of the book feeling warm in my hands. I remember feeling\u2026 safe. Completely safe. Like everything was right in the world, and I could just\u2026 disappear into the story. It was a feeling of quiet contentment, a sense of being utterly present in the moment, without any worries or anxieties. It felt\u2026 warm. Really warm. And\u2026 a little bit magical, I suppose. Is that a helpful description?"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a beautiful and evocative description, Elias. Thank you for sharing that memory with such clarity and detail. It\u2019s incredibly valuable to understand the context in which this expectation of relaxation developed \u2013 the safety, the warmth, the sense of escape that \u201cThe Chronicles of Narnia\u201d provided. \n\nNow, let\u2019s consider something closely related to that memory. When you describe feeling \"completely safe\" in that moment, what *specifically* were you afraid of, or what *didn't* you want to experience, that made you feel so safe? Was it a fear of the outside world, a fear of loneliness, or something else entirely?"
+  },
+  {
+    "role": "therapist",
+    "content": "(A quiet reflection)\n\nThat\u2019s\u2026 a difficult question. I think\u2026 it was a fear of\u2026 disappointment. I was a very sensitive child, and I worried a lot about letting people down. I felt like if I couldn\u2019t escape into a world where everything was perfect and happy, then I would inevitably fail to meet the expectations of those around me. The story offered a refuge from that, a place where I didn't have to worry about being judged or criticized. It was about\u2026 protecting myself from feeling inadequate. It wasn't a conscious fear, really, more of an instinctive desire to shield myself from pain. It\u2019s a very\u2026 fragile feeling, isn\u2019t it?"
+  },
+  {
+    "role": "patient",
+    "content": "(Softly)\n\nYes, it is. And it\u2019s incredibly astute of you to recognize that, Elias. That instinctive desire to protect yourself from feeling inadequate \u2013 that\u2019s a powerful driver, and it\u2019s often operating beneath the surface, influencing our choices and expectations. \n\nWhat you've described \u2013 this need to avoid disappointment and feeling inadequate \u2013 is actually a very common underlying theme in many people\u2019s lives. It\u2019s often rooted in early experiences, perhaps a time when you didn\u2019t feel unconditionally loved or supported. \n\nLet\u2019s explore this a little further. Can you recall any specific instances from your childhood where you felt like you *weren't* meeting someone's expectations, or where you felt judged or criticized? It doesn't have to be a monumental event; even a small interaction can reveal a deeper pattern."
+  },
+  {
+    "role": "therapist",
+    "content": "(A long pause, a slight hesitation)\n\nThere was\u2026 my dad. He was a very\u2026 practical man. He wasn't very effusive with his praise. He always seemed to be focused on what I *should* be doing, rather than what I was *doing* well. I was trying to learn to play the piano, and I was struggling. He would often say things like, \u201cYou\u2019re not practicing enough,\u201d or \u201cYou\u2019re not focusing properly.\u201d It wasn\u2019t said harshly, but\u2026 it always felt like I was failing to meet his expectations. And\u2026 I just wanted to please him. It was important to me. It still is, really. It felt like\u2026 if I couldn\u2019t get it right, then I wasn\u2019t good enough."
+  },
+  {
+    "role": "patient",
+    "content": "(Softly, with empathy)\n\nThank you for sharing that, Elias. It takes a great deal of courage to revisit those early experiences, and to acknowledge the impact they\u2019ve had on you. What you\u2019re describing \u2013 that feeling of needing to *earn* approval, of constantly striving to meet an external standard \u2013 is incredibly powerful, and it\u2019s understandable that it would shape your expectations, even now.\n\nIt\u2019s interesting that you describe it as needing to \u201cearn\u201d approval. Can you tell me more about what you believe you need to *do* to earn his approval, even now? What does \u201cgetting it right\u201d look like in your mind?"
+  },
+  {
+    "role": "therapist",
+    "content": "(A thoughtful pause)\n\nI\u2026 I think it\u2019s about\u2026 perfection. I need to be\u2026 flawless. If I make a mistake, if I don\u2019t achieve something perfectly, then I\u2019ve failed. It\u2019s not about trying to please him directly, although that\u2019s part of it. It\u2019s more about\u2026 proving to myself that I\u2019m capable. That I\u2019m worthy. If I can just\u2026 get it right, then I\u2019ll be okay. It\u2019s a very\u2026 rigid standard. And I know it\u2019s unrealistic, but I can\u2019t seem to shake it. It\u2019s like\u2026 a voice in my head, constantly telling me I\u2019m not good enough unless I\u2019m perfect. It\u2019s exhausting, really."
+  },
+  {
+    "role": "patient",
+    "content": "(A gentle, encouraging tone)\n\nThat\u2019s a remarkably honest and insightful observation, Elias. You've articulated a core element of what\u2019s driving your experience \u2013 this relentless pursuit of perfection as a means of self-validation. It\u2019s incredibly common to find ourselves operating under these kinds of internalized standards, often without even realizing it.\n\nWhat you\u2019re describing \u2013 this feeling of needing to *earn* worthiness through achievement \u2013 is a really powerful dynamic. It\u2019s like you\u2019re operating under the belief that your value is contingent upon your performance, rather than simply being inherent.\n\nLet\u2019s talk about that feeling \u2013 this \u201cvoice in your head\u201d that tells you you\u2019re \u201cnot good enough unless you\u2019re perfect.\u201d Can you describe that voice? What does it *sound* like? Does it have a particular tone \u2013 critical, demanding, gentle, or something else entirely? And, importantly, when do you notice it most strongly? Is it connected to specific situations, thoughts, or feelings?"
+  }
+]

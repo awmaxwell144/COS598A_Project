@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Thorne, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working in private practice for about eight years, primarily focusing on helping people manage difficult emotions and develop healthier patterns of thinking and behavior. It\u2019s wonderful to meet you.\n\nThank you for taking this step \u2013 it takes real courage to reach out. \n\nTo start, could you tell me, what\u2019s bringing you here today? What\u2019s the main reason you\u2019ve decided to come and talk with me? Just take your time and tell me whatever feels most important to you."
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 can\u2019t seem to settle. I\u2019m bouncing off the walls, you know? Like I can\u2019t sit still. I keep fidgeting, pacing\u2026 it\u2019s driving everyone crazy. And I don't know why. It's completely out of character."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating \u2013 and understandably so. It's completely valid to feel distressed when you\u2019re experiencing a change like this, especially when it\u2019s impacting your relationships. \n\nOkay. Let\u2019s focus on this restlessness. When did you first notice this feeling of being unable to settle? Can you pinpoint a specific time or event that you think might have triggered it? And when you say you're \u201cbouncing off the walls,\u201d can you describe *exactly* what that feels like physically?  For example, are there specific muscle movements, a racing heart, or anything else you notice alongside the pacing?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s hard to say, really. It\u2019s been building, I think. It's not like one big thing, more like\u2026 a constant hum of needing to *do* something. I\u2019ve been feeling\u2026 wired. And the pacing\u2026 it\u2019s mostly my legs, you know? Like they\u2019re just\u2026 buzzing. And my heart\u2026 it beats faster, even when I\u2019m just sitting. It's weird. I just\u2026 I can't seem to *switch off*."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s really helpful to unpack that, thank you. It sounds like this restlessness is a very persistent feeling, a constant undercurrent. \n\nOkay, let's dig a little deeper into this \"need to do something.\u201d When you say you feel this need to *do* something, what *specifically* are you doing? Are you engaging in any particular activities \u2013 perhaps checking your phone constantly, organizing things, cleaning \u2013 or is it more of a general feeling of needing to be occupied? And, importantly, *why* do you think you feel this need to be occupied? What do you believe is happening if you *don\u2019t* do something?  Let\u2019s use the laddering technique \u2013 what is that you don\u2019t like about this and why?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s try that. \n\nWhen you don\u2019t do anything, what\u2019s the worst that could happen, in your mind? What are you afraid will occur if you simply\u2026 stop? Don\u2019t censor yourself. Just tell me what\u2019s going through your head."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, leans forward slightly, maintaining a calm and gentle tone)\n\nOkay. Take your time. Just\u2026 tell me what comes to mind when you think about not doing anything. There\u2019s no right or wrong answer here.\n\n(Silence for a moment, allowing space for response)"
+  },
+  {
+    "role": "patient",
+    "content": "(After a longer pause, a slightly strained voice)\n\n\u2026It\u2019s like\u2026 it\u2019s like everything\u2019s going to fall apart. If I just\u2026 stop. If I just *sit*\u2026 it\u2019s like I\u2019m letting everything slip away. Like I\u2019m failing. Like I\u2019m\u2026 worthless. It\u2019s a really strong feeling. It\u2019s\u2026 terrifying, actually."
+  },
+  {
+    "role": "therapist",
+    "content": "(Nods slowly, maintaining eye contact with empathy)\n\nThank you for sharing that. That\u2019s a really powerful and vulnerable feeling \u2013 the fear of things falling apart, and the associated feeling of worthlessness. It\u2019s completely understandable that this feeling drives you to keep *doing* things, to try and maintain control. \n\nLet\u2019s explore that a little. When you say \u201ceverything\u2019s going to fall apart,\u201d what *specifically* do you mean by \u201ceverything\u201d? Can you give me a concrete example of what you imagine would happen if you allowed yourself to just\u2026 be still? Let\u2019s really break down that image."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, a slight shift in posture)\n\nOkay. Let\u2019s try this. Let\u2019s imagine, just for a moment, that you *do* allow yourself to simply be still. You stop pacing, you stop fidgeting. What\u2019s the first thing you notice? What\u2019s the first *thought* that comes into your head? Don\u2019t worry about whether it\u2019s a \u2018good\u2019 or \u2018bad\u2019 thought \u2013 just what\u2019s there, in that moment. Just describe what you experience."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, maintaining a supportive, gentle gaze)\n\nThank you for that willingness to explore that. It takes courage to really confront those underlying thoughts.\n\n(Silence, allowing for response)\n\nOkay. Let\u2019s stay with that feeling\u2026 What\u2019s the *intensity* of that feeling \u2013 that sense of things falling apart \u2013 on a scale of 1 to 10, with 1 being a very mild awareness and 10 being the most intense you\u2019ve ever experienced? And can you describe the physical sensation associated with that intensity? Where do you *feel* it in your body?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, maintaining eye contact with empathy)\n\nThank you for sharing that. It\u2019s important to acknowledge those difficult emotions, and you\u2019re doing that.\n\n(Silence, allowing for response)\n\nOkay, let\u2019s try something different. Close your eyes if that feels comfortable. Just for a moment, let\u2019s focus on your breath. Inhale deeply\u2026 and exhale slowly. As you breathe, I want you to imagine a safe, calming space\u2014a place where you feel completely at ease and secure. It can be real or imagined. Just picture it clearly in your mind. Stay with that image for a few moments\u2026"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, observing response attentively)\n\nOkay. Now, as you\u2019re focusing on this calming image, can you notice any shifts in your physical sensations? Are you still feeling that buzzing in your legs, that racing heart? Or is there anything *different* you\u2019re noticing \u2013 perhaps a sense of relaxation, or a shift in your overall energy level?  Just a gentle observation, no judgment \u2013 simply what you\u2019re experiencing *right now* in your body."
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, maintaining eye contact with empathy)\n\nThank you for that willingness to explore that. It takes courage to really confront those underlying thoughts.\n\n(Silence, allowing for response)\n\nOkay, let\u2019s try something different. Before we move on, I want to ask you a question. When you picture this calming space, who \u2013 if anyone \u2013 is with you? Is it someone you know, a loved one, or is it just you? And if it\u2019s just you, what are you doing in this space? Just describe what you\u2019re experiencing."
+  },
+  {
+    "role": "therapist",
+    "content": "(Nods slowly, maintaining eye contact with empathy)\n\nThank you for sharing that. It\u2019s wonderful to see you\u2019re beginning to articulate these images and feelings. It takes significant vulnerability to bring these things into awareness.\n\n(Silence, allowing for response)\n\nOkay. Let\u2019s return to your sleep. You mentioned you're bouncing off the walls, struggling to settle. Can you tell me more about your sleep patterns? How many hours do you typically sleep? And what\u2019s the *quality* of your sleep like \u2013 do you wake up feeling refreshed, or are you often waking up feeling tired and unrested? Is there a specific time you go to bed and wake up, or does that vary?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, maintaining eye contact with empathy)\n\nThank you for sharing that. It\u2019s wonderful to see you\u2019re beginning to articulate these images and feelings. It takes significant vulnerability to bring these things into awareness.\n\n(Silence, allowing for response)\n\nOkay. Let\u2019s return to your sleep. You mentioned you're bouncing off the walls, struggling to settle. Can you tell me more about your sleep patterns? How many hours do you typically sleep? And what\u2019s the *quality* of your sleep like \u2013 do you wake up feeling refreshed, or are you often waking up feeling tired and unrested? Is there a specific time you go to bed and wake up, or does that vary?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Slightly more gently)\n\nThank you for your patience. I realize we've been circling back a bit on the sleep question. It\u2019s important for us to really understand the impact sleep is having on your experience. \n\nLet's try a slightly different approach. When you *do* manage to get some sleep \u2013 even if it\u2019s just for a few hours \u2013 what\u2019s the *first* thing you notice when you wake up? Is it the light, the sounds, your body feeling\u2026 something specific? And, importantly, what\u2019s the *emotional* state you\u2019re in when you first open your eyes? Just describe it honestly, without judgment."
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, maintaining eye contact with empathy)\n\nThat\u2019s really helpful. Thank you for being so open about that. It sounds like your sleep is profoundly affected, and that\u2019s often a key factor in how we experience our waking hours. \n\nOkay, let\u2019s focus on the *emotional* state you\u2019re in when you first open your eyes. You described it as\u2026 what did you say it was like? Can you elaborate a little more on that feeling \u2013 what does it *feel* like, specifically? Don't worry about whether it\u2019s \u2018good\u2019 or \u2018bad\u2019 \u2013 just describe the sensation as accurately as you can."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, leaning slightly forward with a warm expression)\n\nThank you for that incredibly detailed description. It\u2019s really helpful for me to get a sense of the raw, unfiltered experience you\u2019re having.\n\nNow, let\u2019s gently shift our focus to your appetite and weight. You mentioned a feeling of needing to *do* things, perhaps to avoid feeling\u2026 something. Has your eating or your weight changed recently? Have you noticed any patterns related to your emotions \u2013 perhaps eating more when you\u2019re feeling stressed or anxious, or less when you\u2019re feeling down? And if so, can you describe what that feels like physically \u2013 is there a particular sensation you notice when you eat, or when you\u2019re trying to eat?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, maintaining eye contact with empathy)\n\nThank you for sharing that. It\u2019s incredibly valuable information. It seems like there\u2019s a strong connection between the physical sensations you\u2019re experiencing and your emotional state, particularly around eating.\n\nLet\u2019s explore that a little further. When you notice yourself eating in response to feeling\u2026 what is the *primary* feeling you\u2019re trying to soothe or escape with the food? Is it sadness, anxiety, frustration \u2013 or something else entirely? And when you eat, can you describe the *taste* of the food \u2013 is it pleasurable, neutral, or perhaps even unpleasant?"
+  }
+]

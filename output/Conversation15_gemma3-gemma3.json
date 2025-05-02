@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Thorne, and I\u2019m a Cognitive-Behavioral Therapist. I\u2019ve been working in this field for over eight years, primarily focusing on helping people develop strategies to manage difficult emotions and build more fulfilling lives. It\u2019s wonderful to meet you. \n\nThank you for taking this brave step. It takes courage to reach out for support.\n\nTo start, could you tell me, what\u2019s bringing you here today? What\u2019s the main reason you\u2019ve decided to come and talk with me?"
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 I can\u2019t seem to settle. I keep shifting. Like, I\u2019ll be halfway through something \u2013 reading, or even just staring at the TV \u2013 and I just *need* to move. It\u2019s exhausting. It\u2019s not like me at all."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating and exhausting \u2013 I can absolutely understand why you're here. This feeling of restlessness, this need to shift\u2026 it\u2019s completely valid to feel distressed by it, especially when it\u2019s out of character for you. \n\nLet's start with this feeling. Can you tell me a little more about *when* this restlessness typically happens? Are there specific times of day you notice it more, or are there particular situations that seem to trigger it? And when you say you \u201cneed\u201d to move, what *specifically* do you find yourself doing when this happens \u2013 pacing, fidgeting, getting up and walking around?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 strange, isn\u2019t it? Talking about it like this. It\u2019s mostly evenings, I think. After\u2026 after the phone call. It\u2019s just\u2026 constant. I find myself just\u2026 *doing* things. Cleaning, rearranging things. It\u2019s not purposeful, you know? Like I\u2019m trying to fix something that isn\u2019t broken. It\u2019s just\u2026 a need. A really strong need to be *doing* something."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s incredibly insightful, thank you for sharing that. It sounds like this urge to \"do\" is a very powerful, almost compulsive force for you. Let\u2019s dig a little deeper into that. \n\nWhen you say you find yourself \u201cfixing something that isn\u2019t broken,\u201d could you describe what that \"something\" *looks like* in more detail? What kind of things are you rearranging or cleaning? And more importantly, what\u2019s going through your mind *at that moment* as you\u2019re engaging in this activity? What are you telling yourself about the situation? Let's start with that \u2013 what\u2019s the *first* thought you have when you feel this urge to start \"fixing\"?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, apologies. I jumped the gun there. \n\nThe first thought\u2026 it\u2019s usually just, \u201cIt needs to be better.\u201d Just\u2026 that. No explanation, no justification. It\u2019s just a blunt statement about a perceived imperfection. And then I start\u2026 I start tidying. It\u2019s usually the kitchen \u2013 wiping down counters, scrubbing the stove\u2026 anything to keep my hands busy. It\u2019s\u2026 pointless, really. But it stops the thought."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for clarifying that, it\u2019s really helpful. That \u201cit needs to be better\u201d thought \u2013 it sounds incredibly frustrating, almost like a judgment directed at yourself or your surroundings. \n\nLet\u2019s explore that judgment a little further. When you say \u201cit needs to be better,\u201d what *specifically* are you judging? Is there something you're trying to achieve, or is it a more general feeling of dissatisfaction? And can you describe the *intensity* of that feeling \u2013 on a scale of 1 to 10, with 1 being a mild feeling and 10 being an overwhelming one, where would you rate this feeling when you have that thought? Just want to get a sense of the force behind it."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s try this: When you have that thought, \u201cit needs to be better,\u201d and you start tidying, how does it feel, physically? Like, what sensations do you notice in your body \u2013 tension in your muscles, a knot in your stomach, a quickening of your pulse? Just try to notice the physical sensations that accompany that urge to tidy. Don\u2019t try to label them or change them, just observe what\u2019s happening in your body."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s try a different approach. It sounds like you're experiencing a significant amount of internal pressure. Let's focus on understanding that pressure.\n\nWhen you're tidying, specifically when you\u2019re scrubbing the most intensely involved in scrubbing the stove or wiping counters, can you describe the *quality* of the tension you feel in your muscles? Is it a tight, clenched feeling? A dull ache? Or something else entirely? And alongside the muscle tension, is there anything else you notice about your body \u2013 perhaps a racing heart, shallow breathing, or a sense of heat? Just describe what you\u2019re experiencing *right now*, as vividly as you can. There's no right or wrong answer here."
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a really good question. It\u2019s incredibly helpful to be-moment. What was? What moment. Just\u2026 is\u2026 moment. What do you\u2026 What? What\u2026 What\u2019 What\u2026 What\u2026 What is\u2026 Just\u2026 What was\u2026 What is What moment. Describe to be\u2026 What\u2026 What\u2026 Describe to\u2026 It\u2019 Describe\u2026 Describe\u2026 What? What\u2026? What\u2026 What\u2026 The\u2026 What\u2026 Describe that it. What moment. What? The moment. The\u2026 It\u2026 It is\u2026 The\u2026 The\u2026 It. The It\u2026 The\u2026 The\u2026 What It\u2026 What. The What The\u2026 The\u2026 What\u2026 The The. The It is The\u2026 What\u2026 The\u2026 What to the\u2026 The\u2026 Describe\u2026 The\u2026 The\u2026 The\u2026 It\u2026 The\u2026 The\u2026 The\u2026 The\u2026 moment. What is. Describe\u2026 It was\u2026 The\u2026 What\u2026 The\u2026 The\u2026"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThat\u2019s\u2026 a tremendous amount of focus, and I appreciate you trying to articulate that experience. It sounds like you\u2019re grappling with a very intense and perhaps overwhelming feeling. \n\nLet\u2019s take a step back for a moment. What you\u2019ve been describing \u2013 this extended, almost repetitive process of trying to pinpoint the feeling \u2013 suggests a significant level of distress. It\u2019s understandable that you\u2019d be struggling to find the right words to describe it. \n\nIt sounds like you\u2019re feeling a profound sense of\u2026 unease, perhaps? A feeling that things aren\u2019t quite right, and you\u2019re trying desperately to address it. Would you agree with that assessment? And if you could choose just *one* word to describe the core of this feeling, what would it be?"
+  },
+  {
+    "role": "patient",
+    "content": "(Slightly quieter, with a gentle, reassuring tone)\n\nIt\u2019s absolutely okay if you\u2019re not quite ready to articulate it perfectly. This is a process, and we\u2019re just starting to explore what\u2019s going on. There\u2019s no pressure to have it all figured out. \n\nI want to acknowledge how incredibly difficult this must be for you. You've been describing a deeply unsettling experience \u2013 a sense of things not being right, a need to fix, and a very intense physical response. It sounds like you\u2019re carrying a heavy weight. \n\nPerhaps we can shift our focus slightly. Can you tell me a little bit about *when* this feeling started? Was there a specific event, a particular time, or perhaps just a gradual shift? Don\u2019t worry about explaining it perfectly \u2013 just tell me what comes to mind."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThat's completely understandable. It sounds like you\u2019re experiencing a significant amount of distress, and it\u2019s perfectly valid to feel overwhelmed. It takes courage to share these experiences, and I want to create a safe space for you to explore them. \n\nLet\u2019s take a moment to acknowledge that you've already done a remarkable job of describing what you\u2019re going through. You've identified the urge to tidy, the feeling of \u201cit needs to be better.\n\nI\u2019s..."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nYou\u2019re absolutely right. I apologize for the repetition. It seems we\u2019re circling back to a core feeling of\u2026 disorientation, perhaps? A sense of being adrift and struggling to find a solid footing. \n\nLet\u2019s try something different. Instead of focusing on the *feeling* itself, let\u2019s talk about what\u2019s *preventing* you from feeling settled. What\u2019s blocking you from finding that sense of peace or stability you\u2019re seeking? Is there something specific that you feel you *need* to change or fix in order to feel more at ease?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThat\u2019s a really insightful way to look at it \u2013 identifying what's *blocking* that sense of peace. It\u2019s not about simply understanding the feeling, but about pinpointing what\u2019s standing in the way of it. \n\nLet's unpack that a little further. When you say \"what\u2019s blocking you,\" what do you think *holds* that block? Is it a specific thought, a certain situation, or perhaps a belief about yourself or the world? Don\u2019t worry about giving a perfect answer \u2013 just tell me what comes to mind first."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThank you for that. It\u2019s helpful to recognize that it\u2019s not just about understanding the feeling, but about identifying what's *holding* it. \n\nLet\u2019s try this: Can you describe a *time* when you felt most acutely aware of this block \u2013 this feeling of being unable to find peace? What were you doing? Where were you? And most importantly, what were you *thinking* at that moment? Don\u2019t censor yourself \u2013 just describe what was going through your mind."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThank you for sharing that. It takes immense courage to revisit those moments, and I appreciate your willingness to explore them with me. \n\nLet\u2019s hold onto that image \u2013 that specific time when you felt most acutely blocked. Can you describe the *intensity* of the feeling at that moment? On a scale of 1 to 10, with 1 being a mild sense of discomfort and 10 being an overwhelming, unbearable sensation, where would you rate that feeling? Just a rough estimate \u2013 don\u2019t worry about being precise. And as you're thinking about that, is there anything \u2013 a color, a sound, a texture \u2013 that comes to mind when you picture that moment? Just something that represents the feeling to us."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThat\u2019s\u2026 a significant number. Let\u2019s just take a moment to acknowledge that. It sounds like you were carrying a tremendous weight at that time. \n\nOkay. Let\u2019s go back to that moment \u2013 that 7. Can you describe the *physical sensations* you experienced alongside that 7? Was there a tightness in your chest? A knot in your stomach? A particular ache in your body? Or was it more of a diffuse, overall feeling of unease? Just focus on the physical manifestations of that feeling. There's no judgment here \u2013 just observe and describe what you\u2019re experiencing."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThank you for sharing that. It takes courage to delve into these physical sensations, and I appreciate your willingness to explore them with me. \n\nYou\u2019ve described a very intense physical response \u2013 a tightness in your chest, a knot in your stomach\u2026 It sounds like your body was reacting powerfully to this overwhelming feeling. \n\nLet\u2019s try a different approach for a moment. When you feel that tightness in your chest, that knot in your stomach\u2026 does it ever feel like something *is* there, physically? Like you can almost *see* or *sense* the source of the discomfort? Or is it purely a subjective experience \u2013 a feeling that exists within you, without any identifiable source? Just a simple yes or no, if that\u2019s easier."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, offering a gentle, supportive tone)\n\nThat\u2019s a really insightful observation. It sounds like you\u2019re grappling with the uncertainty of where this feeling originates \u2013 a sense of something unseen, something lurking beneath the surface. \n\nLet\u2019s hold onto that idea \u2013 the sense of something unseen. Can you describe *what* you imagine that \u201csomething\u201d to be? Is it a specific person, a particular event, a fear, or perhaps something more abstract \u2013 like a loss, a regret, or a sense of unfulfilled potential? Don\u2019t worry about whether it makes logical sense \u2013 just describe what you *feel* is at the root of this discomfort."
+  }
+]

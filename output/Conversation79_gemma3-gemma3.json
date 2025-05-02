@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello, my name is Dr. Elias Vance, and I'm a Cognitive Behavioral Therapist. I\u2019ve been working in private practice for over eight years, primarily focusing on helping people manage difficult emotions and develop more adaptive ways of thinking and behaving. It\u2019s wonderful to meet you. \n\nThank you for coming in today. I understand that seeking support can be a really brave step. To start, could you tell me, what\u2019s bringing you here today? What\u2019s prompted you to reach out and make an appointment?"
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? Everything feels\u2026off. Like I\u2019m just bouncing around. I can\u2019t really sit still. I keep fidgeting. It\u2019s driving me mad, really. I just\u2026 can\u2019t seem to *be* anywhere."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating and exhausting. It takes a lot of courage to admit that you're feeling this way, and I want to acknowledge that. It\u2019s completely understandable that this \u201cbouncing around\u201d is driving you mad. \n\nLet's start with this feeling of restlessness. Could you tell me a little more about when you notice this restlessness most strongly? Is there a particular time of day, or perhaps a specific situation that seems to trigger it? And when you say you\u2019re \u201cbouncing around,\u201d can you describe it in more detail? What *exactly* are you doing when you notice this? <<What is that you don't like about this feeling of restlessness and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026strange. It\u2019s mostly in the evenings, I think. After work. I just\u2026can\u2019t seem to *do* anything. Like, I\u2019ll start tidying up, or making a cup of tea, and then I\u2019ll be suddenly doing ten other things. I\u2019ll be pacing the room, just\u2026 moving. It\u2019s not like I *want* to do anything, it\u2019s just\u2026 a need to move. \n\nI don\u2019t really know *why*. It\u2019s just\u2026 overwhelming. Like something\u2019s trying to get out. \n\nI wish I could just\u2026 stop."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s a really vivid image \u2013 something trying to get out. It sounds incredibly unsettling. Let\u2019s dig a little deeper into this feeling of needing to move. When you\u2019re pacing the room, what thoughts or feelings are present alongside that physical movement? Are there any specific things you\u2019re thinking about, or any emotions you\u2019re experiencing, that seem to accompany the pacing? <<What is that you don't like about this need to pace, and why does it feel so overwhelming?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026difficult to say. Honestly, it\u2019s just\u2026 a feeling. Like a pressure. A tightness in my chest, maybe? And a sort of\u2026 blankness. Like if I try to focus on anything, it just\u2026 slips away. It\u2019s not *bad*, exactly. Just\u2026empty. \n\nI try to distract myself, you know? That\u2019s when the pacing starts. It feels like a way to...fill the void, I suppose. But it never really works. It just makes me feel more agitated. \n\nI just... don\u2019t get it. It\u2019s like a switch has been flipped. <<What is that you don't like about this feeling of agitation and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for elaborating so thoroughly. That \u201cswitch has been flipped\u201d feeling is really significant. It suggests a disruption, a sense of something going wrong within you. \n\nLet's explore that a little more. When you say a \"switch has been flipped,\" what does that *feel* like specifically? Is it a sudden shift in sensation, a change in your awareness, or something else? And, thinking back, have you ever experienced anything similar in the past \u2013 perhaps a time when you felt similarly disconnected or overwhelmed? <<What is that you don\u2019t like about this feeling of disconnection, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let me try to describe it\u2026 It's like\u2026 the colours just fade. Like the world is slowly turning grey. And it\u2019s not just visual. It\u2019s\u2026 a hollowness. Like if you took something away \u2013 not a physical thing, but a part of *me*. A bit of\u2026 understanding, I suppose. \n\nAnd yes, there have been times. When I was a kid, after my grandfather died. Everything felt\u2026 muted. Like the joy had been drained out of the world. It wasn\u2019t *sad*, exactly. Just\u2026distant. <<What is that you don\u2019t like about this feeling of distance, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s incredibly insightful. To revisit that image of the \u201cswitch\u201d \u2013 it sounds like you\u2019re experiencing a significant disruption in your ability to connect with the world around you, and perhaps even with yourself. \n\nLet\u2019s focus on that feeling of \u201cdistance.\u201d Can you tell me a little more about what that distance *feels* like in your body? Is there a specific physical sensation you notice when you experience it \u2013 perhaps tension in your muscles, a tightness in your stomach, or something else? And thinking back to that experience after your grandfather's death, what did you *do* to cope with that feeling of distance then? <<What is that you don\u2019t like about this feeling of distance, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(Sighs softly) It\u2019s\u2026 difficult to articulate, really. When it happens, I feel\u2026 detached. Like I\u2019m observing myself from outside my own body. My chest feels heavy, almost constricted. And my thoughts\u2026 they\u2019re not *wrong*, but they feel\u2026 muffled. Like they\u2019re traveling through cotton. \n\nAnd after my grandfather died, I mostly just\u2026 retreated. I stopped doing the things I enjoyed. I just\u2026 stayed in my room. Reading, mostly. Just trying to block everything out. It felt\u2026 pointless to try and connect with anyone. Like it wouldn\u2019t make a difference. <<What is that you don\u2019t like about this feeling of helplessness, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that again \u2013 it\u2019s clear this is a complex experience for you. The recurring image of the \u201cswitch\u201d and the feeling of detachment is really important. It suggests a significant shift in your ability to engage with the world.\n\nLet\u2019s unpack the idea of \"feeling like it wouldn't make a difference.\" When you say that connecting with others wouldn\u2019t make a difference, what *specifically* do you believe would be lacking \u2013 what would be missing to make a connection feel meaningful? <<What is that you don\u2019t like about this belief that connecting with others wouldn\u2019t make a difference, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a really insightful observation. It sounds like you\u2019re sensing a profound lack of\u2026 well, of something that would bridge the gap between you and others. You believe that simply *being* around people wouldn\u2019t alter the fundamental feeling of disconnect. \n\nLet\u2019s explore that further. When you say it would be \"missing,\" what does that \"something\" feel like \u2013 the quality, the element, the *thing* that would need to be present to make a connection feel real and meaningful? Is it a specific emotion, a shared experience, or perhaps something entirely different? <<What is that you don\u2019t like about this feeling of absence, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, thoughtful)\n\nYou\u2019ve hit on something crucial \u2013 the feeling of *absence*. It\u2019s not simply that you\u2019re alone, but that a vital element is missing. \n\nLet\u2019s try a slightly different approach. Let\u2019s talk about sleep. How would you describe your sleep patterns lately? Are you having trouble falling asleep, staying asleep, or waking up feeling refreshed? And if you could describe your sleep as a single word, what would it be?"
+  },
+  {
+    "role": "patient",
+    "content": "(A long sigh, a slight tremor in the voice)\n\nIt\u2019s\u2026 difficult. It\u2019s been\u2026 patchy. I don\u2019t sleep through the night anymore. I\u2019ll be awake for hours, just staring at the ceiling. And when I *do* manage to fall asleep, I wake up exhausted. It\u2019s like\u2026 like my body is fighting itself. It\u2019s not necessarily *bad* sleep, just\u2026 disrupted. And\u2026 I don\u2019t feel refreshed when I wake. It\u2019s like the darkness just\u2026 consumes me. \n\n(A small, almost inaudible, laugh)\n\nIt\u2019s almost\u2026 ironic, isn\u2019t it? Given how much I\u2019m struggling to connect with anything."
+  },
+  {
+    "role": "therapist",
+    "content": "(Leans forward slightly, maintaining a gentle, empathetic tone)\n\nThank you for sharing that so openly. The disrupted sleep\u2026 it\u2019s incredibly significant. It sounds like your sleep is not just a physical state, but a reflection of this deeper disturbance within you. \n\nLet\u2019s explore this a little more. When you say your sleep feels like it\u2019s \u201creflecting a deeper disturbance,\u201d what *specifically* does that disturbance *feel* like *within* you when you\u2019re trying to sleep? Is it anxiety, a sense of unease, a feeling of being overwhelmed, or something else entirely? And, if you could give that disturbance a color, what color would it be? <<What is that you don\u2019t like about this feeling of unease, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, thoughtful)\n\nThat\u2019s a really astute observation \u2013 recognizing that your sleep is a reflection of the deeper disturbance. It\u2019s often the case that when we\u2019re struggling with profound emotional difficulties, our sleep patterns become profoundly affected. \n\nLet\u2019s focus on that feeling of unease. When you experience that unease, can you describe the physical sensations you notice in your body? Is it a tightness in your chest, a knot in your stomach, a racing heart, or something else? And, thinking back to that color you\u2019d give to the disturbance \u2013 what does that color *represent* to you? What does it symbolize or evoke? <<What is that you don\u2019t like about this feeling of unease, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "(Nods slowly, making notes)\n\nThank you for that detailed description. It\u2019s incredibly helpful to understand the specific physical manifestations of this unease \u2013 the tightness in your chest, the racing heart\u2026 it paints a very clear picture. \n\nLet\u2019s delve a little deeper into the *symbolism* of that color you chose. When you described it as\u2026 (repeats the color chosen), what does that color *specifically* represent to you on a personal level? Is it a color you\u2019ve always associated with a particular feeling or memory? Does it trigger any specific thoughts or emotions when you focus on it? <<What is that you don\u2019t like about this feeling of unease, and why does it feel like a switch has been flipped?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(Leans forward slightly, maintaining a gentle, empathetic tone)\n\nThat\u2019s incredibly insightful. The connection between the color and the feeling... it suggests a deeply rooted association, something perhaps not consciously recognized but powerfully present nonetheless. \n\nLet's try a different approach for a moment. I'm going to ask you a question, and I want you to answer honestly, without judgment. When you think about the events that led you to this point \u2013 the recent event that triggered all of this \u2013 what's the *one* word that comes to mind when you think about it? Just one word."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, considering deeply)\n\n\u2026Loss."
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, making notes)\n\n\u201cLoss.\u201d That\u2019s a powerful word. It speaks volumes. Thank you for sharing that with me. It\u2019s a word that carries a tremendous amount of weight, and it\u2019s clear it\u2019s central to what you\u2019re experiencing. \n\nLet\u2019s unpack that word. When you say \u201closs,\u201d what *specifically* are you losing? Is it a tangible thing \u2013 a person, a place, a relationship \u2013 or is it something more abstract, like a sense of security, a belief, or a future? And can you describe the *feeling* associated with that loss \u2013 the raw emotion that comes up when you think about it? <<What is that you don\u2019t like about this feeling of grief, and why does it feel like a switch has been flipped?>>"
+  }
+]

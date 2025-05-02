@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working in private practice for about eight years, primarily focusing on helping people navigate difficult emotions and develop coping strategies. It\u2019s wonderful to meet you, and I want to assure you that this is a safe and confidential space. \n\nTo start, could you tell me a little bit about what\u2019s bringing you here today? What\u2019s the main reason you've decided to come and talk with me?"
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 I can\u2019t seem to sit still. It's like I\u2019m buzzing. I keep getting up and pacing, and I just can\u2019t focus on anything. Work\u2019s been a nightmare, too. Everything feels\u2026 pointless."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating, and I want to acknowledge how exhausting that must feel. The restlessness, the inability to focus \u2013 it's completely understandable that work would feel pointless when you're experiencing that. \n\nLet's start with that restlessness. Could you describe it a little more specifically? When did this feeling of being unable to sit still begin? Was there a particular event or time that you can pinpoint when it started, or has it been a gradual build-up? And can you describe the physical sensation of this \u201cbuzzing\u201d \u2013 is it a feeling in your muscles, your heart, somewhere else entirely?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 a jittery feeling, I suppose. Like my nerves are just\u2026 vibrating. It\u2019s mostly in my hands, actually. I find myself constantly fiddling with things. And my legs, they just won't stop moving. It started\u2026 well, it started a few weeks ago. After\u2026 after the visit. I can\u2019t really put my finger on *why* it started, though. It\u2019s just\u2026 there."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that so openly. It takes courage to describe these sensations, and I appreciate you being so detailed. That \u201cvisit\u201d you mentioned \u2013 you haven\u2019t specified what that was, if I recall correctly. Would you be comfortable telling me a little bit about it? Just the basics \u2013 who was involved, and what happened during the visit? It\u2019s okay if you don\u2019t want to go into all the details just yet, but it might offer a clue as to the trigger for this restlessness."
+  },
+  {
+    "role": "patient",
+    "content": "It was\u2026 a business meeting. With my brother. We hadn\u2019t spoken in months. It was\u2026 awkward. He was trying to convince me to invest in one of his ventures. It wasn't a pleasant experience. Honestly, it just felt\u2026 hostile. He was very insistent, and I just wanted to leave."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay. That sounds like a really difficult and unsettling experience. It\u2019s completely understandable that you\u2019d feel a strong reaction to that \u2013 a desire to leave, feeling pressured, and sensing hostility. Let's dig into that feeling of hostility a little. When you say \u201chostile,\u201d what specifically did he do or say that made you feel that way? Could you give me a specific example? And, beyond that example, what\u2019s the *underlying belief* you hold about how people *should* behave in a business meeting, or in general, when discussing investments with family?"
+  },
+  {
+    "role": "patient",
+    "content": "He kept interrupting me. Constantly. And he was talking down to me, like I was an idiot. He said things like, \"Don\u2019t be naive,\" and \u201cYou\u2019ll thank me later.\u201d It was just\u2026 dismissive. And his tone. It was like he was trying to prove me wrong. It just felt like he was trying to invalidate my opinions, you know? \n\nI think\u2026 I think I believe people should be respectful, even when they disagree. And I believe in honest conversation, not trying to force your will on someone. It felt like a breach of that, a fundamental disrespect. It just\u2026 made me feel small, I guess."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s a really insightful observation. It sounds like a core belief you hold \u2013 the importance of respectful communication and valuing others\u2019 opinions. And it\u2019s powerfully clear how deeply that was violated in that meeting. Let's explore that a little further. When you feel someone is dismissing your opinion, what\u2019s the *worst possible outcome* you imagine happening? What\u2019s the absolute worst thing that could come from that feeling of being invalidated? What\u2019s the core fear driving that image?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let's take a step back for a moment. You mentioned feeling \"small\" during the meeting. That\u2019s a really significant feeling. Can you tell me, what does \u201cfeeling small\u201d *actually* mean to you? What does it feel like in your body when you experience that sensation? Is it a tightness in your chest? A feeling of vulnerability? And, more importantly, *why* do you think you think you feel like that in those situations?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pause, offering a gentle smile)\n\nIt\u2019s okay to take a breath. It\u2019s a very complex feeling, \u201cfeeling small.\u201d It\u2019s not just about a momentary feeling of inadequacy, is it? Let\u2019s explore that a little more. When you feel small, what\u2019s the *core belief* you hold about yourself \u2013 about your value, your competence, your worth \u2013 that's threatened by that feeling? Is it a belief about needing to be \u2018right\u2019 all the time? Or perhaps a fear of not being good enough, or of failing?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, maintaining eye contact)\n\nThank you for being so open with me. It sounds like there's a deep-seated fear there \u2013 a fear of appearing foolish or incompetent. And it\u2019s interesting that you identify that. Often, these feelings aren't about the situation itself, but about the underlying anxieties we hold about ourselves.\n\nLet\u2019s try a different approach. Imagine a scale of one to ten, where one represents a completely carefree, unconcerned feeling, and ten represents the *most* intense fear or anxiety you can imagine. On that scale, what number would you give to the feeling you experience when you feel \u201csmall,\u201d when you sense your competence is being questioned?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, offering a comforting gesture with a hand)\n\nThat's a very honest answer \u2013 a \u20187\u2019. It tells me this is a significant, deeply felt experience for you. Let\u2019s explore that \u20187\u2019 a little more. When you rate the feeling as a \u20187\u2019, what specific thoughts are racing through your mind at that moment? What\u2019s the *automatic negative thought* that pops up when you\u2019re experiencing that intense feeling of being \u2018small\u2019? Try to capture it as precisely as you can."
+  },
+  {
+    "role": "patient",
+    "content": "(A gentle, empathetic tone)\n\nOkay. It\u2019s \u201cI\u2019m going to look stupid.\u201d Can you tell me a little more about *why* that thought comes up for you? What makes you believe that you *will* look stupid in that situation? What evidence do you have to support that belief?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Maintaining a calm, supportive presence)\n\nThat\u2019s a very common and understandably distressing thought \u2013 the fear of appearing foolish. Let\u2019s unpack that a little. You mentioned \u201cHe said things like, \u2018Don\u2019t be naive,\u2019 and \u2018You\u2019ll thank me later.\u2019\u201d Do you believe those statements *actually* reflect his true intentions, or do they trigger this fear of appearing naive or foolish within you? And, importantly, what\u2019s the *worst possible consequence* you imagine happening if you *were* perceived as naive? What's the absolute *most* devastating outcome you can envision?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, offering a comforting gesture with a hand)\n\nIt\u2019s perfectly alright to feel that way \u2013 to question the truth of his words. It sounds like you\u2019re holding yourself to a very high standard, and perhaps carrying a lot of self-doubt. Let's explore that a little. When you imagine yourself being perceived as \u2018naive,\u2019 what's the *core belief* you hold about yourself \u2013 about your intelligence, your judgment, your trustworthiness \u2013 that\u2019s threatened by that perception? Is it a belief that you *need* to always be \u2018right\u2019 and \u2018in control\u2019 in order to be respected?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Softly, with genuine warmth)\n\nThat\u2019s a really insightful observation. It seems like a deeply ingrained need for control and validation is driving this fear. Let's zoom in on that need. When you feel the need to be \u2018right\u2019 and \u2018in control,\u2019 what\u2019s the *underlying need* that\u2019s driving that desire? Is it a need for security, for predictability, for feeling competent and respected? And, crucially, what happens when you *don\u2019t* feel that way \u2013 when things are uncertain or unpredictable? What\u2019s the emotional discomfort you experience when you relinquish control?"
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, offering a comforting gesture with a hand)\n\nIt sounds like there\u2019s a significant amount of anxiety tied up in that need for control. Let\u2019s try a small exercise. Imagine a storm \u2013 a really intense, unpredictable storm. You can\u2019t control it, you can\u2019t stop it, but you can learn to *respond* to it. How would you approach that situation \u2013 that feeling of being overwhelmed and powerless \u2013 if you knew you couldn\u2019t control the storm? What would you do to manage your own emotional response?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Smiling gently)\n\nThat\u2019s a wonderful response. You\u2019re visualizing a way to shift your focus from control to acceptance. It's a really important step. Let\u2019s unpack that a little further. When you imagine accepting the storm, what specific *actions* would you take to manage your emotional response \u2013 to calm the feeling of overwhelm and fear? Would you focus on your breath? Would you try to distract yourself? Perhaps you'd seek support from someone you trust?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods thoughtfully)\n\nExcellent. You\u2019re already beginning to articulate techniques that can help you manage those intense feelings. Let\u2019s explore one of those techniques \u2013 focusing on your breath. When you feel that overwhelming anxiety, what does your breath *actually* feel like? Is it shallow and rapid, or can you consciously slow it down and deepen it? And, if you could, what would you *like* your breath to feel like \u2013 a way to ground you and bring you back to the present moment?"
+  }
+]

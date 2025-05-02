@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello! My name is Emily Wilson, and I'm a licensed psychotherapist specializing in cognitive-behavioral therapy. I have over 8 years of experience working with individuals struggling with various mental health concerns. I want to assure you that everything discussed in this session will be kept confidential and respectful. \n\nCould you please tell me what brings you here today? What are your primary concerns or reasons for seeking therapy at this time?"
+  },
+  {
+    "role": "patient",
+    "content": "I... I don't know if I should be here, but something's been bothering me since my mom passed away a few weeks ago. Lately, I just can't seem to sit still, I feel like I'm constantly fidgeting and can't relax."
+  },
+  {
+    "role": "therapist",
+    "content": "I'm so sorry to hear about the loss of your mom. It's completely understandable that you're feeling this way, and I'm glad you've taken this step to seek support. It takes a lot of courage to acknowledge when we need help.\n\nCan you tell me more about what you mean by \"can't relax\"? Is it that you feel anxious or on edge all the time, or is it more like you're feeling restless and can't seem to calm your body down? And how have you been sleeping since your mom passed away - has there been any change in your sleep patterns?"
+  },
+  {
+    "role": "patient",
+    "content": "No... my mom didn't pass away recently, someone else did. It's just... I don't know, everything feels off. And yeah, it's like I'm restless, can't calm down. Like, I'll be sitting there, and suddenly I need to get up and do something, but I don't even know what I want to do."
+  },
+  {
+    "role": "therapist",
+    "content": "It can be really tough to process and deal with the emotions that come with losing someone, regardless of how recently it happened.\n\nIt sounds like you're experiencing some kind of internal discomfort or agitation that's hard to shake off. This restlessness can be really frustrating, especially when you don't know what's causing it or how to make it stop.\n\nCan you help me understand what you mean by \"everything feels off\"? Is it like a general feeling of unease, or are there specific things in your life that feel different or not quite right since this person passed away? And have you noticed any changes in your daily routines, like your appetite or energy levels, that might be related to how you're feeling?"
+  },
+  {
+    "role": "patient",
+    "content": "You just repeated what I said... Look, can we just focus on one thing at a time? You asked me about \"everything feels off\", and yeah, it's just a general feeling. Like, nothing seems interesting to me anymore, even stuff I used to love doing."
+  },
+  {
+    "role": "therapist",
+    "content": "I apologize if my previous response came across as repetitive or dismissive - that wasn't my intention.\n\nLet's focus on this feeling of nothing seeming interesting to you anymore. That can be a really tough and isolating experience. Can you tell me more about what you mean by \"nothing seems interesting\"? Is it that things don't bring you joy, or is it more like you're not even motivated to try or engage with activities that normally would have appealed to you?"
+  },
+  {
+    "role": "patient",
+    "content": "No need to apologize for my mistake earlier. Let's just move forward.\n\nYou said nothing seems interesting anymore... Can you think of the last time you did something that actually held your attention, something that made you feel like \"yeah, this is what I want to be doing\"?"
+  },
+  {
+    "role": "therapist",
+    "content": "I'm glad we can move forward without any awkwardness.\n\nNow, about your question... Hmm, I'd say it's been a while. Maybe a few months ago? I used to love playing music, and I remember one day I picked up my guitar and started playing, and for a brief moment, everything else faded away, and I felt fully engaged. But even that didn't last long, and soon I just put the guitar down and walked away.\n\nIt's like I've lost touch with the things that used to bring me joy, and now they just feel like chores or obligations. Does that make sense?"
+  },
+  {
+    "role": "patient",
+    "content": "It makes perfect sense. It sounds like you're feeling a bit disconnected from the things that used to give you pleasure and fulfillment.\n\nCan you tell me more about what was going on in your life around the time when you last felt engaged with playing music? Was there something specific happening, or was it just a random moment where everything came together?"
+  },
+  {
+    "role": "therapist",
+    "content": "I think I can try to recall... It was actually right before the person passed away. I remember feeling a bit anxious and overwhelmed, but for some reason, playing music that day helped me calm down and focus.\n\nNow that I think about it, I was probably using music as a way to cope with my emotions at the time. Maybe it was a distraction from the stress and uncertainty of what was happening. But even though it worked in that moment, it's like I've lost access to that coping mechanism now.\n\nIt's weird, because I've tried playing music since then, but it just doesn't feel the same. It's like my heart isn't in it anymore, or something. Does that sound like a normal part of grief, or is there something more going on?"
+  },
+  {
+    "role": "patient",
+    "content": "You're reflecting on how you used to cope with your emotions through music... That's a good insight.\n\nIt sounds like music was a source of comfort and solace for you during a difficult time. Now, when you try to play, it feels empty or unfulfilling. Can you tell me more about what you mean by \"my heart isn't in it anymore\"? Is it that you're just not feeling the emotions you used to feel when playing, or is there something specific that's missing for you?"
+  },
+  {
+    "role": "therapist",
+    "content": "I think what I mean by \"my heart isn't in it\" is that the music doesn't feel meaningful or expressive to me like it used to. When I played before, I felt like I was conveying emotions and thoughts that were real and true to me. But now, when I try to play, it just feels like I'm going through the motions. The notes are right, the technique is there, but it's all just so... hollow.\n\nIt's like I've lost touch with the emotional part of myself that used to drive my music. I'm not feeling the sadness, the joy, or the passion that I used to feel when I played. It's all just kind of... flat. And that's really frustrating for me, because music was always something that helped me process and understand my emotions.\n\nDoes it sound like I'm somehow disconnecting from my emotions, or is this just a normal part of grief where things feel numb and empty?"
+  },
+  {
+    "role": "patient",
+    "content": "It sounds like you're feeling really disconnected from your creative self and the emotions that used to fuel your music. That can be a really painful and confusing experience.\n\nI want to explore this idea of feeling \"flat\" and disconnected from your emotions. Can you tell me more about what it's like for you when you're trying to play music or engage with things that used to bring you joy? Do you feel like you're just going through the motions, or is there something else at play?"
+  },
+  {
+    "role": "therapist",
+    "content": "I think I feel like I'm just going through the motions, but at the same time, there's this underlying sense of... expectation, maybe? Like, I expect myself to feel a certain way when I'm playing music, or to be able to express myself in a certain way. And when that doesn't happen, it feels like I've failed somehow.\n\nIt's hard to explain, but it's like my mind and body are disconnected from each other. My fingers can still play the notes, but my heart and emotions aren't behind it. It's like I'm just mimicking the actions of playing music, without any real feeling or passion behind it.\n\nAnd that makes me wonder... am I just waiting for something to \"click\" again, or is this a sign of something deeper going on? Like, am I avoiding my emotions somehow, or is this just a natural part of grieving and healing?\n\nIt's funny, because when I'm not trying to play music or do things that used to bring me joy, I feel kind of... numb. But when I try to engage with those things, it's like the numbness turns into this sense of disappointment and frustration. Does that make any sense?"
+  },
+  {
+    "role": "patient",
+    "content": "It makes a lot of sense, actually. It sounds like you're experiencing a sense of disconnection from your emotions and your creative self, and that's leading to feelings of frustration and disappointment.\n\nI think it's interesting that you mention feeling numb when you're not trying to engage with music or other activities that used to bring you joy. That numbness can be a coping mechanism, a way of protecting yourself from feeling overwhelmed by your emotions. But when you try to engage with those activities, the numbness lifts, and you're left feeling disappointed and frustrated because it's not feeling the same as it used to.\n\nIt's possible that you are avoiding your emotions somehow, or at least, that you're having trouble accessing them in the way that you used to. Grief can be a very complex and nuanced process, and it's common for people to feel disconnected from their emotions or to struggle with finding meaning or purpose after a loss.\n\nCan I ask, have you noticed any changes in your self-perception or self-worth since this person passed away? Do you feel like you're struggling with feelings of guilt, shame, or inadequacy, or is it more just a sense of sadness and loss?"
+  },
+  {
+    "role": "therapist",
+    "content": "I think I have noticed some changes in my self-perception and self-worth. It's hard to put into words, but I feel like I've been questioning my own identity and purpose since this person passed away. Like, who am I without this person in my life? What's my role now?\n\nAnd yeah, I'd say I'm struggling with feelings of guilt and inadequacy. I keep thinking about things I could've done differently, or things I wish I had said to this person before they passed away. It's like I'm replaying all these what-ifs in my head, and it's really weighing on me.\n\nIt's not just sadness and loss, although those feelings are definitely there too. It's more like... I feel like I've lost my sense of direction, you know? Like, I'm just drifting through life without a clear purpose or sense of who I am anymore.\n\nAnd that makes me wonder, is this feeling of disconnection from my emotions and creative self related to these feelings of guilt and inadequacy? Am I somehow using this numbness as a way to avoid dealing with the harder emotions, like guilt and shame?\n\nIt's funny, because when you asked about changes in my self-perception and self-worth, it made me realize that I have been struggling with those feelings. But at the same time, it feels like there's something deeper going on, something that I'm not quite aware of yet. Does that make sense?"
+  },
+  {
+    "role": "patient",
+    "content": "It makes a lot of sense. It sounds like you're experiencing a significant identity shift, and that can be really unsettling. When someone close to us passes away, it's natural to question our own sense of purpose and identity.\n\nThose feelings of guilt and inadequacy can be particularly challenging to work through. It's common for people to replay what-ifs in their head, especially when they're trying to make sense of a loss. It might be helpful to explore some of those specific thoughts and emotions with me - would you be willing to do that?\n\nAlso, I want to acknowledge that it takes a lot of courage to recognize and admit to struggling with feelings of guilt and inadequacy. That in itself is a big step towards healing and growth.\n\nBefore we move forward, I just want to check in with you - how are you feeling right now? Is there anything that's coming up for you as we're talking about these emotions?"
+  },
+  {
+    "role": "therapist",
+    "content": "I'm feeling... overwhelmed, I think. It's like everything we've been discussing is finally starting to sink in, and it's a lot to process. But at the same time, it's kind of a relief to be talking about this stuff. Like, I feel like I've been carrying around this weight for so long, and now I'm finally starting to unpack it.\n\nI think what's coming up for me right now is just a sense of sadness and regret. I'm thinking about all the things I wish I had done differently, or said to this person before they passed away. It's hard not to get caught up in those what-ifs, you know?\n\nBut I want to explore those thoughts and emotions with you. I feel like that's the only way I'll be able to move forward and start healing. So, yeah, I'm willing to do that.\n\nIt's funny, because as we've been talking, I've started to realize that my feelings of guilt and inadequacy are really tied up in my sense of identity and purpose. Like, who am I without this person in my life? What's my role now? It's like I'm trying to find my way again, and it's scary.\n\nI guess what I'm trying to say is that I feel like we're just scratching the surface of something deeper here. And I'm not sure what that is yet, but I'm willing to keep exploring it with you.\n\nOh, and one more thing - I've been having trouble sleeping lately, and I've noticed that my appetite has changed too. I'm either eating way too much or not eating enough, depending on the day. Is that something we should talk about too?"
+  },
+  {
+    "role": "patient",
+    "content": "I think those physical symptoms are definitely worth exploring, especially since they can be related to emotional distress. It's like your body is trying to tell you something, but you're not quite sure what it's saying yet.\n\nBut before we dive into that, I want to go back to something you said earlier - about feeling overwhelmed and relieved at the same time. That sounds like a really complex mix of emotions. Can you tell me more about what's going on with your energy levels? You mentioned trouble sleeping, but are you also feeling tired or fatigued during the day?"
+  }
+]

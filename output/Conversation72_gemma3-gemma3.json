@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working in this field for over eight years, primarily focusing on helping individuals manage difficult emotions and develop more adaptive ways of thinking and behaving. It\u2019s wonderful to meet you. \n\nThank you for coming in today. It takes a lot of courage to reach out for support, and I want you to know that you\u2019re in a safe and non-judgmental space. \n\nTo start, could you tell me what\u2019s brought you here today? What\u2019s been going on that makes you feel like you needed to seek support?"
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 I can\u2019t seem to sit still. Like, everything feels\u2026 frantic. I keep fidgeting. It\u2019s driving me mad, really. I\u2019m snapping at people, even over the smallest things."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating and distressing. It takes a lot of energy to feel like you're constantly battling this internal restlessness. Let's unpack that a little.\n\nWhen you say you're \"snapping at people,\" could you tell me a bit more about what\u2019s going through your mind *right before* you have those reactions? What thoughts are racing through you? And, importantly, what's the *intensity* of those feelings \u2013 on a scale of 1 to 10, with 1 being a mild annoyance and 10 being the most intense feeling you\u2019ve ever experienced, where would you place that feeling just before you snap?"
+  },
+  {
+    "role": "patient",
+    "content": "Ugh, sorry. It\u2019s just\u2026 a lot. Honestly, it\u2019s like everything is just\u2026 amplified. Like, a simple question about the dishes feels like a monumental demand. I just\u2026 I want to yell, you know? \n\nI\u2019d say\u2026 maybe a 7? A 7. It\u2019s not *constant*, but when it hits, it\u2019s\u2026 overwhelming. Like a pressure building up behind my eyes. It\u2019s ridiculous, really."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that so openly. It sounds incredibly taxing to constantly feel this level of intensity, and it\u2019s completely understandable that you'd be frustrated. Let\u2019s dig a little deeper into that feeling of \u201cpressure behind your eyes.\u201d \n\nWhen you describe that pressure, can you tell me what specific sensations you notice? Is it a tightness, a heat, a throbbing, or something else entirely? And, thinking back to when you first started noticing this heightened reaction to everyday things, was there a particular event or period in your life that seemed to coincide with it, or did it just kind of\u2026 appear?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 a dull ache, mostly. Like a heavy weight. And sometimes, a sort of\u2026 pulsing. It\u2019s not a sharp pain, exactly. Just\u2026 persistent. \n\nIt started\u2026 about three weeks ago. Before that, things were\u2026 fine. Normal. I don\u2019t know. It just\u2026 shifted. Like a switch flipped."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s really valuable information. A shift like that \u2013 a \u201cswitch flipped\u201d \u2013 can be incredibly unsettling. It suggests something has changed within you. Let\u2019s explore that a little further. \n\nWhen you say \u201cshifted,\u201d what specifically *did* feel different *before* this shift occurred? Can you describe a typical day, a week, or even just a few hours from that time? I\u2019m particularly interested in what you were *doing*, *thinking*, and *feeling* \u2013 not just the surface level, but the underlying aspects. Let\u2019s start with your sleep. How has your sleep been lately? Is it shorter, more restless, or difficult to fall asleep?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s talk about sleep. It\u2019s often the first thing to change when something like this is happening.\n\nFor the past three weeks, honestly, it\u2019s been\u2026 awful. I\u2019m either going to bed way too early, like around 9 pm, and then tossing and turning until 3 am, or I\u2019ll be up way later, around midnight, just staring at the ceiling. I don\u2019t really *know* what I\u2019m thinking, it\u2019s just\u2026 a feeling of being wired. And then, when I *do* manage to sleep, it's not restful. I wake up feeling like I haven't slept at all. It\u2019"
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for being so candid about your sleep. It\u2019s clear that this is significantly impacting your well-being, and it\u2019s a common thread when we\u2019re experiencing heightened emotional distress. \n\nLet\u2019s delve a little deeper into that feeling of being \"wired.\" Can you describe what it *feels* like physically when you have that feeling of being wired? Is it a racing heart, a tense jaw, a clenched stomach, or something else? And, thinking back to those nights when you\u2019re staring at the ceiling \u2013 are there any specific thoughts or worries that seem to be recurring, even if you can\u2019t quite articulate them clearly? Let\u2019s use the laddering technique \u2013 what is that you *don't like* about this feeling of being wired, and *why* does that bother you so much?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s tackle that feeling of being wired head-on. When you describe it, it sounds incredibly uncomfortable \u2013 a racing heart, a tense jaw, a clenched stomach\u2026 it\u2019s a cascade of physical sensations.\n\nWhat is it *specifically* about that physical sensation that you dislike the most? Is it the intensity of the physical response? The feeling of being out of control? Or is there something else that contributes to your distress when you experience it? And, thinking about those sleepless nights, what\u2019s the *worst thing* that could happen if you *didn\u2019t* get a good night\u2019s sleep? Let\u2019s try to identify the core fear that\u2019s driving those sleepless nights."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s really unpack this fear. You mentioned a fear of not getting a good night\u2019s sleep. Could you tell me more about *why* that\u2019s so distressing to you? What specifically would be the *impact* of not getting enough sleep on your day-to-day life? What would be the biggest consequence, and *why* is that consequence so frightening to you? Let\u2019s really focus on the \u2018why\u2019 behind that fear."
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s go back to that feeling of being wired, and build from there. When you\u2019re experiencing that intense physical sensation \u2013 the racing heart, the tense jaw, the clenched stomach \u2013 what\u2019s the *first* thought that pops into your head? It doesn't have to be a logical thought, just the very first thing that comes to mind. And don\u2019t censor yourself; just tell me what you\u2019re thinking, even if it seems silly or irrational."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s just get that raw, unfiltered thought out in the open. When you\u2019re experiencing the intense physical sensations \u2013 the racing heart, the tense jaw, the clenched stomach \u2013 what\u2019s the *very first* thought that pops into your head? Again, don\u2019t worry about whether it makes sense or not. Just the initial reaction."
+  },
+  {
+    "role": "patient",
+    "content": "Okay, tell me. What's the very first thought?"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay. The very first thought is: \u201cI\u2019m going to fail.\u201d Can you tell me more about *that* thought? What makes you believe you\u2019re going to fail? What specifically are you afraid of failing *at*? And, more importantly, *why* does that feeling of failure hold so much power over you?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s really unpack that. It\u2019s incredibly brave of you to share that. The thought of failing\u2026 it\u2019s a very powerful one, and it often indicates a deeper fear. \n\nWhen you say \u201cI\u2019m going to fail,\u201d what does \u201cfailure\u201d *represent* to you? Is it a loss of respect? A disappointment to someone you care about? A loss of self-worth? Or perhaps it\u2019s something else entirely. Let\u2019s explore the *meaning* behind that statement. And, related to that \u2013 what\u2019s the *worst-case scenario* you imagine happening if you *did* fail?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pause, gentle tone)\n\nThat\u2019s\u2026 a very significant statement. Thank you for being so honest about that. It sounds like the fear of failure is deeply intertwined with your sense of self-worth. \n\nLet\u2019s dig a little deeper. You mentioned a loss of self-worth if you fail. Can you describe what *kind* of self-worth you're referring to? Is it the feeling of being competent? Kind? Loving? Or perhaps it\u2019s a more fundamental belief about your inherent value as a person? And, to help us understand the strength of this fear, on a scale of 1 to 10, with 1 being a mild concern and 10 being an overwhelming panic, what would you say is the intensity of this fear when it arises?"
+  },
+  {
+    "role": "patient",
+    "content": "(Softly)\n\nThank you for that honest assessment. It takes considerable courage to articulate those deeply held beliefs about your worth. \n\nLet\u2019s explore this further. You described the intensity of the fear as a 7. Can you pinpoint *when* that 7 typically occurs? Is it consistently at 7, or does it fluctuate? And, thinking back to the moments when you feel this intense fear \u2013 are there any specific triggers or situations that seem to exacerbate it, or does it just\u2026 arise spontaneously?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Warm, empathetic tone)\n\nThat\u2019s really valuable information. It sounds like there\u2019s a pattern to these moments of intense fear \u2013 that it's not just random, but linked to specific triggers or situations. \n\nLet\u2019s try a slightly different approach. Could you describe a *typical* situation where you experience this intense fear? I\u2019m interested in the details \u2013 the setting, the people involved, what you were doing, and *what you were expecting* to happen in that situation. Let\u2019s just paint a picture of that moment, as vividly as possible. Don\u2019t worry about whether it\u2019s \u201clogical\u201d \u2013 just describe what you experienced."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s really flesh this out. Let\u2019s go back to\u2026 the job interview. You described feeling the intense fear when you were anticipating the outcome. Can you describe the physical sensations you experienced *during* that anticipation? Was it a specific posture? A particular facial expression? A certain way you were holding yourself? Let's really focus on the *body* experience of that fear. And, beyond the physical sensations, what were you *thinking* about what might happen if you didn\u2019t get the job?"
+  }
+]

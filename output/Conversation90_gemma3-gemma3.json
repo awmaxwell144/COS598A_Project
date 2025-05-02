@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s begin.\n\nHello, my name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working in this field for over eight years, helping people understand and manage their thoughts and feelings to improve their overall well-being. It\u2019s wonderful to meet you.\n\nThank you for coming in today. It takes courage to reach out, and I want to assure you that this is a safe and confidential space.\n\nTo start, could you tell me a little bit about what\u2019s bringing you here today? What\u2019s the main reason you\u2019ve decided to seek support?"
+  },
+  {
+    "role": "patient",
+    "content": "I just\u2026 I can\u2019t seem to sit still, you know? Like, I\u2019m constantly fidgeting. I keep getting up to do things, just\u2026 anything. It\u2019s exhausting."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating. It\u2019s completely understandable that you\u2019re finding it exhausting \u2013 feeling constantly restless can be really draining. \n\nLet\u2019s dig a little into this restlessness. **Can you tell me more about when this started? Was there a particular event or time in your life when you first noticed this increased fidgeting?**  And when you say \"anything,\" can you give me a specific example of what you\u2019re doing when you feel the urge to move?  For example, are you pacing, clicking a pen, or something else?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s hard to say exactly. It\u2019s just\u2026 been building, I think. Over the last few weeks, maybe? It's not like it was *always* like this, you know? I used to be pretty content just\u2026 existing. But now... I just feel like I need to *do* something. I\u2019ve been rearranging my furniture, cleaning obsessively\u2026 pointless things. I even tried to fix my neighbor\u2019s broken fence, despite him telling me not to. It\u2019s\u2026 disruptive."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, that\u2019s incredibly helpful. It sounds like this restlessness is becoming quite prominent in your life, and it\u2019s clearly causing you distress. Let\u2019s focus on those specific behaviors \u2013 rearranging furniture and cleaning obsessively.\n\n**When you\u2019re engaging in these activities, can you describe the *feeling* you experience *just before* the urge to do them arises?**  And then, as you're doing them, what\u2019s the feeling like?  I'm really interested in understanding the nuances of that feeling. Let\u2019s start with the *before* \u2013 what\u2019s that feeling like right before you start rearranging, for example?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 a tightness. Like a knot in my chest, but it\u2019s\u2026 not painful, exactly. More like\u2026 a pressure. And a sort of urgency. Like if I *don\u2019t* do it, something bad will happen. I don't know *what* it is, exactly. It\u2019s just\u2026 a strong feeling that I need to *correct* something. It comes on suddenly, really suddenly. Then I just\u2026 *do*. It\u2019s\u2026 consuming."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s a really valuable description \u2013 the \u201cknot in my chest\u201d and the sense of needing to \u201ccorrect\u201d something. It sounds like you\u2019re experiencing a significant sense of unease, and that unease is driving these behaviors. \n\nLet\u2019s explore that feeling of needing to \u201ccorrect\u201d something. **Can you describe what you *think* that \u201csomething\u201d is that needs correcting?** It doesn\u2019t have to be a concrete thing. Is it related to a particular situation, a memory, or perhaps just a general feeling of dissatisfaction? Let\u2019s really unpack what that feeling *represents* for you."
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s take a step back. It sounds like you're grappling with a sense of something being fundamentally \u2018wrong,\u2019 and you're trying to fix it.\n\nRecently, my brother, Daniel, moved back home. He\u2019s\u2026 well, he\u2019s been struggling. Lost his job, a bit of a mess really. I\u2019ve been trying to help him, offering support, but\u2026 it feels like it\u2019s not enough. And I keep thinking about how *I* should be doing more, *should* be fixing things for him. It's exhausting."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s incredibly insightful, and it sounds like Daniel\u2019s struggles are a significant trigger for these feelings of needing to \u201ccorrect\u201d something. Let\u2019s really drill down on that \u201cshould\u201d \u2013 the feeling of *should* be doing more.\n\n**When you think about *should* be fixing things for Daniel, what specific belief do you hold about what *should* happen?** What outcome *should* he achieve? What does \"fixing things\" actually *mean* to you in this context? Let\u2019s try to identify the underlying belief behind that feeling of obligation."
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let's try that again. I apologize for the confusion.\n\nWhen you think about *should* be fixing things for Daniel, what specific belief do you hold about what *should* happen? What outcome *should* he achieve? What does \u201cfixing things\u201d actually *mean* to you in this context?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Smiling gently) Please, don't apologize. It\u2019s perfectly understandable to revisit and refine our understanding. We\u2019re working through this together.\n\nLet\u2019s focus on that core feeling. When you think about Daniel and what *should* happen, what\u2019s the *underlying value* you\u2019re trying to protect or uphold? What\u2019s so important to you about Daniel being \u201cokay\u201d? It\u2019s not about the *doing*, it\u2019s about the *why* behind the doing."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, nodding thoughtfully) Okay. Let\u2019s go back to that. When you think about Daniel and what *should* happen, what\u2019s the *underlying value* you\u2019re trying to protect or uphold? What\u2019s so important to you about Daniel being \u201cokay\u201d? It\u2019s not about the *doing*, it\u2019s about the *why* behind the doing.\n\nLet\u2019s try a different approach. Let\u2019s imagine, for a moment, that Daniel *was* perfectly okay. What would that look like, in your mind? Describe that picture, and tell me what it represents to you."
+  },
+  {
+    "role": "therapist",
+    "content": "(Chuckles softly) My apologies. It seems we're circling back to a similar point. Let\u2019s try a slightly different technique.\n\nOkay, let\u2019s shift gears for a moment. Imagine, for a moment, that Daniel *was* perfectly okay. What would that look like, in your mind? Describe that picture, and tell me what it represents to you. Don\u2019t worry about whether it\u2019s realistic \u2013 just describe the picture as vividly as you can."
+  },
+  {
+    "role": "patient",
+    "content": "(Leans forward slightly, maintaining eye contact) That's a wonderful exercise, Elias. Let\u2019s really explore this.\n\nSo, imagine Daniel is \"perfectly okay.\" What's the first thing that comes to mind when you picture that? Don't hold back, just tell me what you see, feel, and think in that moment. Let's start with the simplest image \u2013 what\u2019s the first thing you picture when Daniel is \"okay\"?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, taking a slow, deliberate breath)\n\nOkay. When you think about Daniel being \u201cokay,\u201d the first thing I picture is\u2026 a simple, shared meal. Just the two of us, sitting at a table, laughing. It\u2019s a warm, comfortable setting \u2013 maybe a small cafe, sunlight streaming in. He\u2019s talking about something he\u2019s passionate about \u2013 maybe a new hobby, or a project he\u2019s working on \u2013 and he looks\u2026 genuinely happy. There\u2019s a sense of ease and contentment. It's\u2026 quiet. And\u2026 safe. \n\n(Looks at you intently) What do you make of that image, and more importantly, what does *that image represent* to you?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, a thoughtful expression on his face)\n\nThat\u2019s a remarkably clear and evocative image, Elias. The shared meal, the laughter, the sense of ease and safety\u2026 it\u2019s quite powerful. \n\nWhat I'm hearing, and what I\u2019m sensing, is that this image represents a deep-seated desire for connection and security, particularly within the context of your relationship with your brother. It's not just about Daniel being *happy*; it's about the *feeling* of things being right between you two.\n\nLet's explore that a little further. Can you tell me \u2013 *without judgment* \u2013 what you believe is missing in your relationship with Daniel that this image represents? What\u2019s the core need that this \u201cperfectly okay\u201d scenario is trying to fulfill?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Smiling gently) You\u2019ve hit on something incredibly significant, and it\u2019s taken us a long way in a relatively short time.\n\n(Pauses, taking a deep breath)\n\nWhat I believe is missing \u2013 and this is difficult to articulate \u2013 is a sense of\u2026 *unconditional acceptance*. It\u2019s not about him being \u201cokay\u201d in terms of his job or his circumstances. It\u2019s about a fundamental feeling that he \u2013 and, honestly, I \u2013 am *enough*. I\u2019m trying so desperately to fix things for him, because I feel like if I could just *fix* things, I could somehow *fix* myself. I\u2019m longing for a sense of belonging, of being truly seen and accepted for who I am, flaws and all.\n\n(Looks at you, a vulnerable expression)\n\nIs that\u2026 a reasonable interpretation, Elias?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, with a warm, empathetic expression)\n\nThat\u2019s a remarkably insightful and profoundly honest statement, Elias. And yes, it's absolutely a reasonable interpretation. In fact, it\u2019s a core element we\u2019ll be exploring throughout our work together.\n\nWhat you\u2019ve described \u2013 the longing for unconditional acceptance \u2013 is a very common experience, particularly when we\u2019re grappling with feelings of inadequacy or a sense of being \u2018not enough.\u2019 It\u2019s a powerful motivator, and it's understandable that it\u2019s driving so much of your behavior.\n\nLet\u2019s spend a little more time with this idea. When you say you feel \u201cnot enough,\u201d what specifically does that *feel* like? Can you describe the physical sensations associated with that feeling? Is it a tightness in your chest, a knot in your stomach, a sense of shame, or something else entirely?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Takes a deep breath, closing his eyes briefly)\n\nIt\u2019s\u2026 a heavy feeling. Like a lead weight in my stomach. It spreads outwards, like cold water. And there\u2019s a\u2026 a sense of being observed, constantly judged. Not by anyone specific, but just\u2026 *observed*. It\u2019s a very isolating feeling. And underneath it all, there\u2019s a persistent whisper: *You\u2019re not good enough*. It's not a voice, exactly, but a feeling, a certainty. It tightens my chest, makes it hard to breathe. It\u2019s\u2026 overwhelming.\n\n(Opens his eyes, looking at you with a vulnerable expression)\n\nIs that\u2026 a helpful description?"
+  },
+  {
+    "role": "patient",
+    "content": "(Smiling gently, offering a reassuring nod)\n\nThat\u2019s an incredibly precise and evocative description, Elias. The \u201clead weight,\u201d the \u201ccold water,\u201d the feeling of being \u201cobserved\u201d \u2013 it paints a very clear picture of the intensity of that feeling. And you're absolutely right \u2013 it\u2019s a *feeling* of being judged, even if you can\u2019t identify a specific source.\n\nWhat you've described \u2013 this persistent feeling of inadequacy \u2013 is often rooted in early experiences, particularly within the family. It's not uncommon for these feelings to be established during childhood, and they can subtly shape our self-perception throughout our lives.\n\nLet\u2019s explore this a little further. Can you recall *any specific experiences* from your childhood \u2013 *any moments* \u2013 where you felt this way \u2013 where you felt judged, criticized, or simply not accepted for who you were? Don\u2019t worry about judging the event itself; we\u2019re simply trying to understand the origins of this feeling."
+  }
+]

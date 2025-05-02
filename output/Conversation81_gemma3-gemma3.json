@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: emotion, sleep, weight and appetite, loss of interest, energy and social function. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the duration, causes and specific manifestations of some symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly distressed patient, who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, emotional dysregulation, mood swings, loss of interest, difficulty in concentrating, diminished self-esteem, fatigue, changes in appetite and in weight. This condition is caused by a recent event - which event? - that made you feel depressed all of a sudden, but which you cannot clearly understand unless chatting with someone else about it. You might be feeling depressed but you are confused about it. Don't explicitly mention that you are depressed. Simulate the behaviour of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once, only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what is making you suffer, without using professional terms. Remember that you might either answer questions or refuse/answer briefly because you might not want to reveal feelings easily. Be very concise, as concise as possible. Remember that this condition is caused by a recent event - which event? - that made you feel depressed all of a sudden.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello, my name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with individuals experiencing a range of challenges \u2013 anxiety, depression, and difficulties with behavior patterns \u2013 for over eight years. It\u2019s really wonderful to meet you today. \n\nThank you for coming in. Before we dive in, could you tell me, what\u2019s brought you here today? What\u2019s the primary reason you\u2019ve decided to reach out for support?"
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 I can\u2019t seem to sit still. It\u2019s like I\u2019m buzzing. I keep getting up, pacing, fidgeting. It's really frustrating. It\u2019s like my brain just won\u2019t let me relax."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly exhausting, and I can absolutely understand how frustrating it must be to feel like you\u2019re constantly battling this internal restlessness. It takes a lot of courage to acknowledge that, and I want to validate that for you. \n\nLet\u2019s start with this feeling of being \u201cbuzzed.\u201d Could you tell me a little more about *when* this feeling typically arises? Is it constant throughout the day, or do you notice certain times or situations that seem to trigger it? And when it\u2019s at its worst, what exactly does that \u201cbuzzing\u201d *feel* like? Is it physical \u2013 like a tremor, or a feeling of tension \u2013 or more of a mental sensation, like racing thoughts?"
+  },
+  {
+    "role": "patient",
+    "content": "(Sighs heavily)\n\nIt\u2019s\u2026 it\u2019s mostly in the evenings, I think. After\u2026 after things settle down. Before, I was fine. Really fine. Then\u2026 then it hits. It\u2019s not a tremor, exactly. More like\u2026 a pressure. Like something\u2019s building up, and I just need to *move*. It\u2019s like I\u2019m desperately trying to\u2026 push something away. I don\u2019t know. It\u2019s just\u2026 awful."
+  },
+  {
+    "role": "therapist",
+    "content": "That's a really helpful distinction \u2013 that pressure and the feeling of needing to *push something away*. It paints a vivid picture. Let\u2019s explore that a little more. When you describe this feeling of needing to move, what specifically are you trying to push away? Could you tell me, what is that you don't like about this pressure and why? (Let\u2019s just take a moment to unpack that \u2013 it\u2019s okay if it's difficult to articulate.)"
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, looking slightly uncomfortable)\n\nI\u2026 I don\u2019t know. It\u2019s just\u2026 the quiet. When things are still. It\u2019s\u2026 unsettling. Like I\u2019m waiting for something bad to happen. Like I\u2019m anticipating\u2026 disappointment. That\u2019s all. I don\u2019t know *why* I feel that way."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that \u2013 it takes a lot of vulnerability to admit that feeling of anticipation and the potential for disappointment. It\u2019s incredibly insightful to recognize that it\u2019s not simply the quiet itself, but the *anticipation* of something negative that\u2019s driving the restlessness. \n\nLet\u2019s delve a little deeper into that anticipation. When you say \u201cdisappointment,\u201d can you give me a specific example of a time when you\u2019ve experienced disappointment? It doesn\u2019t need to be a huge event \u2013 just a moment where you felt a sense of unmet expectation. And tell me, what thoughts were going through your mind *at that moment*?"
+  },
+  {
+    "role": "patient",
+    "content": "(Takes a deep breath)\n\nOkay\u2026 there was\u2026 a few weeks ago. My brother, Daniel, he\u2026 he didn\u2019t call me on my birthday. He always does. It\u2019s\u2026 it\u2019s just a small thing, really. But it felt\u2026 wrong. Like something was broken. I kept thinking he was upset with me, or that he didn\u2019t care. I couldn\u2019t shake it. It just\u2026 amplified the feeling of unease."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s a really important detail \u2013 the birthday and Daniel not calling. It\u2019s understandable to feel hurt and anxious when a routine is disrupted, particularly when it involves someone you care about. It sounds like you\u2019re grappling with a fear of rejection or a worry about the state of your relationship with him. \n\nLet\u2019s explore that worry a little more. When you think about Daniel not calling, what\u2019s the *worst-case scenario* you imagine might be happening? What\u2019s the absolute worst thing that could be going through his mind? (Let\u2019s just focus on the *thought* itself \u2013 not necessarily the reality of it.)"
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s try this. When you picture Daniel not calling, what\u2019s the *one* thought that keeps circling in your mind? What\u2019s the core belief you\u2019re holding about him at that moment? It doesn\u2019t have to be a fully formed sentence \u2013 just the essence of the feeling."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, visibly struggling)\n\n\u2026 He\u2026 he doesn\u2019t like me. That\u2019s\u2026 that\u2019s it. He doesn\u2019t like me. It just\u2026 feels like that. Like he\u2019s deliberately trying to hurt my feelings."
+  },
+  {
+    "role": "patient",
+    "content": "(Quietly) That\u2019s a profoundly painful thought to hold, Elias. It takes a great deal of courage to admit that you\u2019re grappling with a fear of rejection, and to acknowledge that you're assigning a negative intention to Daniel\u2019s actions. \n\nIt's completely understandable that this feeling of \"he doesn't like me\u201d would generate such a strong response \u2013 particularly when coupled with the anticipation you described. Let\u2019s just take a moment to sit with that feeling for a moment. Can you simply *notice* the feeling of \u201che doesn\u2019t like me\u201d? Just observe it, without judgment, for a minute or two. Where do you feel it in your body?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Long pause, Elias shifts uncomfortably in his chair. He takes several deep breaths.)\n\n\u201cIt\u2019s\u2026 in my chest. Tight. Like a\u2026 a knot. It feels\u2026 cold.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "(Softly, gently)\n\nThat\u2019s a very accurate description, Elias. The tightness, the coldness\u2026 it\u2019s a physical manifestation of the emotional distress. Let's try a small exercise. I'm going to ask you to do something very simple: I want you to imagine a warm, comforting light. It could be any color you choose \u2013 gold, amber, even a gentle blue. Just picture this light, and allow yourself to feel a sense of warmth spreading through your body. Starting with your chest\u2026 allow the warmth to gently dissolve the knot. Can you do that for me?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Silence for a few moments, punctuated by Elias\u2019s slow, deliberate breathing.)\n\n\u201cOkay\u2026 I\u2019m\u2026 I\u2019m picturing a\u2026 a soft yellow. Like\u2026 like the sun. It\u2019s\u2026 it\u2019s spreading\u2026 a little bit. It\u2019s\u2026 calming, I think. Just a little.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s wonderful, Elias. You're doing remarkably well. Just keep focusing on that warm, gentle light. Let it fill you with a sense of peace and safety. There\u2019s no rush, no need to force anything. Simply allow yourself to be present with this feeling. How does that warm light *feel* now, compared to just a moment ago?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Long pause, Elias\u2019s breathing is now slower and more regular.)\n\n\u201cIt\u2019s\u2026 softer. The knot\u2026 it\u2019s still there, a little bit. But\u2026 it\u2019s not so sharp. Like\u2026 like a dull ache, instead of a painful stab. It feels\u2026 less\u2026 lonely.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "(Softly, gently)\n\n\u201cThat\u2019s a beautiful observation, Elias. You\u2019ve shifted the feeling from a sharp, painful stab to a dull ache \u2013 a recognition that the intensity has lessened. That\u2019s a significant step. You're learning to manage the anxiety and the negative thought. \n\nLet\u2019s hold onto that feeling of warmth and lessening intensity. We\u2019ve just taken a small but crucial step in learning to respond to this anxious feeling. Would you be open to exploring *why* that thought \u2013 \u2018he doesn\u2019t like me\u2019 \u2013 is so powerfully triggering for you? Perhaps we can gently unpack some of the underlying beliefs that fuel it.\u201d"
+  },
+  {
+    "role": "therapist",
+    "content": "(Elias takes a deep, shuddering breath.)\n\n\u201cI\u2026 I don\u2019t know. It feels\u2026 scary. To really look at it. To really *think* about it. What if\u2026 what if it\u2019s true? What if he *does* not like me? It\u2019s\u2026 it\u2019s a part of me that\u2026 that fears being alone. Being unloved. It\u2019s\u2026 a very deep-seated fear, I think.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "(Softly, gently)\n\n\u201cThat\u2019s a remarkably honest and vulnerable admission, Elias. It takes incredible courage to acknowledge that fear \u2013 the fear of being unloved, of being alone. And you\u2019re right \u2013 it\u2019s a deeply rooted one. Many people carry this fear with them, often without even realizing it's influencing their thoughts and behaviors. \n\nLet\u2019s just gently explore this fear for a moment. When you imagine being \u201cunloved,\u201d what does that *feel* like, beyond just the sadness? What sensations do you experience in your body? Is it a tightness in your throat? A feeling of coldness? Let\u2019s just notice what\u2019s happening physically.\u201d"
+  }
+]

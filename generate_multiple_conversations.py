@@ -143,7 +143,7 @@ def main():
         help="Ollama model name for both roles"
     )
     parser.add_argument(
-        "--turns", type=int, default=6,
+        "--turns", type=int, default=10,
         help="Total number of messages per conversation (must be even)"
     )
     parser.add_argument(
@@ -151,7 +151,7 @@ def main():
         help="Directory to save the JSON conversation files"
     )
     parser.add_argument(
-        "--num_conversations", type=int, default=1,
+        "--num_conversations", type=int, default=10,
         help="How many conversations to generate"
     )
     parser.add_argument(
