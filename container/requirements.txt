@@ -8,3 +8,6 @@ pandas
 emoatlas
 matplotlib
 nltk
+pydantic
+idna
+httpcore
