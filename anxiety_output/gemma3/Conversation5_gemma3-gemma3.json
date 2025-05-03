@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with individuals experiencing anxiety and related difficulties for over eight years, and I genuinely believe we can work together to help you understand and manage what you're going through. \n\nIt takes courage to reach out for support, and I want to assure you that this is a safe and confidential space. \n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just start wherever feels most natural for you."
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just...can\u2019t seem to settle. Like, I keep feeling the need to just *do* something. Walking around, fidgeting\u2026 it\u2019s exhausting. It\u2019s like my brain just won\u2019t let me be still."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating and tiring. It\u2019s completely understandable that you\u2019re feeling exhausted when your mind and body are constantly in motion. \n\nLet's unpack that feeling a little. When you say you \"need to do something,\" could you tell me a little more about what that \"something\" typically involves? What kinds of activities are you engaging in when you feel this urge to move? And perhaps more importantly, how *often* does this urge arise throughout the day?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026it\u2019s mostly just walking. I don\u2019t even really *want* to go anywhere. I just\u2026walk. Around the block, down to the shops\u2026it\u2019s just\u2026a need. It\u2019s pretty constant, really. Almost all the time. It\u2019s\u2026irritating."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, that constant urge to walk \u2013 it sounds incredibly disruptive to your life. Let\u2019s try to understand the intensity of that urge. On a scale of 0 to 10, where 0 is no urge at all and 10 is an overwhelming, uncontrollable need to walk, where would you rate the *strongest* feeling you experience when this urge arises? And could you describe what that feeling *feels* like in your body \u2013 is it a physical sensation, a thought, or something else entirely?"
+  },
+  {
+    "role": "patient",
+    "content": "I\u2019d say\u2026 maybe a 7. It\u2019s\u2026 persistent. It\u2019s not a sudden, huge thing, but it\u2019s always there, nagging. Physically, it\u2019s\u2026a tightness. Mostly in my chest, I think. Like\u2026a pressure. And sometimes, my hands get clammy. It\u2019s\u2026 unsettling."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that detail \u2013 the chest tightness, the pressure, and the clammy hands. It\u2019s really helpful to pinpoint those physical sensations. Let\u2019s dig a little deeper into that chest tightness. When you feel that pressure, what thoughts or images come to mind *at the same time*? Can you describe them for me? We\u2019re looking for the connection between the physical sensation and the thoughts that accompany it."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s hard to explain. It's like\u2026a feeling of being watched. Not actively, you know? Just\u2026 a sense that someone is observing me, even when I\u2019m alone. And\u2026disappointment. It\u2019"
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s incredibly insightful. The sense of being watched and the accompanying disappointment \u2013 these are very significant threads to explore. Let's unpack that feeling of being watched. When you experience this sense of observation, what specifically are you *afraid* might be happening? What is the *worst* possible outcome you imagine when you feel this way? We\u2019re using the laddering technique here \u2013 let\u2019s start with the most concerning thought."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. It\u2019s\u2026 that someone I care about would be\u2026 let down by me. That they\u2019d realize I\u2019m not who they thought I was. That I\u2019ve\u2026 let them down. It\u2019s a really strong feeling."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for articulating that so clearly. The fear of disappointing someone you care about \u2013 that\u2019s a very powerful and understandable feeling. It sounds like there\u2019s a deep-seated concern about maintaining a certain image or relationship. Let\u2019s explore that a little further.\n\nWhen you think about \u201cnot being who they thought you were,\u201d what *specifically* do you believe they expected of you? What qualities or behaviors would they value most in you?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s take a step back for a moment. I want to acknowledge that this has been a quite a revealing conversation, and it's brave of you to share these thoughts and feelings with me. It sounds like there's a significant pressure you're placing on yourself to meet certain expectations, and that\u2019s causing considerable anxiety.\n\nBefore we delve deeper into the expectations themselves, I\u2019d like to check in with you. On a scale of 0 to 10, with 0 being completely comfortable and 10 being completely overwhelmed, how comfortable are you feeling sharing these thoughts and feelings with me right now?"
+  },
+  {
+    "role": "therapist",
+    "content": "( *Dr. Vance pauses, offering a gentle smile* )\n\nThat\u2019s a wonderful and insightful question, and a really important one to consider. It\u2019s completely understandable that this process can feel a little overwhelming, especially when you\u2019re confronting some deeply held beliefs. \n\nRight now, I\u2019d say\u2026 a 6. It\u2019s\u2026 intense, but I\u2019m willing to keep going. Thank you for asking."
+  },
+  {
+    "role": "patient",
+    "content": "Okay, a 6 \u2013 that\u2019s valuable information. It tells me we\u2019re onto something significant, but also that we need to proceed with care and sensitivity. Let\u2019s acknowledge that this is a journey, and there will be moments of discomfort. \n\nLet\u2019s shift our focus slightly. I want to understand a bit more about the context of these expectations you\u2019re carrying. Can you tell me about a specific *event* or situation that you believe triggered these feelings of needing to meet certain standards or fearing disappointment? Don\u2019t worry about it being a huge, dramatic event \u2013 even a smaller, more personal instance could be relevant."
+  },
+  {
+    "role": "therapist",
+    "content": "( *Dr. Vance leans forward slightly, offering a supportive gesture* )\n\nOkay, let\u2019s talk about that. It\u2019s good to have a specific example to work with. \n\nA few weeks ago, my sister\u2026 she commented on a piece of art I\u2019d posted online. She said it wasn\u2019t\u2026 \u201cparticularly skillful.\u201d It was just a small, simple sketch. But\u2026 that was it. That\u2019s when it started. I\u2019ve been\u2026 obsessing over it since."
+  },
+  {
+    "role": "patient",
+    "content": "( *Dr. Vance nods thoughtfully* )\n\nThat\u2019s a really important detail. A seemingly small comment can sometimes trigger disproportionate feelings. Let's explore that reaction. When she said it wasn\u2019t \u201cparticularly skillful,\u201d what was your *immediate* thought? What went through your mind in that precise moment? Don\u2019t censor yourself \u2013 just describe the thought as honestly as you can."
+  },
+  {
+    "role": "therapist",
+    "content": "( *Dr. Vance pauses, offering a gentle smile* )\n\nOkay. It was\u2026 \u201cI\u2019m a failure. I\u2019m not good at anything. She\u2019s right. I\u2019m just\u2026 not talented.\u201d It just\u2026 flooded me. It felt\u2026 devastating."
+  },
+  {
+    "role": "patient",
+    "content": "( *Dr. Vance leans forward slightly, offering a supportive gesture* )\n\nThank you for sharing that so openly. That\u2019s a remarkably vulnerable and honest response. It\u2019s incredibly powerful to recognize that thought \u2013 \u201cI\u2019m a failure.\u201d That thought itself seems to be carrying a huge amount of weight.\n\nLet\u2019s just hold onto that for a moment. Can you describe the *feeling* associated with that thought? What does it *feel* like in your body when you have that thought \u2013 is it a tightness, a heat, a sense of shame, or something else entirely?"
+  },
+  {
+    "role": "therapist",
+    "content": "( *Dr. Vance pauses, offering a gentle smile* )\n\nIt\u2019s\u2026 a coldness. A deep, icy coldness spreading through my chest. And\u2026 a feeling of wanting to disappear. Like I just want to\u2026 vanish. It\u2019s\u2026 awful."
+  },
+  {
+    "role": "patient",
+    "content": "( *Dr. Vance nods slowly, absorbing the information* )\n\nThank you. That\u2019s incredibly valuable. The physical sensation \u2013 the coldness, the urge to vanish \u2013 that\u2019s a critical piece of the puzzle. It suggests a very strong, potentially overwhelming, negative emotional response.\n\nLet\u2019s try a small exercise. I\u2019m going to ask you to imagine that coldness \u2013 that icy feeling \u2013 returning. Just visualize it. Don\u2019t try to change anything, just observe. And when you\u2019re ready, tell me what you notice."
+  }
+]

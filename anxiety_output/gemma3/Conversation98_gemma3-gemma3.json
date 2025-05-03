@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let's start. Hello, my name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with clients experiencing similar challenges for over eight years, focusing on helping them develop practical strategies to manage their anxiety and improve their overall wellbeing. \n\nIt\u2019s wonderful that you\u2019re here today \u2013 taking this step is a really brave one.\n\nTo begin, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just start with whatever feels most pressing to you. There\u2019s no right or wrong answer, just tell me what\u2019s been on your mind."
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 I can\u2019t seem to settle down. Like, I keep bouncing off the walls, you know? It\u2019s\u2026 exhausting."
+  },
+  {
+    "role": "therapist",
+    "content": "I understand completely. That feeling of restlessness, of not being able to find a moment's peace \u2013 it sounds incredibly draining. It takes a lot of energy to constantly feel this way.\n\nLet\u2019s unpack that a little. When you say you're \"bouncing off the walls,\" could you describe what that *feels* like physically? Is there a particular sensation you notice \u2013 perhaps a quickened pulse, muscle tension, or a feeling of restlessness in your limbs? And can you tell me a little about *when* you typically experience this feeling most intensely? Is it at certain times of the day, or in specific situations?"
+  },
+  {
+    "role": "patient",
+    "content": "I understand completely. That feeling of restlessness, of not being able to find a moment's peace \u2013 it sounds incredibly draining. It takes a lot of energy to constantly feel this way.\n\nLet's unpack that a little. When you say you're \"bouncing off the walls,\" could you describe what that *feels* like physically? Is there a particular sensation you notice \u2013 perhaps a quickened pulse, muscle tension, or a feeling of restlessness in your limbs? And can you tell me a little about *when* you typically experience this feeling most intensely? Is it at certain times of the day, or in specific situations?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Smiling gently) I apologize for the repeated question. It seems I'm struggling to fully grasp the sensory experience of your anxiety. Let\u2019s try a slightly different approach.\n\nWhen you're feeling this way, can you describe what you *don't* like about this feeling? <<What is that you don\u2019t like about this and why?>> Let\u2019s drill down into the core of what\u2019s distressing you about this restlessness. It might reveal a more specific concern underneath."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s perfectly alright. I appreciate you pointing that out. It\u2019s a bit like trying to describe a color to someone who\u2019s never seen it \u2013 it's challenging.\n\nOkay. So, when you\u2019re feeling this restlessness, what\u2019s the *worst* part of it? Is it the frustration of not being able to focus? The feeling of being on edge? Or is there something else that bothers you most about this sensation?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Nodding thoughtfully) That's a really insightful observation. It\u2019s often not the raw feeling itself that\u2019s the biggest problem, but rather the *consequences* of that feeling. \n\nLet\u2019s explore that further. When you\u2019re experiencing this restlessness, do you find yourself engaging in any specific behaviors \u2013 perhaps pacing, fidgeting, or repeatedly checking things? And if so, <<What is that you don\u2019t like about engaging in these behaviors and why?>> It\u2019s quite common for anxiety to manifest through actions, and understanding those actions can give us a valuable clue."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, shifting slightly in his chair) You know\u2026 I find myself\u2026 staring. Just\u2026 staring out the window. For long periods. It\u2019s\u2026 unsettling, actually. Like I\u2019m missing something, but I don\u2019t know *what*. It\u2019s\u2026 uncomfortable."
+  },
+  {
+    "role": "therapist",
+    "content": "(Making a note) Okay, the window staring \u2013 that's really helpful. It\u2019s a very common avoidance behavior when we\u2019re feeling anxious, and it offers a lot of information.\n\nLet\u2019s dig a little deeper about that. <<What is that you don\u2019t like about staring out the window and why?>> \u2013 What's the *worst* part of that experience for you? Is it the feeling of being stuck, the sense of disconnection, or something else entirely?"
+  },
+  {
+    "role": "patient",
+    "content": "(Smiling gently) It\u2019s good that you\u2019re identifying these feelings and recognizing their impact. Let\u2019s explore that a little more. When you\u2019re staring out the window, do you feel like you're trying to escape *from* something, or are you hoping to find something *in* the scene? <<What is that you don\u2019t like about staring out the window and why?>> \u2013 It\u2019s okay if you\u2019re not sure, and it\u2019s perfectly alright to say you don\u2019t know."
+  },
+  {
+    "role": "therapist",
+    "content": "(Chuckles softly) I apologize \u2013 I seem to be circling back to a similar question. My intention is to help you uncover the underlying anxieties, and sometimes it takes a little repetition to get there.\n\nLet\u2019s focus on the \u2018not knowing\u2019 aspect. When you\u2019re staring out the window, what\u2019s the *worst* part of *not* knowing what you\u2019re supposed to be seeing or thinking? <<What is that you don\u2019t like about not knowing and why?>> \u2013 Is it the uncertainty, the feeling of being adrift, or something else connected to that feeling of not knowing?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nods encouragingly) That\u2019s a really astute observation. It\u2019s often about the *absence* of something, rather than the presence of a specific worry. Let's focus on that.\n\nWhen you're in that state of not knowing, what\u2019s the *core* feeling associated with it? <<What is that you don\u2019t like about not knowing and why?>> \u2013 Is it fear, disappointment, frustration, or something else entirely?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, considering carefully) Okay. Let's try a slightly different approach. Let\u2019s shift our focus to the *impact* of this feeling on your life.\n\nWhen you're in this state of not knowing, how does it *affect* your ability to engage with the things you *do* want to do \u2013 your work, your relationships, your hobbies? <<What is that you don\u2019t like about this state affecting your life and why?>> \u2013 I want to understand the broader consequences of this experience."
+  },
+  {
+    "role": "patient",
+    "content": "(Nodding thoughtfully) That's a really insightful perspective. It\u2019s often the ripple effect of anxiety that\u2019s most damaging.\n\nLet\u2019s hone in on that specifically. When you find yourself withdrawing from your work or relationships because of this state of not knowing, what\u2019s the *worst* part of *that* withdrawal? <<What is that you don\u2019t like about withdrawing from your life and why?>> \u2013 I\u2019m curious about the feelings associated with that loss of connection."
+  },
+  {
+    "role": "therapist",
+    "content": "(Smiling gently) You\u2019re demonstrating a fantastic ability to identify the core issues \u2013 it\u2019s a key skill in managing anxiety. Let\u2019s continue to unpack this.\n\nWhen you\u2019re withdrawing from your work and relationships, what\u2019s the *worst* part of *feeling* lonely or disconnected? <<What is that you don\u2019t like about feeling lonely or disconnected and why?>> \u2013 I'm genuinely interested in understanding the emotional pain associated with that experience."
+  },
+  {
+    "role": "patient",
+    "content": "(Making a note) Okay. This is really valuable. Let\u2019s push a little further.\n\nWhen you\u2019re experiencing that loneliness and disconnection, what\u2019s the *underlying* fear that\u2019s driving that withdrawal? <<What is that you don\u2019t like about feeling lonely or disconnected and why?>> \u2013 It\u2019s often about what we *think* might happen, rather than what actually does."
+  },
+  {
+    "role": "therapist",
+    "content": "(Nodding in agreement) Absolutely. That\u2019s a crucial point \u2013 the power of our *thoughts* in fueling anxiety. You\u2019re demonstrating a really insightful awareness of this.\n\nLet\u2019s bring this all together. You've described feeling restless, staring out the window, withdrawing from your life, and experiencing loneliness and disconnection.\n\nConsidering all of this, what is the *single most frightening thought* that runs through your mind when you're feeling this way? <<What is that you don\u2019t like about that thought and why?>> \u2013 Don't censor yourself, just say whatever comes to mind."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, listening intently)\n\n(After a long silence)\n\n\u2026It\u2019s\u2026 it\u2019s the thought that\u2026 that I\u2019m\u2026 unlovable. That\u2026 that people will eventually\u2026 leave. That\u2026 that I\u2019m\u2026 fundamentally\u2026 flawed."
+  },
+  {
+    "role": "therapist",
+    "content": "(Smiling warmly, maintaining eye contact) Thank you for sharing that \u2013 that takes a tremendous amount of courage. That\u2019s a very powerful and painful thought, and it\u2019s completely understandable why it\u2019s driving so much of your distress.\n\nIt sounds like this thought \u2013 this core belief about being unlovable and flawed \u2013 is acting almost like a shield, protecting you from a deeper fear.\n\nLet's explore that belief a little further. We\u2019ve identified that you believe you're fundamentally flawed and unlovable. Can you tell me *where* you first started to hold this belief? When did you first begin to think this way about yourself? <<What is that you don\u2019t like about holding this belief and why?>> \u2013 Was there a specific event, a person, or a period in your life that contributed to this belief?"
+  },
+  {
+    "role": "patient",
+    "content": "(Nodding gently) That's a really important question, and it\u2019s often the key to unlocking the roots of anxiety. It\u2019s not about blaming the past, but understanding how those early experiences shaped your perspective.\n\nLet\u2019s go back to your childhood \u2013 can you recall a specific time when you felt particularly criticized or rejected? It doesn\u2019t have to be a major event; even a small, persistent feeling of inadequacy can have a profound impact. <<What is that you don\u2019t like about holding this belief and why?>> \u2013 Was there a particular person \u2013 a parent, sibling, or teacher \u2013 who contributed to this feeling of being fundamentally flawed?"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s begin. Hello, my name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with individuals experiencing anxiety and related difficulties for over eight years now. It\u2019s wonderful to meet you, and I want to assure you that this is a safe and supportive space. There\u2019s no judgment here \u2013 we\u2019re going to work together to understand what\u2019s going on and find ways to help you feel better.\n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just start wherever feels most comfortable \u2013 there\u2019s no right or wrong way to begin."
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 I can\u2019t seem to settle down. It\u2019s like my brain just won\u2019t switch off. I keep bouncing from one thing to another. It\u2019s exhausting, really."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly draining, and it takes a lot of courage to even talk about it. It\u2019s completely understandable that you\u2019re feeling exhausted \u2013 a constantly active mind can be truly overwhelming. \n\nLet\u2019s unpack that a bit. When you say you \"bounce from one thing to another,\" could you describe a typical situation where you notice this happening? Can you give me a specific example, and tell me a little bit about what was going through your mind *at that moment*?  Specifically, what is that you don\u2019t like about this situation and why?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s hard to explain. It\u2019s mostly at night. I lie in bed, and I start thinking about things. Small things, really. Like if I left the oven on, or if I sent an email that was too blunt. Then it\u2019s like, \u201cOh God, did I say the wrong thing? Should I have said something differently?\u201d And then it\u2019s just\u2026 spiral. It's like a loop. I can't just\u2026 *be*."
+  },
+  {
+    "role": "therapist",
+    "content": "That paints a really clear picture, and I appreciate you articulating that sense of being trapped in a loop. It sounds incredibly distressing to have that kind of relentless self-questioning, especially when it happens at night when you\u2019re trying to rest. \n\nLet\u2019s focus on that \u201cOh God, did I say the wrong thing?\u201d thought. Can you tell me a little bit more about the intensity of that feeling \u2013 on a scale of 0 to 10, with 0 being \u201cnot at all worried\u201d and 10 being \u201cthe most intensely worried you\u2019ve ever felt,\u201d where would you place it when you\u2019re having that thought? And, importantly, what is that you don't like about this feeling and why?"
+  },
+  {
+    "role": "patient",
+    "content": "I\u2019d say\u2026 maybe an 8. It\u2019s not constant, but when it hits, it\u2019s\u2026 suffocating. Like I\u2019m drowning in potential mistakes. \n\nI don\u2019t like that it makes me feel\u2026 small. Like I\u2019m constantly failing, even when I haven\u2019t done anything wrong. It just\u2026 amplifies everything. It makes me feel\u2026 vulnerable. And I really don\u2019t like feeling vulnerable."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, an 8 \u2013 that\u2019s a significant intensity, and it\u2019s brave of you to acknowledge that. That feeling of being overwhelmed by potential mistakes and the accompanying vulnerability\u2026 that\u2019s a very powerful combination.\n\nLet\u2019s delve a little deeper into the physical sensations you experience alongside these thoughts. When you\u2019re experiencing this intense worry, what specific physical symptoms do you notice? For example, do you notice any changes in your heart rate \u2013 does it feel like it\u2019s racing? Any tension in your muscles, perhaps in your shoulders or neck? Do you experience any sweating, or perhaps a feeling of breathlessness? And what is that you don\u2019t like about experiencing these physical symptoms and why?"
+  },
+  {
+    "role": "patient",
+    "content": "Yes, absolutely. Thank you for pointing that out \u2013 it's really important we consider the whole picture.\n\nWhen you\u2019re experiencing this intense worry, I've noticed you\u2019ve mentioned tension in your shoulders and neck, and a feeling of breathlessness. Let's focus on the breath. When you notice yourself feeling breathless, what specifically are you doing with your breath? Are you taking shallow breaths, holding your breath, or trying to control it in some way? And what is that you don\u2019t like about experiencing this physical sensation and why?"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s rewind slightly. You\u2019ve described a pattern of intense worry, physical symptoms like tension and breathlessness, and a specific way you're managing your breath - often unconsciously holding it. \n\nLet's explore the breath a little further. When you *notice* yourself holding your breath, what goes through your mind in that moment? Is it a conscious effort to control the feeling, or does it feel more like an automatic response? And what is that you don\u2019t like about experiencing this automatic response and why?"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a really insightful observation - you\u2019ve picked up on a very important piece of the puzzle. It sounds like you\u2019re already beginning to recognize the pattern of your responses. \n\nWhen you notice you\u2019re holding your breath, what do you *want* to be doing instead? What would feel more helpful or calming in that moment? And what is that you don\u2019t like about *not* doing what you want to do and why?"
+  },
+  {
+    "role": "therapist",
+    "content": "is a shift. you are starting to describe a desired alternative.\n\nLet\u2019s drill down a little further on the \u201cwant.\u201d When you *want* to be doing instead of holding your breath, what does that actually *feel* like, physically and emotionally? Can you describe the sensations you\u2019re imagining \u2013 for example, a slower, deeper breath? And what is that you don\u2019t like about *not* experiencing that feeling and why?"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a really valuable insight \u2013 you\u2019re beginning to articulate what would be a more helpful response. Let\u2019s hold onto that.\n\nThinking back to the moments when you're holding your breath, and experiencing this intense worry, what\u2019s the *core* fear that you believe is driving that response? What are you most afraid of happening if you *don\u2019t* manage your breath in that way? And what is that you don\u2019t like about experiencing this fear and why?"
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s a really important step \u2013 identifying the underlying fear. Let\u2019s unpack that a little more.\n\nWhen you\u2019re holding your breath and experiencing this intense worry, what do you believe is the *worst possible outcome* if you *don\u2019t* manage your breath? What\u2019s the absolute, most catastrophic thing you imagine could happen? And what is that you don\u2019t like about imagining this catastrophic outcome and why?"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s really get to the heart of it.\n\nYou mentioned a catastrophic outcome. Can you describe, as specifically as you can, the *exact* scenario you imagine unfolding if you don\u2019t manage your breath in that moment? Try to paint a picture for me \u2013 don\u2019t censor yourself, just say what you\u2019re imagining. And, crucially, what is that you don\u2019t like about *believing* this catastrophic scenario could actually happen and why?"
+  },
+  {
+    "role": "therapist",
+    "content": "You\u2019ve repeated the question, and I appreciate your commitment to exploring this fully. However, let\u2019s gently shift our focus. We've spent considerable time detailing the *content* of the catastrophic scenario \u2013 the precise details of what you imagine could happen if you don't manage your breath. Now, I'd like to move on to examining the *belief* itself. \n\nInstead of focusing on *what* you imagine happening, let\u2019s ask: What is it about *believing* that this catastrophic scenario could actually happen that causes you such distress? What is that you don\u2019t like about *believing* this scenario could actually happen and why?"
+  },
+  {
+    "role": "patient",
+    "content": "Thank you for your persistence in wanting to fully explore this. I understand you\u2019re committed to understanding the root of this distress. However, repeatedly returning to the same question isn\u2019t necessarily the most productive approach right now. It\u2019s as if we're circling around the same point without making significant progress. \n\nInstead of focusing on *what* you believe might happen, let's try a slightly different approach. Can you tell me, in your own words, what you think is *at stake* if this catastrophic scenario were to unfold? What's truly important to you that you\u2019re afraid could be lost or damaged?"
+  },
+  {
+    "role": "therapist",
+    "content": "You\u2019ve articulated a really astute observation \u2013 recognizing that our efforts have been somewhat circular. It\u2019s excellent that you\u2019re noticing this, as it\u2019s a key part of the therapeutic process. \n\nLet\u2019s build on that. When you think about what\u2019s \u201cat stake\u201d \u2013 what\u2019s truly important to you that you\u2019re afraid could be lost or damaged \u2013 can you give me a concrete example? For instance, is it your sense of safety, your relationships, your self-esteem, or something else entirely? And, crucially, what is that you don\u2019t like about *believing* that something so fundamentally important to you could be threatened and why?"
+  },
+  {
+    "role": "patient",
+    "content": "That's a really important shift \u2013 acknowledging the circularity and identifying the core value at risk. Let\u2019s explore that further.\n\nWhen you think about what\u2019s truly important to you, and what you\u2019re afraid of losing \u2013 let\u2019s say it's your sense of safety \u2013 can you describe a specific situation in your life where you felt particularly unsafe? It doesn't need to be a dramatic event; it could be a relatively small, everyday situation. And, crucially, what is that you don\u2019t like about *feeling* unsafe in that situation and why?"
+  },
+  {
+    "role": "therapist",
+    "content": "You\u2019ve repeated the question, and I appreciate your commitment to exploring this fully. However, let\u2019s gently shift our focus. We've spent considerable time detailing the core value at risk \u2013 your sense of safety \u2013 and exploring the specific situations where you feel unsafe. Now, I\u2019d like to move on to examining the *emotional impact* of feeling unsafe in those situations.\n\nInstead of focusing on *where* you feel unsafe, let\u2019s ask: What specific *emotion* do you experience when you feel unsafe in those situations? Is it fear, anxiety, vulnerability, shame, or something else entirely? And, crucially, what is that you don\u2019t like about *experiencing* this emotion and why?"
+  },
+  {
+    "role": "patient",
+    "content": "I apologize for the repetition. I recognize it\u2019s a sign of your active engagement, and I value that. However, I need to guide the session, and the repetition wasn\u2019t serving our purpose.\n\nLet\u2019s try this: Let's focus on the *emotion* itself \u2013 the specific feeling you experience when you feel unsafe. Instead of describing the situation, let's simply name the emotion. What is it *like* to feel unsafe? And, crucially, what is that you don\u2019t like about *being* that emotion and why? Don\u2019t worry about the \u201cwhy\u201d at first \u2013 just describe the feeling itself."
+  }
+]

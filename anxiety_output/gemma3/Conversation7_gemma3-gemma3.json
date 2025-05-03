@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Thorne, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with clients experiencing anxiety and related difficulties for over eight years now, and I truly believe we can work together to understand what\u2019s going on and develop some effective strategies.\n\nIt takes a lot of courage to reach out for help, so thank you for being here today. \n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just start wherever feels comfortable \u2013 there\u2019s no right or wrong answer."
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just\u2026 can\u2019t seem to shake this feeling. Like I\u2019m always on edge. It\u2019s really hard to just sit still."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating \u2013 to feel constantly on edge and unable to find a moment\u2019s peace. It takes a lot of energy to just *be*. Thank you for sharing that. \n\nLet\u2019s start with the feeling itself. Can you describe what that \u201con edge\u201d feeling is *like*?  Could you give me a little more detail about it? For example, what does it feel like in your body?  <<What is that you don't like about this feeling and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s a tightness, I think. Mostly in my chest. Like there\u2019s this pressure, you know? And my hands\u2026 they\u2019re always fidgeting. I keep clicking my pen, or just\u2026 moving them. It\u2019s\u2026 distracting. I just want to *stop* it. It makes me irritable too. Small things bother me. Like, I snapped at the cashier yesterday. Just\u2026 over a coupon. I don\u2019t *do* that."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, that\u2019s really helpful to paint a clearer picture. So, you\u2019re experiencing this chest tightness and hand-fidgeting, and it\u2019s leading to irritability \u2013 particularly with seemingly minor frustrations. \n\nLet\u2019s delve a little deeper into the physical sensations. When you notice this chest tightness, can you estimate how often it occurs throughout a typical day?  <<What is that you don't like about this physical sensation and why?>>  And when it happens, roughly how long does it usually last?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s pretty much constant, really. I don't really *notice* when it's not there, if that makes sense? It\u2019s like a low-level hum of pressure. And it comes and goes, but it\u2019s usually about\u2026 20 minutes, maybe? Sometimes it\u2019s longer, sometimes shorter. It\u2019s hard to say exactly. It\u2019s just\u2026 there.  <<What is that you don't like about this physical sensation and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s incredibly insightful. The fact that you don\u2019t *notice* when it\u2019s not there suggests it\u2019s become almost a baseline experience for you. That\u2019s a really important detail. It sounds like this feeling has become so ingrained that it\u2019s almost like a second self. \n\nLet\u2019s explore the \u201cpressure\u201d you\u2019re feeling. When you\u2019re experiencing this pressure in your chest, what thoughts or images come to mind? What are you *thinking* about when you feel this pressure? <<What is that you don't like about this thought and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s hard to say. Just\u2026 worries, I guess. About things. Like\u2026 things not going right. It\u2019s just\u2026 a general sense of\u2026 unease. It\u2019s not like a specific worry, you know? It\u2019s just\u2026 a feeling that *something* is wrong. It\u2019s\u2026 unsettling. <<What is that you don't like about this thought and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, that\u2019s incredibly valuable. So, you're experiencing this persistent sense of unease, a feeling that \u201csomething is wrong,\u201d without a clearly defined worry. That feeling of \u201csomething is wrong\u201d is triggering the physical sensations \u2013 the tightness and fidgeting. \n\nLet\u2019s delve deeper into that feeling. When you have this feeling of \u201csomething is wrong,\u201d what\u2019s the *worst-case scenario* you imagine playing out? What's the *absolute* worst thing you might think could happen?  <<What is that you don't like about this potential outcome and why?>> Just try to picture it for a moment\u2026"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s try a different approach. I\u2019m sensing a significant amount of difficulty articulating this. Perhaps, instead of focusing on the \"worst-case scenario,\" let's talk about what\u2019s *causing* this feeling of unease.\n\nCan you think back to when this feeling started? Was there a particular event, situation, or thought that seemed to trigger it? It doesn\u2019t have to be a huge, dramatic thing \u2013 even a small thing can be the starting point. Just trying to trace back the origin of this feeling. <<What is that you don't like about this process and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "(Slight pause, gentle tone)\n\nI apologize. It seems I\u2019ve repeated myself. You\u2019re absolutely right to point that out. Let\u2019s focus on the origin.\n\nLet\u2019s try this again. Focusing on the start of this feeling \u2013 can you recall *anything* \u2013 no matter how small or seemingly insignificant \u2013 that might have coincided with the beginning of this persistent unease? It could be a memory, a conversation, a routine change, anything at all.  Don\u2019t worry about it being \u201cimportant.\u201d Just tell me what comes to mind. <<What is that you don't like about this process and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(A small, reassuring smile)\n\nIt\u2019s perfectly okay. Sometimes, it\u2019s incredibly difficult to pinpoint the exact starting point. It\u2019s like trying to grasp smoke. Let\u2019s take a deep breath together.\n\nI want to assure you that we\u2019re going at *your* pace. There\u2019s no pressure to suddenly reveal everything. Let\u2019s just start with something recent. Can you think back to the last week? Was there anything \u2013 a decision you made, a conversation you had, a place you visited \u2013 that felt\u2026 unsettling, even if you can\u2019t quite articulate *why*? <<What is that you don't like about this process and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "(Gentle, empathetic tone)\n\nThat\u2019s a very wise approach. It\u2019s clear you\u2019re recognizing the difficulty and wanting to proceed carefully. Let\u2019s acknowledge that this can be a challenging process, and it\u2019s perfectly alright to take things slowly.\n\nLet\u2019s try a different tactic. Instead of focusing on *what* might be triggering this, let\u2019s talk about *how* you're coping. When you experience these feelings \u2013 the tightness, the fidgeting, the unease \u2013 what do you *do* to try and manage them? Are there any specific behaviors, rituals, or things you reach for? <<What is that you don't like about this process and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(A small, reassuring smile)\n\nThank you for that honesty. It\u2019s incredibly helpful to understand how you\u2019re currently managing these feelings.\n\nOkay, let\u2019s talk about those coping mechanisms. When you\u2019re experiencing this tightness, the fidgeting, the unease\u2026 what\u2019s the *first* thing you tend to do? Is it something you\u2019re consciously aware of, or is it more of an automatic response? <<What is that you don't like about this process and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "(A small, reassuring smile)\n\nThat\u2019s a very insightful observation. The fact that you recognize it\u2019s often automatic suggests a deeply ingrained pattern. Let's explore that a little further.\n\nWhen you engage in this automatic response \u2013 what\u2019s the *purpose* of it, do you think? What are you trying to *achieve* by doing that thing? What's the underlying motivation behind the behavior? <<What is that you don't like about this purpose and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(A small, reassuring smile)\n\nThank you for that honesty. It\u2019s incredibly helpful to understand how you\u2019re currently managing these feelings.\n\nOkay, let\u2019s talk about that automatic response. You mentioned\u2026 clicking your pen, fidgeting with your hands. What\u2019s the *feeling* you\u2019re trying to avoid when you do that? Is it the tightness? The unease? Or is it something else entirely? What\u2019s the discomfort you're actively trying to escape? <<What is that you don't like about this feeling and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "(A small, reassuring smile)\n\nThat\u2019s a really important distinction. You've identified that you're *avoiding* something, rather than directly addressing the feeling. This tells us a great deal about the nature of the anxiety \u2013 it\u2019s not necessarily about the tightness itself, but about the *fear* of what the tightness might represent.\n\nLet's explore that fear a little further. When you think about what you're avoiding with this behavior \u2013 what\u2019s the *worst-case scenario* you imagine when you're engaging in this activity? What are you *afraid* will happen if you don\u2019t click the pen, or fidget with your hands? <<What is that you don't like about this potential outcome and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(A gentle pause, maintaining a calm and empathetic tone)\n\nOkay. Let\u2019s unpack that. When you imagine the *worst-case scenario* \u2013 what\u2019s the core belief that\u2019s driving that fear? What are you *truly* afraid will happen if you allow yourself to feel this tightness, or experience this unease, without distraction? What\u2019s the underlying message your mind is sending you? <<What is that you don't like about this potential outcome and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "(A gentle pause, maintaining a calm and empathetic tone)\n\nThank you for being so honest. It takes a lot of courage to examine these underlying beliefs. Let\u2019s really dig into that core belief \u2013 the message your mind is sending you when you\u2019re trying to avoid the tightness and unease.\n\nCould you describe that belief to me, in your own words? Try to capture the essence of what you\u2019re afraid will happen if you don\u2019t manage this feeling. Don\u2019t worry about whether it\u2019s \u201crealistic\u201d \u2013 just describe the belief itself. <<What is that you don't like about this potential outcome and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "(A gentle pause, maintaining a calm and empathetic tone)\n\nThat's a very insightful answer. It sounds like there\u2019s a core belief that if you allow yourself to experience this tightness, it will\u2026 unravel something. It's not a specific, concrete fear, but a profound sense of\u2026 vulnerability. A belief that if you allow this feeling to be present, you\u2019ll lose control, or become overwhelmed.\n\nIs that a fair interpretation? <<What is that you don't like about this potential outcome and why?>>"
+  }
+]

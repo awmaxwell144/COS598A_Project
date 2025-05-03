@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, hello. My name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with clients like you for over eight years, helping them to manage anxiety and develop coping strategies. It takes a lot of courage to reach out for help, and I want you to know you\u2019ve made a really positive step. \n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just start with whatever feels most pressing to you. There\u2019s no right or wrong answer \u2013 I'm here to listen without judgment."
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I can\u2019t really\u2026settle down. I keep feeling like I need to *do* something, but I don't know what. Just...jittery."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating. That feeling of needing to *do* something, without knowing what it is, can be really unsettling. Let\u2019s unpack that a little. \n\nCould you describe what \u201cjittery\u201d feels like for you specifically?  **What is that you don't like about this feeling and why?** (I\u2019m really interested in understanding the experience itself \u2013 the physical sensations, the thoughts you might be having alongside it)."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 a tightness. Mostly in my chest, you know? Like a pressure. And my hands, they\u2019re always kind of\u2026 shaky. Not like I\u2019m physically doing anything, just\u2026 vibrating, I guess. \n\nIt\u2019s not *pleasant*. It makes me want to just\u2026 escape, I think. Like I need to get away from whatever\u2019s making it happen. It\u2019s like\u2026 a current, pulling me."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for describing that so vividly. It sounds incredibly uncomfortable and distressing, and that \u201ccurrent\u201d pulling you \u2013 that\u2019s a really powerful image. \n\nLet\u2019s talk a little more about this tightness in your chest. **What is that you don't like about this pressure and why?** (I'm particularly interested in understanding what makes this feeling *unacceptable* to you).  Can you tell me roughly how often you experience this chest tightness, and how long does it typically last when it does occur?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it just feels\u2026wrong. Like something\u2019s about to happen, but I don\u2019t *know* what. It\u2019s\u2026 suffocating, almost. And I can\u2019t shake it off. It comes and goes, really. Some days it\u2019s barely there, maybe just a little flutter. But then others\u2026 it\u2019s full-on. Usually for a couple of hours, maybe longer if I don\u2019t\u2026 I don't know, *do* something? It\u2019s exhausting, honestly."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, thank you for sharing that again \u2013 it\u2019s clear this is a really significant part of your experience. The feeling of impending doom, coupled with the physical sensations, is understandably frightening. \n\nLet\u2019s zoom in a little on the timing. When this \u201cfull-on\u201d period occurs, are there any particular activities or situations that seem to trigger it, or make it worse? **What is that you don\u2019t like about this feeling *when it\u2019s at its worst* and why?** (Let's focus on the peak experience \u2013 the most intense moments)."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 when I\u2019m alone. Just\u2026 thinking. It\u2019s like the silence amplifies everything. The pressure gets heavier, and it\u2019s harder to breathe. I try to distract myself \u2013 read, watch TV \u2013 but it just\u2026 shifts. It doesn\u2019t go away. It just changes location. It\u2019s\u2026 unsettling."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for elaborating on that \u2013 the impact of silence and solitary thought is a really common experience for people struggling with anxiety. It highlights a significant avoidance behavior, which is understandable, but also contributes to the cycle.\n\nLet\u2019s explore that avoidance a bit further. When you try to distract yourself \u2013 reading, watching TV \u2013 what *specifically* are you avoiding in those moments? **What is that you don\u2019t like about *avoiding* these activities and why?** (I'm interested in understanding the underlying motivation for the avoidance itself)."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 the thoughts themselves. It\u2019s like\u2026 the questions just keep coming. And I don't want to answer them. They\u2019re\u2026 unsettling. Like looking at something I shouldn\u2019t. I try to change the channel, but it\u2019s no use. It\u2019s like\u2026 a trap. I feel like if I just *stop* thinking, it\u2019ll just\u2026 disappear."
+  },
+  {
+    "role": "therapist",
+    "content": "That's incredibly insightful. It sounds like you\u2019re experiencing a very powerful urge to control your thoughts, and that feeling of them being dangerous or unacceptable. It\u2019s understandable that you\u2019d want to avoid them. \n\nLet\u2019s talk about the nature of those \u201cquestions\u201d you\u2019re encountering. Can you give me an example of a typical question that arises in these moments? **What is that you don\u2019t like about *this particular question* and why?** (I want to understand the specific content that triggers this response \u2013 is it about the future, the past, yourself, something else?)."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s try this again. Can you give me an example of a typical question that arises in these moments? **What is that you don\u2019t like about *this particular question* and why?** (I want to understand the specific content that triggers this response \u2013 is it about the future, the past, yourself, something else?)."
+  },
+  {
+    "role": "therapist",
+    "content": "(Slight chuckle) You\u2019re absolutely right to push back there. My apologies \u2013 it\u2019s a bit of a loop! Let\u2019s try this again, focusing on the core of the question. \n\nOkay. Let\u2019s try this again. **What is a typical question that arises when you're alone and experiencing this feeling, and what *specifically* do you dislike about that question?** (Let\u2019s really hone in on the content \u2013 is it about something you're worried about, a fear you have, a regret, or something else entirely?)."
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, takes a deep breath)\n\nOkay. You're right. I\u2019m getting stuck. My apologies. \n\nIt\u2019s\u2026 it\u2019s a question about whether I\u2019m\u2026 good enough. About what I've done, or haven\u2019t done. About whether people like me, or if they\u2019ll ever *really* like me. It\u2019s\u2026 a feeling of being fundamentally flawed, I think. And the *question*\u2026 the question just\u2026 amplifies it. It feels like I\u2019m being judged, constantly. That's what I dislike about it. It\u2019s\u2026 heavy."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that so openly. It takes a lot of courage to articulate those core fears \u2013 the fear of not being good enough, the fear of judgment, the fear of disapproval. You\u2019ve identified a really significant underlying theme here: a deep-seated concern about your self-worth. \n\nLet\u2019s unpack that a little further. **What is that you don\u2019t like about *this feeling of not being good enough*, and why?** (I\u2019m interested in understanding the *consequences* of this belief \u2013 what happens to you when you believe this about yourself?).  Can you describe what that feels like, specifically?"
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, thoughtful)\n\nWhen I believe I\u2019m \u201cnot good enough,\u201d it feels\u2026 like a coldness spreading through me. Like a draining. It\u2019s not a physical sensation, exactly, but it\u2019s a deep sense of\u2026 emptiness. And a feeling of impending failure \u2013 like if I try *anything*, it will inevitably end badly. It makes me want to just\u2026 shut down. To not even try. It\u2019s a feeling of profound shame, mixed with a desperate desire to *hide*\u2014to disappear so no one sees how inadequate I am. It\u2019s\u2026 paralyzing."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for describing that so vividly. That \u201ccoldness spreading through you\u201d \u2013 that\u2019s a really powerful image, and it clearly conveys the intensity of the distress you\u2019re experiencing. It\u2019s clear this belief \u2013 \u201cI\u2019m not good enough\u201d \u2013 isn\u2019t just a fleeting thought; it's a fundamental belief that\u2019s profoundly impacting your life.\n\nLet\u2019s dig a little deeper. **What *specifically* do you believe to be true when you hold this belief \u2013 \u201cI\u2019m not good enough\u201d?** (I'm interested in understanding the *evidence* you use to support this belief. What would you say *proves* that you\u2019re not good enough?). Don\u2019t worry about whether it's \u201cright\u201d or \u201cwrong\u201d; I\u2019m simply interested in how you perceive the situation."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s take a moment. When you believe you're \u201cnot good enough,\u201d what\u2019s the *first* thing that comes to mind when you think about the evidence that supports that belief? Just the very first thought."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, thoughtful)\n\nOkay. It\u2019s\u2026 a mistake I made in college. A big one. A failure. And\u2026 the feeling that people *already* see it. That they *know* I\u2019m not capable. It's like\u2026 a record of past shortcomings playing on repeat in my mind."
+  },
+  {
+    "role": "patient",
+    "content": "Thank you for articulating that so clearly. That\u2019s a really key piece of information \u2013 the belief that others *already know* you\u2019re not capable. It adds a layer of judgment and scrutiny to your experience. \n\nLet\u2019s explore that a little further. **When you think about *other people* knowing you\u2019re not good enough, what *specifically* do you imagine them thinking or saying?** (I\u2019m interested in understanding the *content* of the judgment you anticipate \u2013 what are they saying, what are they doing, that reinforces this belief?)."
+  }
+]

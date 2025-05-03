@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let\u2019s begin. My name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with individuals experiencing anxiety and related difficulties for over eight years now. It\u2019s wonderful to meet you, and I want to assure you that this is a safe space \u2013 a place where you can openly explore what\u2019s going on for you without judgment. \n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately?  Just start with whatever comes to mind. There\u2019s no right or wrong answer."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 it\u2019s just been hard to settle down, you know? I keep tossing and turning. Sleep hasn\u2019t been great."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating. It takes a real toll when sleep is disrupted. Let\u2019s delve into that a little. When you say \u201ctossing and turning,\u201d can you describe what that feels like physically?  <<What is that you don\u2019t like about this physical sensation and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026it\u2019s like my muscles are just\u2026tense. Like I'm coiled up, ready to jump. And it\u2019s warm, too. Really warm. Like I\u2019m overheating. I just\u2026can\u2019t seem to relax. It\u2019s exhausting."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, thank you for sharing that so openly. The physical sensations \u2013 the muscle tension, the warmth, the feeling of being \u201ccoiled up\u201d \u2013 that sounds incredibly uncomfortable and, frankly, quite alarming.  Let\u2019s try to understand this a little more deeply. When you notice yourself feeling this way \u2013 this tension and warmth \u2013 can you pinpoint *what* you\u2019re thinking or what\u2019s going through your mind *at that exact moment*? <<What is that you don\u2019t like about this physical sensation and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026it\u2019s just\u2026a feeling. Like something\u2019s about to happen. I don\u2019t\u2026I can\u2019t really *name* it. It\u2019s just\u2026 a pressure. A tightness. Like I need to be ready. It\u2019s\u2026 unsettling."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s incredibly common \u2013 that feeling of impending doom, even when you can\u2019t articulate exactly *what* it is. It\u2019s brave of you to acknowledge that. Let\u2019s unpack that \"need to be ready\" feeling a little further. When you notice that feeling of needing to be ready, what *specifically* do you imagine is going to happen?  <<What is that you don\u2019t like about this feeling of needing to be ready and why?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 I don\u2019t know. Something bad. Something\u2026 significant. Like\u2026 like a mistake. A big one. I just\u2026 I don't want to mess things up. It\u2019s silly, I know. But it\u2019s persistent. It just\u2026 sits there. <<What is that you don\u2019t like about this feeling of needing to be ready and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "It\u2019s absolutely *not* silly to feel this way. The feeling of needing to be prepared for something bad is a very real and often powerful anxiety response.  Thank you for voicing that.  Let's explore that \"messing things up\" thought a bit more.  When you imagine making a \"big mistake,\" what is the *worst* possible outcome you envision?  Let\u2019s just focus on that specific, most feared outcome.  What is that you don\u2019t like about this worst-case scenario and why?  It\u2019s okay to describe the fear itself, not just the event."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. Let\u2019s take a step back for a moment. You mentioned feeling like you\u2019re \u201cmessing things up.\u201d Can you tell me a little bit about what \u201cthings\u201d you\u2019re referring to? It doesn\u2019t have to be a specific situation\u2014just the *area* of your life where you feel this urge to avoid making a mistake. Is it work? Relationships? Something else entirely?"
+  },
+  {
+    "role": "therapist",
+    "content": "It\u2019s definitely work. I\u2019m a software developer, and I\u2019m working on a really important project. It\u2019s\u2026 it\u2019s a huge codebase, and I\u2019m responsible for a critical module. I just\u2026 I\u2019m terrified of making a mistake that will derail the whole thing. It\u2019s\u2026 it's consuming all my energy."
+  },
+  {
+    "role": "patient",
+    "content": "Okay. That gives us a really clear focus. The pressure you\u2019re feeling \u2013 the responsibility for this \u201ccritical module\u201d \u2013 is generating a significant amount of anxiety. Let\u2019s talk about that pressure. On a scale of 1 to 10, with 1 being \u201cnot much pressure at all\u201d and 10 being \u201ccompletely overwhelming,\u201d where would you rate the pressure you\u2019re feeling regarding this project? And can you describe *why* you\u2019d rate it that way?"
+  },
+  {
+    "role": "therapist",
+    "content": "I\u2019d say\u2026 probably an 8. It\u2019s\u2026it\u2019s a 7 if I could be honest. There\u2019s so much riding on this. If I make one wrong decision, it could have serious consequences \u2013 delays, budget overruns, maybe even\u2026 losing my job. It\u2019s not just a project; it\u2019s a reflection on me, on my abilities. The thought of failing\u2026 it\u2019s paralyzing."
+  },
+  {
+    "role": "patient",
+    "content": "Thank you for being so candid. That's a really significant level of pressure, and it makes perfect sense that you\u2019re experiencing these intense physical sensations \u2013 the tension, the warmth, the feeling of needing to be ready \u2013 in response to that. Let\u2019s focus on that \u201cfeeling of needing to be ready.\u201d When you feel that urge to be prepared, what\u2019s the *primary* goal or intention behind it? What are you *trying* to achieve by preparing so intensely?"
+  },
+  {
+    "role": "therapist",
+    "content": "I\u2026 I want to feel in control. If I can just anticipate every possible problem and have a solution ready, then I won\u2019t feel so\u2026 vulnerable. It\u2019s about regaining a sense of\u2026 mastery. It\u2019s a way to avoid the feeling of helplessness."
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a really insightful observation. It sounds like the core of what you\u2019re experiencing isn\u2019t *just* about the project itself, but about a deeper need for control and a fear of feeling helpless. Let\u2019s explore that fear of helplessness a little further. Can you describe a time in your life \u2013 perhaps a past experience \u2013 where you felt particularly helpless, and how that experience made you feel? <<What is that you don\u2019t like about this feeling of helplessness and why?>>"
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, let me think\u2026 When I was a kid, my dog\u2026 he got really sick. Suddenly, everything was just\u2026 out of my control. I couldn\u2019t fix it. I couldn\u2019t stop it from getting worse. I felt\u2026 utterly powerless. It was the worst feeling in the world. It made me feel small and insignificant. And the feeling\u2026 the feeling of not being able to protect him\u2026 it still haunts me sometimes. It makes me feel\u2026 vulnerable. It\u2019s like a knot in my stomach."
+  },
+  {
+    "role": "patient",
+    "content": "That's a profoundly impactful experience, and it's understandable that it continues to resonate with you. The loss of control, particularly during a time when you were already vulnerable as a child, can create a deep-seated fear of helplessness. It\u2019s clear that this experience has shaped your current anxiety \u2013 the urge to control, the fear of making mistakes, and the intense feeling of vulnerability when you perceive a lack of control.\n\nLet\u2019s spend a little more time reflecting on that specific feeling \u2013 the feeling of being \u2018small and insignificant\u2019 when you couldn\u2019t help your dog. Can you describe *what* that feeling felt like *in your body*? Where did you feel it?"
+  },
+  {
+    "role": "therapist",
+    "content": "It was\u2026 a heavy feeling in my chest. Like a weight. And\u2026 my hands were always shaking. I couldn\u2019t stop them. It felt like\u2026 like everything was shrinking around me. Like the world was getting smaller, and I was getting smaller too. It was\u2026 cold, too. A deep, cold feeling. Like the world was rejecting me."
+  },
+  {
+    "role": "patient",
+    "content": "Thank you for sharing that so honestly. That\u2019s a really powerful image \u2013 the feeling of shrinking, of being rejected. It\u2019s incredibly insightful to recognize that physical sensation \u2013 the cold, the shrinking \u2013 as a core component of your fear of helplessness.\n\nLet\u2019s explore that a little further. When you experience that feeling \u2013 that coldness, that shrinking \u2013 what\u2019s the *first* thought that comes to your mind? What\u2019s the immediate reaction?"
+  }
+]

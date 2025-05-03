@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Thorne, and I'm a Cognitive Behavioral Therapist. I\u2019ve been working with clients like you for almost ten years, helping them understand and manage difficult emotions and behaviors. It takes a lot of courage to reach out for support, and I want you to know you\u2019ve taken a really important first step. \n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just start wherever feels most comfortable \u2013 there\u2019s no right or wrong way to begin."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 hard to say. I just feel\u2026 wired. Like I can\u2019t really switch off. I keep bouncing my leg, you know? Just\u2026 restless. It\u2019s been happening a lot lately, and it's starting to drive me mad."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly frustrating. That constant feeling of being \u2018wired\u2019 and that restlessness \u2013 it's completely understandable that it\u2019s driving you mad. It takes a lot of energy to just *be* like that. \n\nLet\u2019s unpack this a little. When you say you're feeling 'wired', can you tell me a bit more about what that *feels* like specifically?  Let\u2019s try a more precise question \u2013 **What is that you don\u2019t like about this feeling of being wired, and why does it bother you so much?**"
+  },
+  {
+    "role": "patient",
+    "content": "(Shifting uncomfortably in my chair)\n\nIt\u2019s\u2026 just\u2026 a buzzing, I think. Like there\u2019s something underneath my skin. And I can\u2019t\u2026 I can\u2019t really focus on anything. Like, I\u2019ll be reading, and my mind just\u2026 jumps. It\u2019s not a bad buzzing, exactly. Just\u2026 persistent. And it makes me feel\u2026 impatient. Really impatient. Like I *have* to be doing something, even when I\u2019m not."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that with such honesty. That \"buzzing\" underneath your skin \u2013 it sounds incredibly unsettling. It\u2019s clear this is significantly impacting your ability to concentrate, and that impatience must be incredibly draining. \n\nLet\u2019s delve a little deeper into the concentration issue. **Can you tell me, on a scale of 1 to 10, with 1 being \"barely noticeable\" and 10 being \"completely debilitating,\" how much does this difficulty concentrating affect your daily life? And could you describe a specific situation where this happened recently \u2013 what were you doing, what was happening around you, and how did you feel in that moment?**"
+  },
+  {
+    "role": "patient",
+    "content": "I\u2019d say\u2026 a seven. Maybe a seven-and-a-half. It\u2019s\u2026 it\u2019s bad. Really bad. \n\nI was\u2026 I was trying to finish a report for work. Just a fairly standard one. Spreadsheets, figures\u2026 you know. But I couldn\u2019t\u2026 I just kept getting pulled away. Like, I\u2019d be looking at a number, and suddenly I\u2019d be thinking about\u2026 about something completely unrelated. A conversation I\u2019d had last week, a memory\u2026 it was like my brain just kept jumping to other things. I felt\u2026 frustrated, mostly. And irritable. I snapped at my secretary, which wasn\u2019t me at all. It was awful. I just wanted to\u2026 escape it."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay. Thank you for sharing that. That\u2019s a lot to unpack, and it sounds incredibly overwhelming. It takes courage to talk about these intense feelings and behaviors. Let's break this down a bit.\n\nFirst, let's focus on the \"snap\" at your secretary. Can you tell me more about *what* triggered that feeling in that specific moment? Let's use the laddering technique. What *is it about* the situation with your secretary that you don't like, and *why*? Let\u2019s start really small \u2013 what specifically did she do or say that made you feel so frustrated?"
+  },
+  {
+    "role": "patient",
+    "content": "She asked me to print out a revised version of the report, and she just\u2026 she just said, \"Are you *sure* you\u2019ve checked all the figures?\" It was just a simple question, but it felt\u2026 loaded. Like she was implying I\u2019d made a mistake. And I just\u2026 I just got really irritated. It wasn't the question itself, really. It was the *tone* she used. Just\u2026 a little bit sharper than usual."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, thank you for that very detailed response. That's really helpful. So, the *tone* she used \u2013 that sharpness \u2013 triggered a strong reaction in you. Let\u2019s really hone in on that. \n\nNow, let's use the laddering technique again. *What is it about that perceived sharpness in her tone that you don\u2019t like, and why does it evoke such a strong, irritable response in you?* Let\u2019s dig deeper than just \"she was sharp.\" What underlying belief or fear does that tone seem to be tapping into?"
+  },
+  {
+    "role": "patient",
+    "content": "(Sighs quietly)\n\nI\u2019m sorry, I seem to have repeated myself there. Let\u2019s just move forward.\n\nOkay. Let\u2019s try this another way. When she said, \u201cAre you *sure* you\u2019ve checked all the figures?\u201d, what was the *worst thing* that went through your mind in that moment? What was the absolute *scariest* thought that flashed into your head? Don\u2019t censor yourself \u2013 just tell me what you were thinking."
+  },
+  {
+    "role": "therapist",
+    "content": "(Pauses, offers a gentle smile)\n\nIt sounds like you're grappling with a significant level of anxiety there. It\u2019s perfectly understandable that you'd want to really explore those intense thoughts. Let\u2019s acknowledge that you\u2019re feeling a bit stuck. \n\nIt seems like you're wanting to fully understand the root of this reaction. Let's take a step back for a moment. When you hear someone question the accuracy of your work, particularly in a professional setting, what is the *deepest, most vulnerable fear* that arises for you? Let\u2019s not focus on the specifics of the question itself, but on the *underlying feeling* it evokes. What are you truly afraid of when your work is questioned?"
+  },
+  {
+    "role": "patient",
+    "content": "(Sighs quietly)\n\nThat's a very astute observation. It\u2019s clear you're picking up on the intensity of my questioning, and rightfully so. I apologize if I\u2019ve made you feel uncomfortable; that\u2019s certainly not my intention. \n\nLet\u2019s gently shift gears. When you hear someone questioning the accuracy of your work, what is the *deepest, most vulnerable fear* that arises for you? Let\u2019s not focus on the specifics of the question itself, but on the *underlying feeling* it evokes. What are you truly afraid of when your work is questioned?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Chuckles softly)\n\nYou're absolutely right to push back there. I apologize for the repetition; I\u2019m clearly focused on uncovering something significant, and it's helpful to have you guiding me. Thank you for pointing that out. \n\nLet\u2019s take a different approach for a moment. Let's shift away from the work situation entirely, if that's okay.\n\nCan you tell me about a time in your life \u2013 perhaps a childhood memory, a past experience \u2013 where you felt intensely scrutinized or judged? It doesn't have to be a major event; even a small interaction would be helpful. I'm interested in understanding the roots of these anxieties, and sometimes those roots can be found in earlier experiences. What was that like for you?"
+  },
+  {
+    "role": "patient",
+    "content": "(Pauses, offering a gentle smile)\n\nYou\u2019re absolutely right to push back there. I apologize for the repetition; I\u2019m clearly focused on uncovering something significant, and it's helpful to have you guiding me. Thank you for pointing that out.\n\nLet's try a slightly different tactic. It sounds like you\u2019re experiencing a considerable amount of self-doubt, and perhaps a fear of failure. Let\u2019s explore that a bit. Can you think of a time when you set a goal for yourself \u2013 anything \u2013 and then struggled to achieve it? What went through your mind as you were working towards it? Don\u2019t worry about judging yourself; just describe the experience as objectively as you can."
+  },
+  {
+    "role": "therapist",
+    "content": "(Sighs quietly, a touch of weariness in his voice)\n\nYou\u2019re absolutely right to push back there. I apologize for the repetition; I\u2019m clearly focused on uncovering something significant, and it\u2019s helpful to have you guiding me. Thank you for pointing that out.\n\nLet\u2019s try a slightly different tactic. It sounds like you\u2019re experiencing a considerable amount of self-doubt, and perhaps a fear of failure. Let\u2019s explore that a bit. Can you think of a time when you set a goal for yourself \u2013 anything \u2013 and then struggled to achieve it? What went through your mind as you were working towards it? Don\u2019t worry about judging yourself; just describe the experience as objectively as you can.\n\n(Long pause, thoughtful silence)\n\nOkay\u2026 let me think. There was\u2026 a business I tried to start, about ten years ago. It was a small online shop \u2013 selling handcrafted jewelry. I\u2019d spent months researching, designing, building the website\u2026 I was so passionate about it. But it just\u2026 didn\u2019t take off. Sales were incredibly slow. And I started to feel\u2026 utterly worthless. Like I'd failed. It wasn\u2019t about the money, really. It was about proving to myself that I could *do* something, that I wasn\u2019t a complete disappointment."
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, a glimmer of understanding in his eyes)\n\nThat\u2019s\u2026 a remarkably vulnerable and insightful response, Elias. Thank you for sharing that. It sounds like this experience \u2013 this failed venture \u2013 wasn\u2019t just about the business itself, but about a deeply ingrained need to prove your worth, to avoid feeling like a \u2018failure.\u2019\n\nLet\u2019s unpack that a little further. When you think about that feeling of being a \u2018complete disappointment,\u2019 what specifically did that *mean* to you? Was it a fear of what others would think? Or was it more about your own internal judgment of yourself? Let\u2019s focus on the *internal* feeling \u2013 the voice you heard telling you that you weren't good enough."
+  },
+  {
+    "role": "therapist",
+    "content": "(Takes a deep breath, a slight tremor in his voice)\n\nIt\u2019s\u2026 harder to articulate than I thought. It wasn\u2019t really about what anyone else thought, not consciously, anyway. It was\u2026 a profound sense of *emptiness*. Like if I failed, if I couldn't achieve something I\u2019d set my mind to, then\u2026 I was truly, utterly *nothing*. It was a terrifying thought. The feeling wasn't so much about external judgment; it was about a core belief that my value as a person was directly tied to my accomplishments. If I couldn't *do* something, I felt like I ceased to exist, really. It\u2019s a\u2026 shameful feeling, actually. The idea that I might be inherently flawed, incapable of success.\n\n(Looks down, avoiding eye contact for a moment)\n\nI\u2019ve spent a lifetime trying to convince myself otherwise, but that\u2019s the core of it, isn\u2019t it? That underlying fear of being worthless."
+  },
+  {
+    "role": "patient",
+    "content": "(Leans forward slightly, offering a gentle, reassuring gaze)\n\nThat's a remarkably honest and insightful response, Elias. It takes immense courage to voice those deeply ingrained, and often shamefully guarded, beliefs. What you\u2019ve described \u2013 that feeling of ceasing to exist when you fail \u2013 is incredibly powerful. And it\u2019s not uncommon. Many people, particularly those who grew up in environments where achievement was highly valued, internalize this very strong connection between their self-worth and their accomplishments.\n\nLet\u2019s explore this a little further. You mentioned \u201ctrying to convince yourself otherwise.\u201d What specific thoughts or strategies did you use \u2013 consciously or unconsciously \u2013 to combat this feeling of \u201cceasing to exist\u201d? Were you trying to reassure yourself? Did you try to focus on the effort you put in, rather than the outcome?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Takes a deep breath, a slight tremor in his voice)\n\nWell\u2026 initially, it was a lot of \u201cjust keep going.\u201d That\u2019s what I told myself. \u201cDon\u2019t give up. Just keep trying. You\u2019re making progress, even if you don\u2019t see it.\u201d But it wasn\u2019t really working. It felt\u2026 hollow. Like I was just plastering over a deeper wound. Later on, I started focusing on the *effort*. \"I worked really hard on that. I put in the hours. That\u2019s what mattered.\u201d I tried to convince myself that the outcome didn\u2019t define my worth. But even then, the feeling lingered. It was like a persistent shadow, always threatening to engulf me. And I felt\u2026 ashamed that I couldn't simply \u2018snap out of it.\u2019\n\n(Looks down, avoiding eye contact for a moment)\n\nIt was\u2026 a very lonely feeling, really. Like I was the only one who understood how profoundly flawed I felt."
+  },
+  {
+    "role": "patient",
+    "content": "(Nods slowly, a touch of empathy in his voice)\n\nThat\u2019s incredibly insightful, Elias. And you\u2019ve articulated something profoundly important \u2013 the shame associated with these feelings. It\u2019s often the shame that keeps us trapped, prevents us from acknowledging and processing these deeply rooted anxieties. You\u2019re right; it\u2019s a persistent shadow.\n\nLet\u2019s explore that shame a little more. When you say you felt \u2018shame,\u2019 what specifically *did* that shame feel like in your body? Did you notice any physical sensations \u2013 a tightness in your chest, a knot in your stomach, a feeling of heat in your face? Often, these physical sensations are a direct reflection of the emotional experience, and understanding them can be a powerful tool in managing the anxiety. Would you be willing to describe those sensations for me?"
+  }
+]

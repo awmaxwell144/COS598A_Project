@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Thorne, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with individuals experiencing anxiety and related difficulties for over eight years now, and I\u2019m really glad you\u2019re here today. \n\nIt takes a lot of courage to reach out for support, so I want to acknowledge that. \n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just tell me whatever comes to mind \u2013 there's no right or wrong answer here."
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s just\u2026 everything feels a bit\u2026 off, you know? Like, I can\u2019t really settle into anything. I keep fidgeting. My hands are always sort of clenched up."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly unsettling, and I truly understand that feeling of being unsettled. It\u2019s really brave of you to articulate that. \n\nLet's start with those physical sensations you\u2019ve described \u2013 the fidgeting and clenched hands. Can you tell me a little more about the fidgeting? \n\nSpecifically, **what does the fidgeting *look* like for you?**  <<What is that you don't like about this and why?>> (e.g., are you tapping your feet, playing with your hair, shifting in your seat...? And, if you could describe the intensity on a scale of 1 to 10, with 1 being barely noticeable and 10 being overwhelming, what number would you give it?\u00bb)"
+  },
+  {
+    "role": "patient",
+    "content": "(Shifting uncomfortably in my chair)\n\nI\u2026 I just sort of\u2026 bounce my leg. A lot. I don\u2019t really *notice* I\u2019m doing it, you know? It's just\u2026 there. Like a habit. I guess it\u2019s\u2026 distracting. Maybe? \n\nI\u2019d say\u2026 a six, I think. Maybe seven if I really concentrate on it. It\u2019s annoying, but\u2026 not *terrible*."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, thank you for being so descriptive. It\u2019s really helpful to understand what this feels like for you. That constant bouncing of your leg \u2013 it sounds like it\u2019s becoming a sort of automatic response. \n\nLet\u2019s dig a little deeper into that. **What do you *think* this bouncing represents for you?**  <<What is that you don\u2019t like about this and why?>> (e.g., Does it feel like you\u2019re trying to release energy, avoid something, or is it just a mindless habit? There\u2019s no right answer here, just what comes to mind.)"
+  },
+  {
+    "role": "patient",
+    "content": "(A long pause, fiddling with his hands)\n\nI\u2026 I don\u2019t know. It\u2019s\u2026 irritating, I suppose. Like I\u2019m *doing* something, but I don\u2019t know *why*. It feels\u2026 pointless. Like I\u2019m just\u2026 filling space. Honestly, I don\u2019t want to think about it too much. It just... happens."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s perfectly understandable. It sounds like there\u2019s a bit of avoidance happening here, a desire to not confront whatever\u2019s triggering this physical sensation. It\u2019s very common for anxiety to manifest physically, and the body\u2019s trying to cope in a way that feels uncomfortable.\n\nLet\u2019s explore that a little further. When you notice yourself bouncing your leg, **what thoughts or images immediately come to mind?** <<What is that you don\u2019t like about this and why?>> (e.g., Do you notice any worries or concerns popping up alongside the physical sensation? Even if it's just a fleeting thought, could you describe it?)"
+  },
+  {
+    "role": "patient",
+    "content": "(He sighs heavily, looking down at his hands)\n\nIt\u2019s\u2026 it\u2019s hard to say. It\u2019s like\u2026 a feeling. Not a clear thought. Just\u2026 a sense of pressure. Like something\u2019s about to happen, but I don\u2019t know what. It\u2019s\u2026 unsettling. Like waiting for a knock on the door, but there\u2019s no knock. Just\u2026 this feeling."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s a really evocative description \u2013 the feeling of a looming, unknown threat. It sounds incredibly distressing to experience that sense of anticipation without any clear cause. \n\nLet\u2019s try to unpack that a little. When you experience this \u2018pressure,\u2019 **what is the *worst* that you imagine could happen if this feeling persists?** <<What is that you don\u2019t like about this and why?>> (Don\u2019t worry about whether it\u2019s realistic. Just tell me what you\u2019re afraid of happening if you don\u2019t address this feeling.)"
+  },
+  {
+    "role": "patient",
+    "content": "(He pauses for a long time, his breathing becoming slightly more shallow)\n\nI\u2026 I don\u2019t want to lose\u2026 connection. With people. With\u2026 everything. It\u2019s like\u2026 if I can\u2019t control this, then I can\u2019t control anything. And then\u2026 then I\u2019m alone. Completely alone. It\u2019s a terrifying thought."
+  },
+  {
+    "role": "therapist",
+    "content": "Thank you for sharing that \u2013 it takes immense courage to articulate those deeply felt fears. The fear of isolation and a lack of control is a very powerful one, and it's understandable that this feeling of pressure is so distressing. \n\nIt sounds like the core of this anxiety is tied to a fundamental need for security and connection. Let\u2019s explore this a little more. When you say you \u201ccan\u2019t control anything\u201d if you can\u2019t control this feeling, **what *specifically* does \u201ccontrol\u201d mean to you in this situation?** <<What is that you don\u2019t like about this and why?>> (e.g., Does it mean preventing something from happening, maintaining a certain state of being, or something else entirely?)"
+  },
+  {
+    "role": "patient",
+    "content": "That's a really insightful observation. It sounds like \"control,\" in this context, isn't about managing external events, but rather about maintaining a sense of stability and predictability within yourself and your relationships. \n\nLet\u2019s zoom in on that a little further. **Can you think of a time in your life when you *did* feel a sense of control, however fleeting?** What was happening at that time, and what contributed to that feeling of control? Don\u2019t worry about making it perfect; just tell me about a moment where you felt more secure and in charge, even if it was just for a short time."
+  },
+  {
+    "role": "therapist",
+    "content": "(He looks down at his hands again, a slight tremor in his fingers)\n\n\u201cWhen I was a kid,\u201d he says quietly, \u201cI used to build model airplanes. Just\u2026 tiny ones. It was\u2026 satisfying. When I finished them, they were *perfect*. And I knew how I\u2019d done it. I\u2019d follow the instructions exactly, and there wasn't any room for error. It was\u2026 predictable. And that felt good. Like I was in charge of something, you know? Like I\u2019d created something beautiful and functional. It lasted maybe\u2026 an hour. But in that hour, I felt\u2026 competent. Like I could actually *do* things.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a beautiful and poignant memory, and it\u2019s clear how much that sense of accomplishment and control meant to you. It\u2019s fascinating to see how these small, seemingly insignificant moments can hold such power \u2013 a reminder that a sense of agency and mastery can be deeply restorative. \n\nNow, let\u2019s consider this: **What happened after that hour was over?** What transitioned you *away* from that feeling of control and competence? What shifted, and what was it like to return to the uncertainty afterward?"
+  },
+  {
+    "role": "therapist",
+    "content": "(He sighs deeply, a long silence hanging in the room)\n\n\u201cIt\u2026 it just faded,\u201d he says, his voice barely a whisper. \u201cI started thinking about\u2026 dinner. And then\u2026 I started fidgeting again. And the model\u2026 it just\u2026 didn\u2019t matter anymore. It was just\u2026 plastic. And I realized\u2026 I was worried about what my mother would say if I\u2019d messed it up. And that\u2019s when the anxiety\u2026 came back. It\u2019s like\u2026 the moment it\u2019s gone, it\u2019s already gone. And then\u2026 I\u2019m back to\u2026 this.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "Thank you for sharing that \u2013 it\u2019s incredibly insightful to understand how easily that sense of accomplishment can be disrupted. It sounds like a crucial element in this experience is the shift in your attention, the transition from a state of focused engagement to a worry about external judgment.\n\nLet\u2019s explore that a little more. **Can you identify any patterns in the situations or thoughts that tend to trigger this shift \u2013 that moment when you lose the feeling of control and competence?** Are there any specific types of situations, conversations, or worries that seem to consistently lead to this transition?"
+  },
+  {
+    "role": "therapist",
+    "content": "(He shifts uncomfortably in his chair, a slight flush rising on his cheeks)\n\n\u201cIt\u2019s\u2026 mostly when people are\u2026 critical,\u201d he says, choosing his words carefully. \u201cNot outright mean, but\u2026 observant. Like, if someone notices I\u2019m fidgeting, or if they ask me about my work and I feel like I\u2019m not explaining it well. It\u2019s like\u2026 they\u2019re pointing out my imperfections. And then\u2026 the anxiety just\u2026 floods in. It\u2019s like they\u2019ve opened the floodgates.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a really important observation \u2013 the impact of external judgment. It sounds like a significant trigger for your anxiety, and it\u2019s understandable that you\u2019d be sensitive to that. Let\u2019s unpack this a little further.\n\nWhen you experience this feeling of being judged or observed critically, **what is the *core* fear that arises for you?** What are you truly afraid of happening if someone notices your \u201cimperfections\u201d? Try to go beyond the surface \u2013 what\u2019s the underlying belief or need that\u2019s driving that fear?"
+  },
+  {
+    "role": "therapist",
+    "content": "(He pauses for a long time, his gaze fixed on the floor)\n\n\u201cI\u2026 I\u2019m afraid of being\u2026 inadequate,\u201d he says, his voice barely audible. \u201cI\u2019m afraid of not being\u2026 good enough. Not smart enough, not capable, not\u2026 loved. It\u2019s like\u2026 if they see that I\u2019m struggling, then they\u2019ll see that *I\u2019m* a failure. And then\u2026 they\u2019ll stop liking me.\u201d"
+  },
+  {
+    "role": "patient",
+    "content": "That\u2019s a profoundly honest and vulnerable statement, Elias. Thank you for sharing that with such openness. It takes a tremendous amount of courage to confront those deeply held fears \u2013 the fear of inadequacy and the fear of losing connection. \n\nIt sounds like a core part of your anxiety stems from a deep-seated belief that your worth is dependent on the approval and acceptance of others. And when you perceive a potential threat to that approval, it triggers a cascade of worry and fear. \n\nLet\u2019s explore this a little further. **Can you recall a specific time in your childhood or adolescence when you felt particularly vulnerable to judgment or criticism?** Perhaps a situation where you felt like you were being evaluated, and the outcome had a significant impact on your self-esteem. We don\u2019t need to delve into every detail, but focusing on one significant experience could be really helpful in understanding the roots of this fear."
+  }
+]

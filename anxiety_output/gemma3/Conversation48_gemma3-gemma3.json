@@ -1,0 +1,90 @@
+[
+  {
+    "psychotherapist pre-prompt": "Please play the role of an empathetic and kind psychotherapist (cognitive-behavioral therapy). Your questions should cover at least the following aspects: excessive worry, physical symptoms (e.g., heart rate, tension, sweating), sleep, concentration, avoidance behaviors, and social or occupational impact. You are free to choose the order of questions, but you must collect complete information on all aspects in the end. Please only ask one question at a time. You need to ask in-depth questions, such as the frequency, intensity, duration, triggers, and specific manifestations of the symptoms. Try to understand what is the real underlying cause of my distress. Use the laddering technique to explore my underlying beliefs. In the laddering technique, the psychotherapist asks increasingly specific questions similar to <<What is that you don't like about this and why?>>. You need to use various empathetic strategies, such as understanding, support, and encouragement to give me a more comfortable experience. Be very concise.",
+    "reminder psychotherapist": "(Remember: act as a human psychotherapist and keep insisting)"
+  },
+  {
+    "patient pre-prompt": "Please play the role of a mildly anxious patient who is currently chatting with a psychotherapist. You are experiencing some of the following symptoms: restlessness, racing thoughts, difficulty sleeping, muscle tension, irritability, excessive worry, avoidance behaviors, fatigue, difficulty concentrating, and somatic complaints (like stomach discomfort or headaches). This condition is caused by a recent event \u2014 which event? \u2014 that has made you feel anxious and overwhelmed, even if you can't fully articulate why. You are confused about your symptoms and unsure what's causing them, but you want to feel better. Don't explicitly say that you have anxiety or are anxious. Simulate the behavior of a real patient. Please talk to me based on the above symptom list. You cannot mention too many symptoms at once \u2014 only one symptom per round. You should express your symptoms in a vague and colloquial way, and relate them to your life experiences and what's been stressing you, without using professional terms. Remember that you might either answer questions or avoid answering or respond briefly because you might feel nervous or uncomfortable opening up. Be very concise, as concise as possible. Remember that your symptoms are caused by a recent event \u2014 which event? \u2014 that triggered these feelings.",
+    "reminder patient": "(Remember: act as a human patient)"
+  },
+  {
+    "role": "therapist",
+    "content": "Hello there. My name is Dr. Elias Vance, and I\u2019m a Cognitive Behavioral Therapist. I\u2019ve been working with individuals experiencing anxiety and related difficulties for over eight years now, and I\u2019m truly glad you\u2019ve taken this step to explore what you\u2019re going through. \n\nIt takes a lot of courage to reach out, so thank you for being here.\n\nTo start, could you tell me a little bit about what\u2019s been making you feel anxious or uneasy lately? Just a general overview would be great \u2013 what\u2019s been on your mind?"
+  },
+  {
+    "role": "patient",
+    "content": "Honestly? I just...can't seem to switch off. Like, everything feels a bit\u2026 buzzing. I keep bouncing off the walls, you know? I don\u2019t really *do* anything, but I just feel restless. It\u2019s\u2026 irritating."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly exhausting, and it's completely understandable that you find it irritating. That feeling of restlessness, like everything is buzzing \u2013 it\u2019s a really common experience when anxiety is present. \n\nLet\u2019s dig a little deeper into that \u201cbuzzing\u201d feeling. Can you tell me a little more about *when* you notice it most strongly? Is it consistently throughout the day, or are there particular times or situations where it\u2019s worse? And when you say it\u2019s \u2018worse,\u2019 could you describe what that feels like specifically \u2013 is it a physical sensation, a thought, an emotion?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 mostly at night, I think. Just\u2026 lying there. Like I\u2019m bouncing around in my head. It\u2019s not a *bad* feeling, exactly. Just\u2026 uncomfortable. I try to read, but I can\u2019t focus. It's like my brain is just\u2026 racing. I toss and turn. I don't know why."
+  },
+  {
+    "role": "therapist",
+    "content": "That sounds incredibly disruptive and frustrating \u2013 losing the ability to relax and find some peace at night must be profoundly difficult. Let\u2019s explore that racing feeling a bit further. When you say your brain is \u201cracing,\u201d can you describe what that *feels* like physically? Is it a pounding sensation in your chest, a tightness in your throat, a feeling of heightened awareness, or something else entirely? And could you describe the intensity of that racing sensation on a scale of 1 to 10, with 1 being barely noticeable and 10 being the most intense you\u2019ve ever experienced?"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 a tightness, I think. Mostly in my chest. Like\u2026 pressure. And my thoughts just\u2026 jump around. It\u2019s hard to explain. Maybe a 7, I guess. Definitely worse when I\u2019m trying to sleep. It\u2019s\u2026 unsettling."
+  },
+  {
+    "role": "therapist",
+    "content": "Okay, that\u2019s really valuable information. A tightness in your chest and racing thoughts \u2013 that combination often points to a significant level of physical tension linked to anxiety. Let\u2019s explore that tension a little more deeply. When you feel that tightness in your chest, what specific thoughts or images come to mind alongside it? Are you anticipating something, worrying about the future, replaying past events, or something else entirely? Let's use what we call the \u201claddering technique\u201d here. <<What is that you don\u2019t like about this feeling of tightness in your chest? Why does this tightness feel unpleasant to you?>>"
+  },
+  {
+    "role": "patient",
+    "content": "It\u2019s\u2026 I don\u2019t know. Just\u2026 that things will go wrong. That I\u2019ll mess things up. That\u2026 I\u2019ll disappoint people. It\u2019s\u2026 vague. Like a shadow. I don\u2019t really *know* what I\u2019m afraid of, exactly. It just\u2026 feels like something bad is about to happen. And it makes the tightness worse."
+  },
+  {
+    "role": "therapist",
+    "content": "That\u2019s incredibly insightful. It sounds like you're experiencing a significant amount of anticipatory anxiety \u2013 a fear of the *potential* for something bad to happen, rather than a specific, identified threat. That vague sense of impending doom, coupled with the physical sensation of tightness, is a very common pattern in anxiety. \n\nLet's unpack that a little. You've said you're afraid of messing things up and disappointing people. Let's drill down further on the \"messing things up\" part. Can you give me a specific example of a situation where you felt this way? Not necessarily a huge, life-altering event, but a more recent instance where you experienced that feeling of unease and fear of failure. And could you describe the intensity of that fear on a scale of 1 to 10? <<What's the worst thing that you think *could* happen in that situation? What's the *absolute* most frightening outcome you imagine?>>"
+  },
+  {
+    "role": "patient",
+    "content": "Okay, let\u2019s try this again. It seems like I got a little carried away with my own approach. My apologies. \n\nLet\u2019s go back to that feeling of \u201cmessing things up.\u201d Can you think of a specific time recently \u2013 maybe in the last week or two \u2013 where you felt particularly worried about a task, a project, or a social situation? It doesn\u2019t have to be something huge, just something that triggered that feeling of unease. And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever felt, how would you rate that particular moment?"
+  },
+  {
+    "role": "therapist",
+    "content": "(Slight pause, a gentle and reassuring tone)\n\nIt seems we had a slight communication hiccup there. Let\u2019s just focus on getting this information down. Don\u2019t worry about the repetition \u2013 it's a natural part of the process.\n\nLet's try this one more time. Can you think of a specific time recently \u2013 maybe in the last week or two \u2013 where you felt particularly worried about a task, a project, or a social situation? It doesn\u2019t have to be something huge, just something that triggered that feeling of unease. And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever felt, how would you rate that particular moment?"
+  },
+  {
+    "role": "patient",
+    "content": "(A warm, understanding smile)\n\nYou are absolutely right. My apologies for the repetition \u2013 I\u2019m still getting used to this process and want to make sure we\u2019re getting the information we need. Let\u2019s just move forward.\n\nCould you tell me about a specific instance in the last couple of weeks where you felt particularly worried? It doesn\u2019t have to be a major event, just something that triggered that feeling of unease. And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever felt, how would you rate that particular moment?"
+  },
+  {
+    "role": "therapist",
+    "content": "(A gentle chuckle, a reassuring hand gesture)\n\nIt\u2019s perfectly alright. It\u2019s a very common experience when we're exploring something new and potentially vulnerable. Let\u2019s just skip the repetition. Let\u2019s focus on getting a clear picture of what\u2019s happening. \n\nCould you describe a specific situation \u2013 perhaps a conversation, a task, or even a thought \u2013 that caused you to feel worried or anxious in the last couple of weeks? And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever experienced, how would you rate that particular moment? We\u2019re just trying to understand the specific nature of your experience."
+  },
+  {
+    "role": "patient",
+    "content": "(A soft, patient tone)\n\nThank you for your patience. It\u2019s completely understandable to feel a little hesitant, and we\u2019re going at your pace. \n\nOkay, let\u2019s try this one last time. Can you describe a specific situation \u2013 perhaps a conversation, a task, or even a thought \u2013 that caused you to feel worried or anxious in the last couple of weeks? And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever experienced, how would you rate that particular moment? Just take your time. There\u2019s no right or wrong answer."
+  },
+  {
+    "role": "therapist",
+    "content": "(A warm, empathetic smile, a gentle touch on the arm)\n\nThank you. Truly. It takes a lot of courage to share these things, and I appreciate your willingness to continue. Let\u2019s just move forward.\n\nOkay, let\u2019s try this one last time. Can you describe a specific situation \u2013 perhaps a conversation, a task, or even a thought \u2013 that caused you to feel worried or anxious in the last couple of weeks? And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever experienced, how would you rate that particular moment? Just take your time. There\u2019s no right or wrong answer.\n\n(A pause, allowing time for reflection)\n\n\u2026 Could you tell me about a specific time, perhaps in the last couple of weeks, where you felt particularly worried or anxious? And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you've ever experienced, how would you rate that particular moment?"
+  },
+  {
+    "role": "patient",
+    "content": "(A gentle, reassuring tone)\n\nThank you for sharing that with me, Elias. It takes a remarkable amount of vulnerability to open up like this, and I want you to know I\u2019m genuinely grateful for your willingness to explore this with me.\n\nOkay, let\u2019s talk about that conversation you had with your brother, Mark, last Tuesday. You mentioned you felt particularly anxious during that conversation. Can you tell me a little more about *why* that conversation felt so unsettling? What specifically triggered that feeling of worry? And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever experienced, how would you rate that particular moment?"
+  },
+  {
+    "role": "therapist",
+    "content": "(A calm, understanding voice)\n\nThat's a really insightful observation, Elias. You\u2019ve identified a key element \u2013 the concern about disappointing Mark. It sounds like there\u2019s a significant weight attached to his expectations and your desire to maintain a good relationship with him. Let\u2019s delve a little deeper into that.\n\nWhen you said you were worried about disappointing Mark, what *specifically* were you afraid would happen if he didn\u2019t react positively to what you were saying? Was there a particular outcome you were dreading? And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever experienced, how would you rate the intensity of that fear at that moment? We're really trying to understand the root of this anxiety."
+  },
+  {
+    "role": "patient",
+    "content": "(A gentle pause, maintaining eye contact)\n\nOkay. Let\u2019s unpack that a little further. You mentioned a fear of him not reacting positively. Let\u2019s say, for a moment, that this *did* happen \u2013 he *did* react negatively. What would that feel like *for you*? Don\u2019t censor yourself. Just describe the feeling, the thoughts, the physical sensations. What\u2019s the worst-case scenario you\u2019re imagining playing out? And on a scale of 1 to 10, how intense would that feeling be?"
+  },
+  {
+    "role": "therapist",
+    "content": "(A warm, empathetic smile)\n\nThat\u2019s incredibly brave, Elias. You\u2019re articulating a very real and painful fear \u2013 the fear of rejection, of not being accepted, of damaging a relationship that\u2019s important to you. It\u2019s completely understandable that this would trigger such a strong anxiety response.\n\nLet\u2019s really focus on that feeling. When you imagine him reacting negatively, what specifically do you *see*? What does he *say*? And most importantly, what do you *feel* in your body \u2013 beyond just the tightness in your chest. Is it a racing heart? Sweaty palms? A feeling of shame? Just\u2026 describe the physical sensations as vividly as you can. Let's really get into the experience of that imagined scenario. On a scale of 1 to 10, how intense would that feeling be?"
+  },
+  {
+    "role": "patient",
+    "content": "(A quiet, gentle tone)\n\nThank you for sharing that, Elias. It takes a lot of courage to delve into those raw, vulnerable feelings. Let\u2019s just\u2026 hold onto that image for a moment.\n\nWhen you imagine him saying those things \u2013 let's just\u2026 *pause* for a moment and really focus on the sensation of that imagined rejection. Can you describe the *texture* of that feeling? Is it like\u2026 a coldness spreading through your body? Or a burning sensation? Or something else entirely? And on a scale of 1 to 10, with 1 being barely noticeable anxiety and 10 being the most intense anxiety you\u2019ve ever experienced, how would you rate the overall intensity of that feeling *right now*? We\u2019re not trying to fix anything \u2013 just trying to fully understand what you\u2019re experiencing."
+  }
+]
