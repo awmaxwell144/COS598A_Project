@@ -126,7 +126,7 @@ def worker(args):
 
     t_mod = model.replace('/', '_')
     p_mod = model.replace('/', '_')
-    fname = f"Conversation{i}_{t_mod}-{p_mod}.json"
+    fname = f"Conversation{32 + i}_{t_mod}-{p_mod}.json"
     path = os.path.join(output_dir, fname)
 
     with open(path, "w") as f:
@@ -187,7 +187,7 @@ if __name__ == "__main__":
         help="Ollama model name for both roles"
     )
     parser.add_argument(
-        "--turns", type=int, default=10,
+        "--turns", type=int, default=20,
         help="Total number of messages per conversation (must be even)"
     )
     parser.add_argument(
@@ -195,7 +195,7 @@ if __name__ == "__main__":
         help="Directory to save the JSON conversation files"
     )
     parser.add_argument(
-        "--num_conversations", type=int, default=10,
+        "--num_conversations", type=int, default=37,
         help="How many conversations to generate"
     )
     parser.add_argument(
