@@ -1,0 +1,437 @@
+Help on class EmoScores in module emoatlas.emolib:
+
+class EmoScores(builtins.object)
+ |  EmoScores(language='english', spacy_model=None, emotion_model='plutchik')
+ |  
+ |  Methods defined here:
+ |  
+ |  __init__(self, language='english', spacy_model=None, emotion_model='plutchik')
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  calculate_path_weight(self, network, path)
+ |      Calculate the weight of a given path in the network.
+ |      
+ |      Parameters:
+ |      - network (list): A weighted edgelist.
+ |      - path (list): A list of nodes representing all paths.
+ |      
+ |      Returns:
+ |      - weight (float): The total weight of the path.
+ |  
+ |  combine_formamentis(self, edgelists, weights=False)
+ |      Combine multiple formamentis networks into a single formamentis network, summing the weights of any duplicate edges if specified.
+ |      
+ |      Parameters:
+ |      -----------
+ |      - edgelists (list): A list of edgelists to be combined. Supports FormamentisNetwork, NetworkX Graph, and raw edgelists.
+ |      - weights (bool): If True, includes the weights of the edges. If False, edges are treated as unweighted.
+ |      
+ |      Returns:
+ |      -----------
+ |      - FormamentisNetwork: A namedtuple containing 'edges' (a list of combined edges) and 'vertices' (a set of unique nodes).
+ |      OR
+ |      - Weighted Edgelist (list): A list of tuples representing the combined edgelist, where each tuple contains the two nodes and the weight.
+ |  
+ |  draw_formamentis(self, fmn, layout='edge_bundling', highlight=[], thickness=1, ax=None, hide_label=False, translated=False, alpha_syntactic=0.5, alpha_hypernyms=0.5, alpha_synonyms=0.5, save_path=None)
+ |      Represents a Formamentis Network in either a circular or force-based layout.
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *fmn*:
+ |          A Formamentis Network to visualize.
+ |      
+ |      *layout*:
+ |          A str. Either "edge_bundling" for circular layout or "force_layout" for force-based layout.
+ |      
+ |      *highlight*:
+ |          A list of the words to highlight in the network.
+ |      
+ |      *thickness*:
+ |          A numeric. How thick must lines be drawn. Default is 1.
+ |      
+ |      *ax*:
+ |          A matplotlib axes to draw the network on. If none is provided, a new one will be created.
+ |      
+ |      *hide_label*:
+ |          A boolean value. If True, labels of words will not be visible.
+ |      
+ |      *translated*:
+ |          A boolean value. True for english-translated nodes, False for original node labels. Default is False.
+ |      
+ |      *alpha_syntactic*:
+ |          A numeric. Alpha value for syntactic edges, must be between 0.0 and 1.0
+ |      
+ |      *alpha_hypernyms*:
+ |          A numeric. Alpha value for hypernyms edges, must be between 0.0 and 1.0
+ |      
+ |      *alpha_synonyms*:
+ |          A numeric. Alpha value for synonyms edges, must be between 0.0 and 1.0
+ |      
+ |      *save_path*:
+ |      A string representing the file path where the figure should be saved.
+ |      If None, the figure will only be plotted and not saved. Default is None.
+ |  
+ |  draw_formamentis_flower(self, text, target_word=None, keepwords=[], stopwords=[], max_distance=3, semantic_enrichment=[], reject_range=(-1.96, 1.96), title=None)
+ |      Draw a Plutchik's wheel of emotions based on a Formamentis Network built upon input text.
+ |      This function is a wrapper of
+ |          fmn = formamentis_network(text, target_word = target_word)
+ |          zs = zscores(fmn)
+ |          draw_plutchik(zs, reject_range = (-1.96, 1.96))
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *text*:
+ |          A string, the text to extract the Formamentis_Network from.
+ |      
+ |      *target_word*:
+ |          A string or None. If a string and method is 'formamentis', it will be computed the emotion distribution
+ |          only of the neighborhood of 'target_word' in the formamentis network.
+ |      
+ |      *keepwords*:
+ |          A list. Words that shall be included in formamentis networks regardless from their part of speech. Default is an empty list.
+ |          By default implementation, a pre-compiled list of negations and pronouns will be loaded and used as keepwords.
+ |      
+ |      *stopwords*:
+ |          A list. Words that shall be discarded from formamentis networks regardless from their part of speech. Default is an empty list.
+ |          If a word is both in stopwords and in keepwords, the word will be discarded.
+ |      
+ |      *max_distance*:
+ |          An integer, by default 2. Links in the formamentis network will be established from each word to each neighbor within a distance
+ |          defined by max_distance.
+ |      
+ |      *semantic_enrichment*:
+ |          A str or a list of str. If 'synonyms', will be added semantic arcs between synonyms into the network. If 'hyperonyms', will be
+ |          added semantic arcs between hyperonyms and hyponyms. Also ['synonyms', 'hyperonyms'] is accepted.
+ |      
+ |      *title*:
+ |          Title for the plot.
+ |      
+ |      *reject_range*:
+ |          A threshold for significance of zscores. A zscore higher (lower) than 1.96 (-1.96) means that an emotion is
+ |          statistically over (under) represented (p-value = 0.05).
+ |  
+ |  draw_plutchik(self, scores, ax=None, rescale=False, reject_range=None, highlight='all', show_intensity_levels='none', font=None, fontweight='light', fontsize=15, show_coordinates=True, show_ticklabels=False, ticklabels_angle=0, ticklabels_size=11, height_width_ratio=1, title=None, title_size=None)
+ |      Draw the emotions or dyads Plutchik flower.
+ |      Full details at https://github.com/alfonsosemeraro/pyplutchik/blob/master/Documentation.md
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *scores*:
+ |          A dictionary with emotions or dyads.
+ |          For each entry, values accepted are a 3-values iterable (for emotions only) or a scalar value between 0 and 1.
+ |          The sum of the 3-values iterable values must not exceed 1, and no value should be negative.
+ |          See emo_params() and dyad_params() for accepted keys.
+ |      
+ |          Emotions and dyads are mutually exclusive. Different kinds of dyads are mutually exclusive.
+ |      
+ |      *ax*:
+ |          Axes to draw the coordinates.
+ |      
+ |      *rescale*:
+ |          Either None or a 2-item tuple, with minimum and maximum value of the printable area.
+ |      
+ |      *reject_range*:
+ |          A 2-item tuple. All petal scores that fall within the range must be considered non-interesting, thus drawed in grey.
+ |          Default is None (no range at all).
+ |      
+ |      *highlight*:
+ |          A string or a list of main emotions to highlight. If a list of emotions is given, other emotions will be shadowed.
+ |          Default is 'all'.
+ |      
+ |      *show_intensity_levels*:
+ |          A string or a list of main emotions. It shows all three intensity scores for each emotion in the list,
+ |          and for the others cumulative scores. Default is 'none'.
+ |      
+ |      *font*:
+ |          Font of text. Default is sans-serif.
+ |      
+ |      *fontweight*:
+ |          Font weight of text. Default is light.
+ |      
+ |      *fontsize*:
+ |          Font size of text. Default is 15.
+ |      
+ |      *show_coordinates*:
+ |          A boolean, wether to show polar coordinates or not.
+ |      
+ |      *show_ticklabels*:
+ |          Boolean, wether to show tick labels under Joy petal. Default is False.
+ |      
+ |      *ticklabels_angle*:
+ |          How much to rotate tick labels from y=0. Value should be given in radians. Default is 0.
+ |      
+ |      *ticklabels_size*:
+ |          Size of tick labels. Default is 11.
+ |      
+ |      *height_width_ratio*:
+ |          Ratio between height and width of the petal. Lower the ratio, thicker the petal. Default is 1.
+ |      
+ |      *title*:
+ |          Title for the plot.
+ |      
+ |      *title_size*:
+ |          Size of the title. Default is font_size.
+ |      
+ |      Returns:
+ |      ----------
+ |      *ax*:
+ |          The input Axes modified, if provided, otherwise a new generated one.
+ |  
+ |  draw_statistically_significant_emotions(self, obj, title=None)
+ |      Computes how statistically significantly higher or lower is each emotion in the input text or Formamentis Network.
+ |      It draws the Plutchik's flower highlighting only emotions over/under represented w.r.t. a neutral baseline.
+ |      This function is a wrapper of
+ |          zs = zscores(obj)
+ |          draw_plucthik(zs, reject_range = [-1.96, 1.96])
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *obj*:
+ |          A str or a Formamentis Network to search emotions in.
+ |      
+ |      *reject_range*:
+ |          A threshold for significance of zscores. A zscore higher (lower) than 1.96 (-1.96) means that an emotion is
+ |          statistically over (under) represented (p-value = 0.05).
+ |      
+ |      *title*:
+ |          Title for the plot.
+ |  
+ |  emotions(self, obj, normalization_strategy='none', return_words=False, convert_emojis=True)
+ |      Count emotions in an input text or Formamentis Network.
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *obj*:
+ |          Either a string or a list of tuples, with the former being the text to extract emotion from,
+ |          and the latter being the standard representation of a formamentis edgelist.
+ |      
+ |      *normalization_strategy*:
+ |          A string, whether to normalize emotion scores over the number of words. Accepted values are:
+ |              'none': no normalization at all
+ |              'text_lenght': normalize emotion counts over the total text length
+ |              'emotion_words': normalize emotion counts over the number of words associated to an emotion
+ |      
+ |      *return_words*:
+ |          A bool. Whether to return a list of the words associated with each of the emotions, or just their count.
+ |      
+ |      *convert_emojis*:
+ |          A bool. Whether to convert emojis in raw text to be processed, or not.
+ |      
+ |      
+ |      Returns:
+ |      ----------
+ |      *emotions*:
+ |          A dict. Keys are emotions, and values the scores.
+ |  
+ |  export_formamentis(self, fmnt, filename=None, path=None)
+ |      Export the edges of a Formamentis Network to a text file. Does not support multiplex.
+ |      
+ |      Parameters:
+ |      -----------
+ |      fmnt : FormamentisNetwork
+ |          The Formamentis Network object to extract edges from.
+ |      path : str, optional
+ |          The directory path to save the file. Defaults to the current working directory.
+ |      filename : str, optional
+ |          The name of the file to save. Defaults to 'extracted_formamentis.txt'.
+ |      
+ |      Returns:
+ |      --------
+ |      None
+ |  
+ |  extract_word_from_formamentis(self, fmn, target_word)
+ |      Extract the semantic frame of a single word from a formamentis network.
+ |      
+ |      Required arguments:
+ |      *fmn*:
+ |          The formamentis from which the word must be extracted.
+ |      *target_word*:
+ |          A string. Only the edges that are related to this word will be extracted.
+ |      
+ |      ----------
+ |      Returns:
+ |      *fmnt*:
+ |          A Formamentis Network of the target word.
+ |  
+ |  find_all_shortest_paths(self, graph, start_node, end_node)
+ |      Find all shortest paths between start_node and end_node in a graph.
+ |      
+ |      Parameters:
+ |      -----------
+ |      - graph (list): A raw edgelist, might include weights.
+ |      - start_node: The starting node for the shortest paths.
+ |      - end_node: The ending node for the shortest paths.
+ |      
+ |      Returns:
+ |      -----------
+ |      - result (list): A list of lists that represent all the shortest paths between the nodes.
+ |  
+ |  formamentis_network(self, text, target_word=None, keepwords=[], stopwords=[], max_distance=3, semantic_enrichment='synonyms', multiplex=False, with_type=False)
+ |      Extract a Formamentis Network from input text.
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *text*:
+ |          A string, the text to extract emotions from.
+ |      
+ |      *target_word*:
+ |          A string or None. If a string and method is 'formamentis', it will be computed the emotion distribution
+ |          only of the neighborhood of 'target_word' in the formamentis network.
+ |      
+ |      *keepwords*:
+ |          A list. Words that shall be included in formamentis networks regardless from their part of speech. Default is an empty list.
+ |          By default implementation, a pre-compiled list of negations and pronouns will be loaded and used as keepwords.
+ |      
+ |      *stopwords*:
+ |          A list. Words that shall be discarded from formamentis networks regardless from their part of speech. Default is an empty list.
+ |          If a word is both in stopwords and in keepwords, the word will be discarded.
+ |      
+ |      *max_distance*:
+ |          An integer, by default 2. Links in the formamentis network will be established from each word to each neighbor within a distance
+ |          defined by max_distance.
+ |      
+ |      *semantic_enrichment*:
+ |          A str or a list of str. If 'synonyms', will be added semantic arcs between synonyms into the network. If 'hypernyms', will be
+ |          added semantic arcs between hypernyms and hyponyms. Also ['synonyms', 'hypernyms'] is accepted.
+ |      
+ |      *multiplex*:
+ |          A bool: whether to return different edgelist for different kinds of edges (syntactic, synonyms, hypernyms) or not. Default is False.
+ |      
+ |      
+ |      Returns:
+ |      ----------
+ |      *fmn*:
+ |          A Formamentis Network in the form of (Edges, Vertices).
+ |  
+ |  formamentis_to_nxgraph(self, fmnt)
+ |      Converts a Formamentis Network to a NetworkX graph.
+ |      
+ |      Required arguments:
+ |      *fmnt*:
+ |          A Formamentis Network.
+ |      
+ |      Returns:
+ |      *graph*:
+ |          A NetworkX graph.
+ |  
+ |  get_top_quantile_shortest_paths(self, network, start_node, end_node, top_quantile=0.25)
+ |      Returns the top quantile of shortest paths between the start_node and end_node in the given network.
+ |      
+ |      Parameters:
+ |          network (list): A raw edgelist.
+ |          start_node (string): The starting node of the paths.
+ |          end_node (string): The ending node of the paths.
+ |          top_quantile (float): The quantile of paths to keep. Defaults to 0.25.
+ |      
+ |      Returns:
+ |          list: A list of paths (as lists of nodes) from the top quantile of the shortest paths.
+ |  
+ |  import_formamentis(self, filepath=None)
+ |      Import the edges of a Formamentis Network from a text file. Does not support multiplex.
+ |      
+ |      Parameters:
+ |      -----------
+ |      filepath : str, optional
+ |          The path of the file from which to import files.
+ |      
+ |      Returns:
+ |      --------
+ |      fmnt : FormamentisNetwork
+ |          The Formamentis Network object.
+ |  
+ |  lemmatize_text(self, text)
+ |      # Used if you are only interested in lemmatizing texts
+ |  
+ |  nxgraph_to_formamentis(self, graph)
+ |      Converts a networkx graph to a formamentis network object.
+ |      CONSIDERS ALL EDGES AS syntactic.
+ |      
+ |      Required arguments:
+ |      *graph*:
+ |          A networkx graph.
+ |      ----------
+ |      Returns:
+ |      *fmnt*:
+ |          A Formamentis Network of syntactic edges.
+ |  
+ |  plot_mindset_stream(self, graph, start_node, end_node, shortest_paths=None, top_quantile=None, figsize=(12, 8), title=' ')
+ |      Plot the mindset stream graph.
+ |      
+ |      Parameters:
+ |      - graph (list): A raw edgelist or a FormamentisNetwork, might include weights.
+ |      - shortest_paths(list of lists): if None, it will compute all shortest paths between the 2 nodes.
+ |      - start_node: The starting node for the shortest paths.
+ |      - end_node: The ending node for the shortest paths.
+ |      - quantile (float): The top quantile of shortest paths to keep. Defaults to None. Requires a weighted edgelist.
+ |      - figsize (tuple): Figure size for the plot. Defaults to (12, 8).
+ |  
+ |  set_baseline(self, baseline=None)
+ |      Set a new emotion distribution as baseline to compute zscores.
+ |      If no baseline is provided, a new one will be created from the default emotion lexicon loaded.
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *baseline*:
+ |          Either a list of lists, a text, or None.
+ |          If baseline is a list of list, it contains the distribution of emotions of the text used as baseline.
+ |          If baseline is a text, a new emotion distribution will be computed from it.
+ |          If baseline is None, it will be computed the emotion distribution of the default emotion lexicon loaded.
+ |  
+ |  set_stemming_lemmatization(self, stem_or_lem='lemmatization')
+ |  
+ |  zscores(self, obj, baseline=None, n_samples=300, convert_emojis=True)
+ |      Checks the emotion distribution in an input text or Formamentis Network against a baseline, and returns the z-scores.
+ |      
+ |      Required arguments:
+ |      ----------
+ |      
+ |      *obj*:
+ |          Either a string or a list of tuples, with the former being the text to extract emotion from,
+ |          and the latter being the standard representation of a formamentis edgelist.
+ |      
+ |      *baseline*:
+ |          Either a list of lists, a text, or None.
+ |          If baseline is a list of list, it contains the distribution of emotions of the text used as baseline.
+ |          If baseline is a text, a new emotion distribution will be computed from it.
+ |          If baseline is None, it will be computed the emotion distribution of the default emotion lexicon loaded.
+ |      
+ |      *n_samples*:
+ |          An integer, how many time the baseline emotion distribution will be sampled before checking for z-scores.
+ |          Default is 300.
+ |      
+ |      *convert_emojis*:
+ |          A bool. Whether to convert emojis in raw text to be processed, or not.
+ |      
+ |      Returns:
+ |      ----------
+ |      *z-scores*:
+ |          A dict. Keys are emotions, and values the z-scores.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  defaultdict = <class 'collections.defaultdict'>
+ |      defaultdict(default_factory=None, /, [...]) --> dict with default factory
+ |      
+ |      The default factory is called without arguments to produce
+ |      a new value when a key is not present, in __getitem__ only.
+ |      A defaultdict compares equal to a dict with the same items.
+ |      All remaining arguments are treated the same as if they were
+ |      passed to the dict constructor, including keyword arguments.
+

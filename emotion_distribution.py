@@ -14,7 +14,7 @@ def aggregate_turns(turns: List[str]) -> str:
 
 def main():
     model = "gemma3"
-    CONVERSATIONS_DIR = f'output/{model}'
+    CONVERSATIONS_DIR = f'conversations/{model}'
     PLOTS_DIR = 'plots'
     os.makedirs(PLOTS_DIR, exist_ok=True)
 
