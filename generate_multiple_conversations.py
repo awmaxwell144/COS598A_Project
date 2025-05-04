@@ -126,7 +126,7 @@ def worker(args):
 
     t_mod = model.replace('/', '_')
     p_mod = model.replace('/', '_')
-    fname = f"Conversation{32 + i}_{t_mod}-{p_mod}.json"
+    fname = f"Conversation{i}_{t_mod}-{p_mod}.json"
     path = os.path.join(output_dir, fname)
 
     with open(path, "w") as f:

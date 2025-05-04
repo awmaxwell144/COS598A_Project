@@ -126,7 +126,7 @@ def worker(args):
 
     t_mod = model.replace('/', '_')
     p_mod = model.replace('/', '_')
-    fname = f"Conversation{32 + i}_{t_mod}-{p_mod}.json"
+    fname = f"Conversation{64+i}_{t_mod}-{p_mod}.json"
     path = os.path.join(output_dir, fname)
 
     with open(path, "w") as f:
@@ -195,7 +195,7 @@ if __name__ == "__main__":
         help="Directory to save the JSON conversation files"
     )
     parser.add_argument(
-        "--num_conversations", type=int, default=37,
+        "--num_conversations", type=int, default=36,
         help="How many conversations to generate"
     )
     parser.add_argument(
