@@ -5,11 +5,10 @@ import seaborn as sns
 
 # Define file paths
 file_paths = {
-    "gemma3": "plots/average_zscores_gemma3.csv",
-    "llama3.3": "plots/average_zscores_llama3.3.csv",
-    "qwen3": "plots/average_zscores_qwen3.csv",
-    "gpt-3.5": "plots/average_zscores_GPT.csv",
-    "claude 3 Haiku": "plots/average_zscores_Haiku.csv"
+    "gemma3": "calculated_data/average_zscores_gemma3.csv",
+    "llama3.3": "calculated_data/average_zscores_llama3.3.csv",
+    "gpt-3.5": "calculated_data/average_zscores_GPT.csv",
+    "claude 3 Haiku": "calculated_data/average_zscores_Haiku.csv"
 }
 
 # Load and label each dataset
