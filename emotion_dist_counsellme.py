@@ -13,15 +13,15 @@ def aggregate_turns(turns: List[str]) -> str:
     return " \n".join(turns)
 
 def main():
-    model = "gemma3"
-    CONVERSATIONS_DIR = f'output/{model}'
+    model = "GPT"
+    CONVERSATIONS_DIR = 'Conv-GPT-patients'
     PLOTS_DIR = 'plots'
     os.makedirs(PLOTS_DIR, exist_ok=True)
 
     emos = EmoScores(language="english")
 
-    role_sums = defaultdict(lambda: defaultdict(float))
-    role_counts = defaultdict(int)
+    role_sums = defaultdict(lambda: defaultdict(float))  # e.g., role_sums['patient']['joy'] = total
+    role_counts = defaultdict(int)  # e.g., role_counts['patient'] = 17 conversations
 
     for filename in tqdm(os.listdir(CONVERSATIONS_DIR)):
         if not filename.endswith(".json"):
@@ -30,36 +30,45 @@ def main():
         with open(os.path.join(CONVERSATIONS_DIR, filename), "r") as f:
             conversation = json.load(f)
 
+        # Filter only the actual dialogue turns with "role" and "content"
+        dialogue_turns = [turn for turn in conversation if "role" in turn and "content" in turn]
+
         speaker_turns = defaultdict(list)
-        for turn in conversation:
-            role = turn.get("role", "").lower()
-            text = turn.get("content", "").strip()
-            if role in ["therapist", "patient"] and text:
-                speaker_turns[role].append(text)
+
+        for turn in dialogue_turns:
+            role_raw = turn.get("role", "").lower()
+            content = turn.get("content", "").strip()
+            if not content:
+                continue
+
+            role_map = {"user": "patient", "assistant": "therapist"}
+            role = role_map.get(role_raw)
+            if role:
+                speaker_turns[role].append(content)
 
         for speaker in ["therapist", "patient"]:
             if speaker not in speaker_turns or not speaker_turns[speaker]:
                 continue
 
-            corpus = aggregate_turns(speaker_turns[speaker])
-            z = emos.zscores(corpus)
+            full_text = aggregate_turns(speaker_turns[speaker])
+            z = emos.zscores(full_text)
 
             for emotion, value in z.items():
                 role_sums[speaker][emotion] += value
             role_counts[speaker] += 1
 
-    # Determine all emotions for a consistent CSV header
+    # Determine all possible emotions from the z-score keys
     all_emotions = sorted(set(emotion for scores in role_sums.values() for emotion in scores))
 
-    # Write CSV output
-    csv_path = os.path.join(PLOTS_DIR, f"average_zscores_{model}.csv")
+    # Write average z-scores to CSV
+    csv_path = os.path.join(PLOTS_DIR, "average_zscores.csv")
     with open(csv_path, "w", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=["role"] + all_emotions)
         writer.writeheader()
 
         for speaker in ["therapist", "patient"]:
             if role_counts[speaker] == 0:
-                print(f"No turns found for role: {speaker}")
+                print(f"No data for role: {speaker}")
                 continue
 
             avg_z = {
@@ -67,15 +76,14 @@ def main():
                 for emotion in all_emotions
             }
 
-            # Write numerical data to CSV
             writer.writerow({"role": speaker, **avg_z})
 
-            # Plot Plutchik wheel
+            # Create and save Plutchik wheel
             emos.draw_plutchik(avg_z, title=f"Average – {speaker}")
             plt.savefig(os.path.join(PLOTS_DIR, f"average_{speaker}_{model}.png"))
             plt.close()
 
-    print(f"\n Z-scores saved to {csv_path}")
+    print(f"Results saved to {csv_path}")
 
 if __name__ == "__main__":
     main()
