@@ -6,7 +6,7 @@ from tqdm import tqdm
 from emoatlas import EmoScores
 
 # Configuration
-MODELS = ["gemma3", "llama3.3", "qwen3", "gpt3.5", "haiku"]
+MODELS = ["gemma3", "llama3.3", "gpt3.5", "haiku"]
 INPUT_DIR = "conversations"
 MAX_STEPS = 20  # truncate or pad all conversations to this many steps
 
