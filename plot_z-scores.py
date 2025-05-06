@@ -49,12 +49,14 @@ for ax, df, title in zip(
         hue="model",
         ax=ax
     )
-    ax.set_title(title, fontsize=14)
-    ax.set_ylabel("Average Z-Score" if title == "Therapist Responses" else "", fontsize=12)
+    ax.set_title(title, fontsize=18)
+    ax.set_ylabel("Average Z-Score" if title == "Therapist Responses" else "", fontsize=16)
     ax.tick_params(labelsize=12)
+    ax.set_xlabel("Emotion", fontsize=16)
     ax.set_ylim(-4, 5)
     ax.grid(True, axis='y', linestyle='--', alpha=0.7)
-    ax.set_axisbelow(True)  # <-- ensures gridlines appear behind bars
+    ax.set_axisbelow(True)
+
 
 plt.tight_layout()
 plt.savefig("plots/zscore_comparison_side_by_side.png")

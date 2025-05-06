@@ -18,7 +18,7 @@ ORDERED_EMOTIONS = [
 ]
 
 def main():
-    df = pd.read_csv("data/emo_zscores.csv")
+    df = pd.read_csv("calculated_data/emo_zscores.csv")
 
     os.makedirs("plots", exist_ok=True)
     for role in df["role"].unique():
@@ -42,12 +42,13 @@ def main():
                        ax=ax,
                        width=0.8,
                        color=[PALETTE[c] for c in ordered_cols])
-            ax.set_title(f"{model.capitalize()} – {role.capitalize()}")
+            ax.set_title(f"{model.capitalize()} – {role.capitalize()}", fontsize=18)
             ax.set_xlabel("")
             ax.axhline(0, color="gray", linestyle="--", linewidth=0.8)
             ax.legend(title="Prompt")
+            ax.tick_params(axis='x', labelsize=14)  
 
-        fig.supylabel("Average Z‑Score")
+        fig.supylabel("Average Z‑Score", fontsize=16)
         plt.savefig(f"plots/split_{role}.png")
         plt.close()
 
